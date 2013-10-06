@@ -1,0 +1,49 @@
+// Forced collapse
+.group.collapse .column { float: none; width: 100%; }
+
+
+// When things get too small, do this...
+@media screen and (max-width:1140px) {
+  .group.collapse-1140 > .column { float: none; width: 100%; }
+  .show-over-1140  { display: none; }
+  .masthead.responsive { padding-left: $pad*5; padding-right: $pad*5; }
+}
+
+@media screen and (max-width:1024px) {
+  .group.collapse-1024 > .column { float: none; width: 100%; }
+  .show-over-1024  { display: none; }
+}
+
+@media screen and (max-width:768px) {
+  .group.collapse-768 > .column { float: none; width: 100%; }
+  .show-over-768  { display: none; }
+}
+
+@media screen and (max-width:600px) {
+  .group.collapse-600 > .column { float: none; width: 100%; }
+  .show-over-600 { display: none; }
+}
+
+@media screen and (max-width:480px) {
+  .group.collapse-480 > .column { float: none; width: 100%; }
+  .show-over-480 { display: none; }
+}
+
+
+// when the screen is large enough, do this...
+@media screen and (min-width:1025px) {
+  .show-under-1024 { display: none; }
+}
+
+@media screen and (min-width:769px) {
+  .show-under-768 { display: none; }
+}
+
+@media screen and (min-width:601px) {
+  .show-under-600 { display: none; }
+}
+
+@media screen and (min-width:481px) {
+  .show-under-480 { display: none; }
+}
+

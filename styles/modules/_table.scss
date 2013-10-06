@@ -1,0 +1,52 @@
+//Table Resets
+
+table, {
+  border-collapse: collapse; //need to add IE conditional class to change to border-collapse: collapse in IE
+  border-spacing: 0;
+  td, th {
+    border: none;
+    padding: 0;
+  }
+}
+
+@-moz-document url-prefix() {
+  table {
+    border-collapse: separate;
+  }
+}
+
+.table {
+  display: table;
+}
+//Drow resets for tables.
+
+tr.drow {
+  background: transparent none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  td {
+    background: transparent none;
+    border: none;
+    margin: 0;
+  }
+}
+
+
+// In some cases the layout styling of tables is needed in cases where you need even height columns
+// or you need to vertically align content.
+//
+// Styleguide 4.6 - Cell Class
+.cell {
+  display: table-cell;
+  &.va-top {
+    vertical-align: top;
+  }
+  &.va-middle {
+    vertical-align: middle;
+  }
+  &.va-bottom {
+    vertical-align: bottom;
+  }
+}
+
