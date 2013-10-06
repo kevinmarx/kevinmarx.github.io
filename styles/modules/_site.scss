@@ -1,0 +1,37 @@
+// page nav and header
+@import "modules/buttons";
+
+&.homepage {
+  .page-header {
+    background-color: $lt;
+    font-family: $accent-font-family;
+    text-transform: uppercase;
+    border-top: $pad solid $dk;
+
+    .logo {
+      background: url("/images/#{$color}/logo.png") no-repeat center;
+      width: 180px;
+      height: 41px;
+      display: block;
+      position: relative;
+      top: -$pad;
+    }
+
+    a {
+      @include font-size(8);
+    }
+  }
+
+  .featurette {
+    background-color: $lt;
+    height: 500px;
+  }
+}
+
+ul.horizontal {
+  li {
+    display: inline-block;
+    float: left;
+    list-style: none;
+  }
+}

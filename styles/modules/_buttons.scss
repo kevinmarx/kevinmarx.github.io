@@ -1,0 +1,149 @@
+button, a.button, input[type=submit] {
+  cursor: pointer;
+  display: inline-block;
+  margin: 0;
+  padding: $pad*1.5 $pad*4 $pad*1.25;
+  position: relative;
+  background: none;
+  @include border($dk);
+  border-radius: $pad*1;
+  color: $dk;
+  font-style: $bold-it;
+  @include font-size(8);
+  line-height: 1.5;
+  text-transform: uppercase;
+  text-decoration: none !important;
+  @include use-rems(min-width, 28);
+
+  .icon {
+    vertical-align: middle;
+    margin-top: -3px;
+
+    &:only-child { text-align: center; }
+  }
+
+  &:hover {
+    background: $dk;
+    @include border($dk);
+    color: $lt;
+  }
+
+  &:active {
+    background: none;
+    @include border($dk);
+    color: $dk;
+  }
+
+  &.selected {
+    background: $dk;
+    @include border($dk);
+    color: $lt;
+  }
+
+  &:focus {
+    @include border($dk);
+    @include box-shadow($dk);
+    outline: none;
+  }
+
+// Spinner Buttons
+  .spinner {
+    display: none;
+  }
+
+  &.spinning {
+    color:transparent !important;
+    text-shadow: none !important;
+
+    span:before {
+      visibility: hidden;
+    }
+
+    .spinner {
+      display:block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin: -$pad*2 !important;
+      width: $pad*4;
+      height: $pad*4;
+      margin: -$pad*2;
+      border-width: $pad*0.75;
+      border-color: transparentize($dk, .75);
+      border-bottom-color: lighten($dk, 10%);
+      animation-duration: .7s;
+      -moz-animation-duration: .7s;
+      -webkit-animation-duration: .7s;
+      -ms-animation-duration: .7s;
+
+      &:before {
+        visibility: hidden;
+      }
+    }
+
+    &.key .spinner, &.save .spinner {
+        border-color: transparentize(#fff, .75);
+        border-bottom-color: #fff;
+      }
+  }
+}
+
+// Key Buttons are visually distinctive in order to set them off as some sort of special or primary call-to-action.
+
+button.key, a.button.key, input[type=submit].key {
+  background: $dk;
+  @include border($dk);
+  font-weight: $bold-it;
+
+  &:hover {
+    background: darken($dk, 10%);
+    @include border(darken($dk, 10%));
+    color: $lt;
+
+    .icon { opacity: 1; }
+  }
+
+  &:active {
+    background: transparent;
+    @include border($dk);
+    color: $dk;
+  }
+
+  &:focus {
+    @include border(darken($dk, 10%));
+    @include box-shadow(darken($dk, 10%));
+    outline: none;
+  }
+}
+
+button.no-style, a.button.no-style, input[type=submit].no-style {
+  background: none;
+  border: 2px solid transparent;
+  color: $dk;
+  @include font-size(8);
+  padding: $pad*1.5 $pad*2 $pad*1.25;
+  line-height: 1.45;
+  letter-spacing: 1px;
+
+  &:hover {
+    background: none;
+    color: lighten($dk, 10%);
+    cursor: pointer;
+  }
+
+  &:active {
+    background: none;
+    border: none;
+    text-shadow: none;
+  }
+
+  &.selected {
+    background: none;
+    border: 2px solid $dk;
+    color: $dk;
+    text-shadow: none;
+  }
+
+  &.media { padding: 0 $pad*1.5; @include use-rems(line-height, 28); }
+
+}

@@ -1,14 +1,9 @@
-tination: ./_site
+destination: ./_site
 auto:        true
 lsi:         false
 server_port: 4000
 pygments:    true
-markdown:    redcarpet
+markdown:    rdiscount
 permalink:   date
-redcarpet:
-  fenced_code_blocks: true
-  strikethrough: true
-  superscript: true
-  underline: true
-  highlight: true
-  footnotes: true
+rdiscount:
+  extensions: [smart]

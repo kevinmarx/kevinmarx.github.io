@@ -3,4 +3,22 @@ layout: default
 title: Kevin Marx
 ---
 
-<p>TEST TEST</p>
+<header class="page-header column x100">
+  <div class="pillar wrapper group">
+    <a href="/" class="column logo el"></a>
+    <nav class="column right">
+      <ul class="horizontal el">
+        <li><a href="#" class="button no-style selected">Blog</a></li>
+        <li><a href="#" class="button no-style">Talks</a></li>
+        <li><a href="#" class="button no-style">Projects</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+{% include featurette.html post=site.posts.first %}
+
+{% for post in site.posts %}
+  <small>{{ post.date | date_to_string }}</small>
+  <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+{% endfor %}

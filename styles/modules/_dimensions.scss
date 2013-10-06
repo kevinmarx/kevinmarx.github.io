@@ -1,50 +1,5 @@
-// The <code>.x##</code> classes are useful for applying a percentage based width to your element. Goes well with <code>.column</code>
-//
-//  .x100 - width: 100%;
-//  .x95  - width: 95%;
-//  .x90  - width: 90%;
-//  .x85  - width: 85%;
-//  .x80  - width: 80%;
-//  .x75  - width: 75%;
-//  .x70  - width: 70%;
-//  .x66  - width: 66.667%;
-//  .x65  - width: 65%;
-//  .x60  - width: 60%;
-//  .x55  - width: 55%;
-//  .x50  - width: 50%;
-//  .x45  - width: 45%;
-//  .x40  - width: 40%;
-//  .x35  - width: 35%;
-//  .x33  - width: 33.333%;
-//  .x30  - width: 30%;
-//  .x25  - width: 25%;
-//  .x24  - width: 24%;
-//  .x23  - width: 23%;
-//  .x22  - width: 22%;
-//  .x21  - width: 21%;
-//  .x20  - width: 20%;
-//  .x19  - width: 19%;
-//  .x18  - width: 18%;
-//  .x17  - width: 17%;
-//  .x16  - width: 16%;
-//  .x15  - width: 15%;
-//  .x14  - width: 14%;
-//  .x13  - width: 13%;
-//  .x12  - width: 12%;
-//  .x11  - width: 11%;
-//  .x10  - width: 10%;
-//  .x9   - width: 9%;
-//  .x8   - width: 8%;
-//  .x7   - width: 7%;
-//  .x6   - width: 6%;
-//  .x5   - width: 5%;
-//  .x4   - width: 4%;
-//  .x3   - width: 3%;
-//  .x2   - width: 2%;
-//  .x1   - width: 1%;
-//  .x05  - width: 0.5%;
-//
-// Styleguide 1.4 - Width
+// percentage widths
+
 .x100 { width: 100%; }
 .x95  { width: 95%; }
 .x90  { width: 90%; }
@@ -89,15 +44,7 @@
 .x1   { width: 1%; }
 .x05  { width: 0.5%; }
 
-// Pixel width classes. Initially designed for use with the <code>.pillar</code>, works well with the <code>.x##</code> percentage width classes.
-//
-// .px320  - max-width: 320px;
-// .px480  - max-width: 480px;
-// .px768  - max-width: 768px;
-// .px1024 - max-width: 1024px;
-// .px1140 - max-width: 1140px;
-//
-// Styleguide 1.4.1 - Pixel Widths
+// pixel widths
 .px320  { max-width: 320px; }
 .px480  { max-width: 480px; }
 .px640  { max-width: 640px; }
@@ -105,55 +52,8 @@
 .px1024 { max-width: 1024px; }
 .px1140 { max-width: 1140px; }
 
-// The <code>.h##</code> classes are useful for specifying height on an element in percentages.
-// Reminder: Percentage heights only work if the parent element has a defined height. So in most cases these will be used in relation to <code>window</code>.
-//
-// .h05  - height: 0.5%;
-// .h1   - height: 1%;
-// .h2   - height: 2%;
-// .h3   - height: 3%;
-// .h4   - height: 4%;
-// .h5   - height: 5%;
-// .h6   - height: 6%;
-// .h7   - height: 7%;
-// .h8   - height: 8%;
-// .h9   - height: 9%;
-// .h10  - height: 10%;
-// .h11  - height: 11%;
-// .h12  - height: 12%;
-// .h13  - height: 13%;
-// .h14  - height: 14%;
-// .h15  - height: 15%;
-// .h16  - height: 16%;
-// .h17  - height: 17%;
-// .h18  - height: 18%;
-// .h19  - height: 19%;
-// .h20  - height: 20%;
-// .h21  - height: 21%;
-// .h22  - height: 22%;
-// .h23  - height: 23%;
-// .h24  - height: 24%;
-// .h25  - height: 25%;
-// .h30  - height: 30%;
-// .h33  - height: 33%;
-// .h35  - height: 35%;
-// .h40  - height: 40%;
-// .h45  - height: 45%;
-// .h50  - height: 50%;
-// .h55  - height: 55%;
-// .h60  - height: 60%;
-// .h65  - height: 65%;
-// .h66  - height: 66%;
-// .h70  - height: 70%;
-// .h75  - height: 75%;
-// .h80  - height: 80%;
-// .h85  - height: 85%;
-// .h90  - height: 90%;
-// .h95  - height: 95%;
-// .h100 - height: 100%;
-//
-// Styleguide 1.5 - Height
 
+// percentage height
 .h05  { height: 0.5%; }
 .h1   { height: 1%; }
 .h2   { height: 2%; }
@@ -199,16 +99,7 @@
 .h100 { height: 100%; }
 
 
-// Pixel height classes. For use when your element needs to have a defined height and is not relative to the parent element or window.
-//
-// .hpx320  - height: 320px;
-// .hpx480  - height: 480px;
-// .hpx640  - height: 640px;
-// .hpx768  - height: 768px;
-// .hpx1024 - height: 1024px;
-// .hpx1140 - height: 1140px;
-//
-// Styleguide 1.5.1 - Pixel Height
+// Pixel height classes.
 
 .hpx320 { max-height: 320px; }
 .hpx480 { max-height: 480px; }
@@ -218,35 +109,7 @@
 .hpx1140 { max-height: 1140px; }
 
 
-// The <code>.l##</code> classes are useful for pushing <code>.column</code> elements into position.
-//
-// .l100 - margin-left: 100%;
-// .l95  - margin-left: 95%;
-// .l90  - margin-left: 90%;
-// .l85  - margin-left: 85%;
-// .l80  - margin-left: 80%;
-// .l75  - margin-left: 75%;
-// .l70  - margin-left: 70%;
-// .l66  - margin-left: 66.667%;
-// .l65  - margin-left: 65%;
-// .l60  - margin-left: 60%;
-// .l55  - margin-left: 55%;
-// .l50  - margin-left: 50%;
-// .l45  - margin-left: 45%;
-// .l40  - margin-left: 40%;
-// .l35  - margin-left: 35%;
-// .l33  - margin-left: 33.333%;
-// .l30  - margin-left: 30%;
-// .l25  - margin-left: 25%;
-// .l20  - margin-left: 20%;
-// .l15  - margin-left: 15%;
-// .l10  - margin-left: 10%;
-// .l5   - margin-left: 5%;
-// .l1   - margin-left: 1%;
-// .l05  - margin-left: 0.5%;
-// .l0   - margin-left: 0;
-//
-// Styleguide 1.6 - Left Margin
+// left margin
 .l100 { margin-left: 100%; }
 .l95  { margin-left: 95%; }
 .l90  { margin-left: 90%; }
@@ -274,35 +137,7 @@
 .l0   { margin-left: 0; }
 
 
-// The <code>.r##</code> classes are useful for pushing right floated <code>.column</code> elements into position.
-//
-// .r100 - margin-right: 100%;
-// .r95  - margin-right: 95%;
-// .r90  - margin-right: 90%;
-// .r85  - margin-right: 85%;
-// .r80  - margin-right: 80%;
-// .r75  - margin-right: 75%;
-// .r70  - margin-right: 70%;
-// .r66  - margin-right: 66.667%;
-// .r65  - margin-right: 65%;
-// .r60  - margin-right: 60%;
-// .r55  - margin-right: 55%;
-// .r50  - margin-right: 50%;
-// .r45  - margin-right: 45%;
-// .r40  - margin-right: 40%;
-// .r35  - margin-right: 35%;
-// .r33  - margin-right: 33.333%;
-// .r30  - margin-right: 30%;
-// .r25  - margin-right: 25%;
-// .r20  - margin-right: 20%;
-// .r15  - margin-right: 15%;
-// .r10  - margin-right: 10%;
-// .r5   - margin-right: 5%;
-// .r1   - margin-right: 1%;
-// .r05  - margin-right: 0.5%;
-// .r0    - margin-right: 0;
-//
-// Styleguide 1.7 - Right Margin
+// Right Margin
 .r100 { margin-right: 100%; }
 .r95  { margin-right: 95%; }
 .r90  { margin-right: 90%; }

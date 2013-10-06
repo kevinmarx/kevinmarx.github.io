@@ -1,6 +1,4 @@
 // Web Design is 99% Typography.
-//
-// Styleguide 2.0
 
 // Base Type styles using REM at a root scale of 62.5% (~10px) ----------------------//
 
@@ -9,7 +7,7 @@
 html { font-size: 62.5%; }
 
 body {
-  color: $dk1;
+  color: $dk;
   @include font-size(14);
 }
 
@@ -23,37 +21,6 @@ h1, h2, h3, h4, h5, h6 {
   small { @include font-size(10); color: #ccc; line-height: 0; }
 }
 
-h1.tabheader {
-  color: #3f454c;
-  @include font-size(18);
-  font-weight: $semibold;
-}
-h2.subheader {
-  color: #6f7479;
-  @include font-size(16);
-  font-weight: $bold;
-}
-h3.subheader {
-  color: $dk1;
-  @include font-size(14);
-  text-transform: uppercase;
-}
-
-.masthead {
-  h1 {
-    color: $masthead-heading;
-    @include font-size(20);
-    font-weight: $bold;
-    margin: 0;
-  }
-  h2 {
-    color: $masthead-subheading;
-    @include font-size(14);
-    font-weight: $normal;
-    margin: $pad 0 0;
-  }
-}
-
 
 hr { border: solid #cbcbcb; border-width: 1px 0 0; clear: both; margin: 22px 0 21px; height: 0; }
 
@@ -63,8 +30,8 @@ small { @include font-size(10); line-height: inherit; }
 
 // Links ----------------------//
 
-a, a:visited { color: $link; text-decoration: none; }
-a:hover { color: $link-hover; }
+a, a:visited { color: $dk; text-decoration: none; }
+a:hover { color: lighten($dk, 15%); }
 a:focus { outline: none; }
 
 // Better CSS outline suppression: people.opera.com/patrickl/experiments/keyboard/test
@@ -106,8 +73,8 @@ pre, code, kbd, samp { font-family: Menlo, Consolas, 'DejaVu Sans Mono', Monaco,
 pre code { border: none; }
 code, kbd, samp {
   padding: 0 $pad;
-  background: $lt3;
-  border: 1px solid $lt2;
+  background: $ltGray;
+  border: 1px solid $dkGray;
   border-radius: $pad*0.75;
   @include font-size(12);
 }
@@ -118,7 +85,7 @@ blockquote, blockquote p { line-height: 1.5; color: #6f7479; }
 blockquote { margin: 0 0 1rem; padding: 9px 20px 0 19px; border-left: 1px solid #cbcbcb;
   cite { display: block; @include font-size(6); color: #52585f;
     &:before { content: "\2014 \0020"; }
-    a, a:visited { color: $link; }
+    a, a:visited { color: $dk; }
   }
 }
 
@@ -127,34 +94,20 @@ abbr { text-transform: none; }
 
 
 // Font weight helper classes can be put on any element to modify the font weight for that element.
-//
-// .light     - Lightest font weight.
-// .regular   - Regular font weight, the default.
-// .semibold  - Semibold, used primarily in subheaders.
-// .bold      - Bold font-weight.
-// .black     - Heaviest font weight.
-//
-// Styleguide 2.2
-.light { font-weight: $light; }
+
+.light { font-weight: $light-it; }
 .regular { font-weight: $normal; }
-.semibold { font-weight: $semibold; }
-.bold { font-weight: $bold; }
-.black { font-weight: $black; }
+.italic { font-weight: $normal-it; }
+.bold-it { font-weight: $bold-it; }
 
 // Cheap and dirty alignment classes
-//
-// .align-right   - right
-// .align-left    - left
-// .align-center  - middle
-//
-// Styleguide 2.3
+
 .align-right { text-align: right; }
 .align-left { text-align: left; }
 .align-center { text-align: center; }
 
 // Cleanly separated links. Can be used with a combination of <code>p span</code> or <code>ul li</code>.
-//
-// Styleguide 2.4 Link List
+
 .link-list {
   span, li {
     display: inline;
