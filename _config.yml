@@ -3,7 +3,12 @@ auto:        true
 lsi:         false
 server_port: 4000
 pygments:    true
-markdown:    rdiscount
+markdown:    redcarpet
 permalink:   date
-rdiscount:
-  extensions: [smart]
+redcarpet:
+  fenced_code_blocks: true
+  strikethrough: true
+  superscript: true
+  underline: true
+  highlight: true
+  footnotes: true
