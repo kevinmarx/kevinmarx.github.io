@@ -15,10 +15,17 @@
     <title>{{ page.title }}</title>
     <link rel="stylesheet" href="/styles/main.css" media="screen" />
     <link rel="shortcut icon" href="/images/favicon.ico" />
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
   </head>
   <body>
-      <section id="Main">
+      <section id="Main" style="display: none;">
         {{ content }}
       </section>
+      <script>
+        $(document).ready(function() {
+          var colors = ['red', 'blue', 'yellow']
+          $('#Main').addClass(colors[Math.random() * colors.length | 0]).show()
+        })
+      </script>
   </body>
 </html>
