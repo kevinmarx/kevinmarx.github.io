@@ -1,7 +1,12 @@
 <article class="featurette column x100" data-bkgimg="{{include.post.hero}}">
-  <header class="pillar wrapper group">
+  <header class="px480 x100 {{include.post.hero_contrast}}">
     {% if include.post.title %}
-      <h1>{{include.post.title}}</h1>
+      <h1 class="js-bg-check"><a href="#">{{include.post.title}}</a></h1>
     {% endif %}
+    <div class="column x100">
+      <a href="#" class="column">{{ include.post.date | date_to_string }}</a>
+      <span class="column right">1 minute read</span>
+    </div>
   </header>
+
 </article>

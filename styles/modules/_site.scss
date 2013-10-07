@@ -1,7 +1,16 @@
 // page nav and header
 @import "modules/buttons";
+@import "modules/typography";
+
+p { font-family: $default-font-family; font-weight: 400; }
 
 &.homepage {
+  a, span, .button {
+    @include font-size(8);
+    font-family: $accent-font-family;
+    font-weight: 600;
+  }
+
   .page-header {
     background-color: $lt;
     font-family: $accent-font-family;
@@ -16,15 +25,49 @@
       position: relative;
       top: -$pad;
     }
-
-    a {
-      @include font-size(8);
-    }
   }
 
   .featurette {
     background-color: $lt;
     height: 500px;
+
+    header {
+      margin: 20% auto 0;
+      text-align: center;
+
+      h1 {
+        padding: $pad*5;
+
+        a {
+          @include font-size(26);
+          font-family: $default-font-family;
+        }
+      }
+
+      &.dark {
+        h1 {
+          border-top: 2px solid $lt;
+          border-bottom: 2px solid $lt;
+        }
+        a, span { color: $lt; }
+      }
+      &.light {
+        h1 {
+          border-top: 2px solid $dk;
+          border-bottom: 2px solid $dk;
+          color: $dk;
+        }
+        a, span { color: $lt; }
+      }
+      &.complex {
+        h1 {
+          border-top: 2px solid $ltGray;
+          border-bottom: 2px solid $ltGray;
+          color: $ltGray;
+        }
+        a, span { color: $lt; }
+      }
+    }
   }
 }
 

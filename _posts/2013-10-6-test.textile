@@ -1,6 +1,7 @@
 ---
 layout: post
-title: Test
+title: Managing Backbone Views with Viewstate
 hero: test.gif
+hero_contrast: dark
 ---
 # TEST

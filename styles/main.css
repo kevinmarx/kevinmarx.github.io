@@ -1291,14 +1291,251 @@ table td, table th {
   line-height: 28px;
   line-height: 2.8rem;
 }
+/* line 5, modules/_typography.scss */
+.red * {
+  -webkit-font-smoothing: antialiased;
+}
+/* line 7, modules/_typography.scss */
+.red html {
+  font-size: 62.5%;
+}
+/* line 9, modules/_typography.scss */
+.red body {
+  color: #571d03;
+  font-size: 14px;
+  font-size: 1.4rem;
+}
+/* line 14, modules/_typography.scss */
+.red p {
+  margin-bottom: 14px;
+  margin-bottom: 1.4rem;
+}
+/* line 17, modules/_typography.scss */
+.red h1, .red h2, .red h3, .red h4, .red h5, .red h6 {
+  text-rendering: optimizeLegibility;
+  line-height: 1.1;
+  margin-bottom: 4px;
+}
+/* line 21, modules/_typography.scss */
+.red h1 small, .red h2 small, .red h3 small, .red h4 small, .red h5 small, .red h6 small {
+  font-size: 10px;
+  font-size: 1rem;
+  color: #ccc;
+  line-height: 0;
+}
+/* line 25, modules/_typography.scss */
+.red hr {
+  border: solid #cbcbcb;
+  border-width: 1px 0 0;
+  clear: both;
+  margin: 22px 0 21px;
+  height: 0;
+}
+/* line 27, modules/_typography.scss */
+.red em, .red i {
+  font-style: italic;
+  line-height: inherit;
+}
+/* line 28, modules/_typography.scss */
+.red strong, .red b {
+  font-weight: 700;
+  line-height: inherit;
+}
+/* line 29, modules/_typography.scss */
+.red small {
+  font-size: 10px;
+  font-size: 1rem;
+  line-height: inherit;
+}
+/* line 33, modules/_typography.scss */
+.red a, .red a:visited {
+  color: #571d03;
+  text-decoration: none;
+}
+/* line 34, modules/_typography.scss */
+.red a:hover {
+  color: #a13606;
+}
+/* line 35, modules/_typography.scss */
+.red a:focus {
+  outline: none;
+}
+/* line 38, modules/_typography.scss */
+.red a:hover, .red a:active {
+  outline: none;
+}
+/* line 42, modules/_typography.scss */
+.red ol, .red ul {
+  line-height: 1.6;
+  margin-bottom: 14px;
+  margin-bottom: 1.4rem;
+  margin-left: 25px;
+  margin-left: 2.5rem;
+  list-style-position: outside;
+}
+/* line 43, modules/_typography.scss */
+.red ol ol, .red ul ul {
+  margin-bottom: 0;
+}
+/* line 45, modules/_typography.scss */
+.red ul ul {
+  list-style: outside;
+}
+/* line 47, modules/_typography.scss */
+.red ul.square {
+  margin-left: 10px;
+  margin-left: 1rem;
+  list-style-type: square;
+}
+/* line 51, modules/_typography.scss */
+.red ul.square ul {
+  list-style: inherit;
+}
+/* line 54, modules/_typography.scss */
+.red ul.no-bullet {
+  list-style: none;
+}
+/* line 55, modules/_typography.scss */
+.red ul.large li {
+  line-height: 21px;
+}
+/* line 60, modules/_typography.scss */
+.red mark {
+  background: #ff9;
+}
+/* line 61, modules/_typography.scss */
+.red ins {
+  text-decoration: none;
+  background: #ff9;
+}
+/* line 62, modules/_typography.scss */
+.red del {
+  text-decoration: line-through;
+}
+/* line 66, modules/_typography.scss */
+.red pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+/* line 72, modules/_typography.scss */
+.red pre, .red code, .red kbd, .red samp {
+  font-family: Menlo, Consolas, 'DejaVu Sans Mono', Monaco, 'Courier New', Courier, monospace;
+}
+/* line 73, modules/_typography.scss */
+.red pre code {
+  border: none;
+}
+/* line 74, modules/_typography.scss */
+.red code, .red kbd, .red samp {
+  padding: 0 4px;
+  background: #f9fdeb;
+  border: 1px solid #2c2a30;
+  border-radius: 3px;
+  font-size: 12px;
+  font-size: 1.2rem;
+}
+/* line 84, modules/_typography.scss */
+.red blockquote, .red blockquote p {
+  line-height: 1.5;
+  color: #6f7479;
+}
+/* line 85, modules/_typography.scss */
+.red blockquote {
+  margin: 0 0 1rem;
+  padding: 9px 20px 0 19px;
+  border-left: 1px solid #cbcbcb;
+}
+/* line 86, modules/_typography.scss */
+.red blockquote cite {
+  display: block;
+  font-size: 6px;
+  font-size: 0.6rem;
+  color: #52585f;
+}
+/* line 87, modules/_typography.scss */
+.red blockquote cite:before {
+  content: "\2014 \0020";
+}
+/* line 88, modules/_typography.scss */
+.red blockquote cite a, .red blockquote cite a:visited {
+  color: #571d03;
+}
+/* line 92, modules/_typography.scss */
+.red abbr, .red acronym {
+  color: #6f7479;
+  border-bottom: 1px dashed #cbcbcb;
+  cursor: help;
+}
+/* line 93, modules/_typography.scss */
+.red abbr {
+  text-transform: none;
+}
+/* line 98, modules/_typography.scss */
+.red .light {
+  font-weight: 300;
+}
+/* line 99, modules/_typography.scss */
+.red .regular {
+  font-weight: 400;
+}
+/* line 100, modules/_typography.scss */
+.red .italic {
+  font-weight: 500;
+}
+/* line 101, modules/_typography.scss */
+.red .bold-it {
+  font-weight: 700;
+}
+/* line 105, modules/_typography.scss */
+.red .align-right {
+  text-align: right;
+}
+/* line 106, modules/_typography.scss */
+.red .align-left {
+  text-align: left;
+}
+/* line 107, modules/_typography.scss */
+.red .align-center {
+  text-align: center;
+}
+/* line 112, modules/_typography.scss */
+.red .link-list span, .red .link-list li {
+  display: inline;
+}
+/* line 115, modules/_typography.scss */
+.red .link-list span:after, .red .link-list li:after {
+  content: " \00b7";
+}
+/* line 116, modules/_typography.scss */
+.red .link-list span:last-child:after, .red .link-list li:last-child:after {
+  content: "";
+}
+/* line 119, modules/_typography.scss */
+.red ul.link-list {
+  list-style: none;
+  margin-left: 0;
+}
 /* line 5, modules/_site.scss */
+.red p {
+  font-family: "klinic-slab", Georgia, serif;
+  font-weight: 400;
+}
+/* line 8, modules/_site.scss */
+.red.homepage a, .red.homepage span, .red.homepage .button {
+  font-size: 8px;
+  font-size: 0.8rem;
+  font-family: "raleway", "Helvetica Neue", Verdana, sans-serif;
+  font-weight: 600;
+}
+/* line 14, modules/_site.scss */
 .red.homepage .page-header {
   background-color: #cc6044;
   font-family: "raleway", "Helvetica Neue", Verdana, sans-serif;
   text-transform: uppercase;
   border-top: 4px solid #571d03;
 }
-/* line 11, modules/_site.scss */
+/* line 20, modules/_site.scss */
 .red.homepage .page-header .logo {
   background: url("/images/red/logo.png") no-repeat center;
   width: 180px;
@@ -1307,17 +1544,56 @@ table td, table th {
   position: relative;
   top: -4px;
 }
-/* line 20, modules/_site.scss */
-.red.homepage .page-header a {
-  font-size: 8px;
-  font-size: 0.8rem;
-}
-/* line 25, modules/_site.scss */
+/* line 30, modules/_site.scss */
 .red.homepage .featurette {
   background-color: #cc6044;
   height: 500px;
 }
-/* line 32, modules/_site.scss */
+/* line 34, modules/_site.scss */
+.red.homepage .featurette header {
+  margin: 20% auto 0;
+  text-align: center;
+}
+/* line 38, modules/_site.scss */
+.red.homepage .featurette header h1 {
+  padding: 20px;
+}
+/* line 41, modules/_site.scss */
+.red.homepage .featurette header h1 a {
+  font-size: 26px;
+  font-size: 2.6rem;
+  font-family: "klinic-slab", Georgia, serif;
+}
+/* line 48, modules/_site.scss */
+.red.homepage .featurette header.dark h1 {
+  border-top: 2px solid #cc6044;
+  border-bottom: 2px solid #cc6044;
+}
+/* line 52, modules/_site.scss */
+.red.homepage .featurette header.dark a, .red.homepage .featurette header.dark span {
+  color: #cc6044;
+}
+/* line 55, modules/_site.scss */
+.red.homepage .featurette header.light h1 {
+  border-top: 2px solid #571d03;
+  border-bottom: 2px solid #571d03;
+  color: #571d03;
+}
+/* line 60, modules/_site.scss */
+.red.homepage .featurette header.light a, .red.homepage .featurette header.light span {
+  color: #cc6044;
+}
+/* line 63, modules/_site.scss */
+.red.homepage .featurette header.complex h1 {
+  border-top: 2px solid #f9fdeb;
+  border-bottom: 2px solid #f9fdeb;
+  color: #f9fdeb;
+}
+/* line 68, modules/_site.scss */
+.red.homepage .featurette header.complex a, .red.homepage .featurette header.complex span {
+  color: #cc6044;
+}
+/* line 75, modules/_site.scss */
 .red ul.horizontal li {
   display: inline-block;
   float: left;
@@ -1485,14 +1761,251 @@ table td, table th {
   line-height: 28px;
   line-height: 2.8rem;
 }
+/* line 5, modules/_typography.scss */
+.blue * {
+  -webkit-font-smoothing: antialiased;
+}
+/* line 7, modules/_typography.scss */
+.blue html {
+  font-size: 62.5%;
+}
+/* line 9, modules/_typography.scss */
+.blue body {
+  color: #2a505b;
+  font-size: 14px;
+  font-size: 1.4rem;
+}
+/* line 14, modules/_typography.scss */
+.blue p {
+  margin-bottom: 14px;
+  margin-bottom: 1.4rem;
+}
+/* line 17, modules/_typography.scss */
+.blue h1, .blue h2, .blue h3, .blue h4, .blue h5, .blue h6 {
+  text-rendering: optimizeLegibility;
+  line-height: 1.1;
+  margin-bottom: 4px;
+}
+/* line 21, modules/_typography.scss */
+.blue h1 small, .blue h2 small, .blue h3 small, .blue h4 small, .blue h5 small, .blue h6 small {
+  font-size: 10px;
+  font-size: 1rem;
+  color: #ccc;
+  line-height: 0;
+}
+/* line 25, modules/_typography.scss */
+.blue hr {
+  border: solid #cbcbcb;
+  border-width: 1px 0 0;
+  clear: both;
+  margin: 22px 0 21px;
+  height: 0;
+}
+/* line 27, modules/_typography.scss */
+.blue em, .blue i {
+  font-style: italic;
+  line-height: inherit;
+}
+/* line 28, modules/_typography.scss */
+.blue strong, .blue b {
+  font-weight: 700;
+  line-height: inherit;
+}
+/* line 29, modules/_typography.scss */
+.blue small {
+  font-size: 10px;
+  font-size: 1rem;
+  line-height: inherit;
+}
+/* line 33, modules/_typography.scss */
+.blue a, .blue a:visited {
+  color: #2a505b;
+  text-decoration: none;
+}
+/* line 34, modules/_typography.scss */
+.blue a:hover {
+  color: #427e8f;
+}
+/* line 35, modules/_typography.scss */
+.blue a:focus {
+  outline: none;
+}
+/* line 38, modules/_typography.scss */
+.blue a:hover, .blue a:active {
+  outline: none;
+}
+/* line 42, modules/_typography.scss */
+.blue ol, .blue ul {
+  line-height: 1.6;
+  margin-bottom: 14px;
+  margin-bottom: 1.4rem;
+  margin-left: 25px;
+  margin-left: 2.5rem;
+  list-style-position: outside;
+}
+/* line 43, modules/_typography.scss */
+.blue ol ol, .blue ul ul {
+  margin-bottom: 0;
+}
+/* line 45, modules/_typography.scss */
+.blue ul ul {
+  list-style: outside;
+}
+/* line 47, modules/_typography.scss */
+.blue ul.square {
+  margin-left: 10px;
+  margin-left: 1rem;
+  list-style-type: square;
+}
+/* line 51, modules/_typography.scss */
+.blue ul.square ul {
+  list-style: inherit;
+}
+/* line 54, modules/_typography.scss */
+.blue ul.no-bullet {
+  list-style: none;
+}
+/* line 55, modules/_typography.scss */
+.blue ul.large li {
+  line-height: 21px;
+}
+/* line 60, modules/_typography.scss */
+.blue mark {
+  background: #ff9;
+}
+/* line 61, modules/_typography.scss */
+.blue ins {
+  text-decoration: none;
+  background: #ff9;
+}
+/* line 62, modules/_typography.scss */
+.blue del {
+  text-decoration: line-through;
+}
+/* line 66, modules/_typography.scss */
+.blue pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+/* line 72, modules/_typography.scss */
+.blue pre, .blue code, .blue kbd, .blue samp {
+  font-family: Menlo, Consolas, 'DejaVu Sans Mono', Monaco, 'Courier New', Courier, monospace;
+}
+/* line 73, modules/_typography.scss */
+.blue pre code {
+  border: none;
+}
+/* line 74, modules/_typography.scss */
+.blue code, .blue kbd, .blue samp {
+  padding: 0 4px;
+  background: #f9fdeb;
+  border: 1px solid #2c2a30;
+  border-radius: 3px;
+  font-size: 12px;
+  font-size: 1.2rem;
+}
+/* line 84, modules/_typography.scss */
+.blue blockquote, .blue blockquote p {
+  line-height: 1.5;
+  color: #6f7479;
+}
+/* line 85, modules/_typography.scss */
+.blue blockquote {
+  margin: 0 0 1rem;
+  padding: 9px 20px 0 19px;
+  border-left: 1px solid #cbcbcb;
+}
+/* line 86, modules/_typography.scss */
+.blue blockquote cite {
+  display: block;
+  font-size: 6px;
+  font-size: 0.6rem;
+  color: #52585f;
+}
+/* line 87, modules/_typography.scss */
+.blue blockquote cite:before {
+  content: "\2014 \0020";
+}
+/* line 88, modules/_typography.scss */
+.blue blockquote cite a, .blue blockquote cite a:visited {
+  color: #2a505b;
+}
+/* line 92, modules/_typography.scss */
+.blue abbr, .blue acronym {
+  color: #6f7479;
+  border-bottom: 1px dashed #cbcbcb;
+  cursor: help;
+}
+/* line 93, modules/_typography.scss */
+.blue abbr {
+  text-transform: none;
+}
+/* line 98, modules/_typography.scss */
+.blue .light {
+  font-weight: 300;
+}
+/* line 99, modules/_typography.scss */
+.blue .regular {
+  font-weight: 400;
+}
+/* line 100, modules/_typography.scss */
+.blue .italic {
+  font-weight: 500;
+}
+/* line 101, modules/_typography.scss */
+.blue .bold-it {
+  font-weight: 700;
+}
+/* line 105, modules/_typography.scss */
+.blue .align-right {
+  text-align: right;
+}
+/* line 106, modules/_typography.scss */
+.blue .align-left {
+  text-align: left;
+}
+/* line 107, modules/_typography.scss */
+.blue .align-center {
+  text-align: center;
+}
+/* line 112, modules/_typography.scss */
+.blue .link-list span, .blue .link-list li {
+  display: inline;
+}
+/* line 115, modules/_typography.scss */
+.blue .link-list span:after, .blue .link-list li:after {
+  content: " \00b7";
+}
+/* line 116, modules/_typography.scss */
+.blue .link-list span:last-child:after, .blue .link-list li:last-child:after {
+  content: "";
+}
+/* line 119, modules/_typography.scss */
+.blue ul.link-list {
+  list-style: none;
+  margin-left: 0;
+}
 /* line 5, modules/_site.scss */
+.blue p {
+  font-family: "klinic-slab", Georgia, serif;
+  font-weight: 400;
+}
+/* line 8, modules/_site.scss */
+.blue.homepage a, .blue.homepage span, .blue.homepage .button {
+  font-size: 8px;
+  font-size: 0.8rem;
+  font-family: "raleway", "Helvetica Neue", Verdana, sans-serif;
+  font-weight: 600;
+}
+/* line 14, modules/_site.scss */
 .blue.homepage .page-header {
   background-color: #79bfd7;
   font-family: "raleway", "Helvetica Neue", Verdana, sans-serif;
   text-transform: uppercase;
   border-top: 4px solid #2a505b;
 }
-/* line 11, modules/_site.scss */
+/* line 20, modules/_site.scss */
 .blue.homepage .page-header .logo {
   background: url("/images/blue/logo.png") no-repeat center;
   width: 180px;
@@ -1501,17 +2014,56 @@ table td, table th {
   position: relative;
   top: -4px;
 }
-/* line 20, modules/_site.scss */
-.blue.homepage .page-header a {
-  font-size: 8px;
-  font-size: 0.8rem;
-}
-/* line 25, modules/_site.scss */
+/* line 30, modules/_site.scss */
 .blue.homepage .featurette {
   background-color: #79bfd7;
   height: 500px;
 }
-/* line 32, modules/_site.scss */
+/* line 34, modules/_site.scss */
+.blue.homepage .featurette header {
+  margin: 20% auto 0;
+  text-align: center;
+}
+/* line 38, modules/_site.scss */
+.blue.homepage .featurette header h1 {
+  padding: 20px;
+}
+/* line 41, modules/_site.scss */
+.blue.homepage .featurette header h1 a {
+  font-size: 26px;
+  font-size: 2.6rem;
+  font-family: "klinic-slab", Georgia, serif;
+}
+/* line 48, modules/_site.scss */
+.blue.homepage .featurette header.dark h1 {
+  border-top: 2px solid #79bfd7;
+  border-bottom: 2px solid #79bfd7;
+}
+/* line 52, modules/_site.scss */
+.blue.homepage .featurette header.dark a, .blue.homepage .featurette header.dark span {
+  color: #79bfd7;
+}
+/* line 55, modules/_site.scss */
+.blue.homepage .featurette header.light h1 {
+  border-top: 2px solid #2a505b;
+  border-bottom: 2px solid #2a505b;
+  color: #2a505b;
+}
+/* line 60, modules/_site.scss */
+.blue.homepage .featurette header.light a, .blue.homepage .featurette header.light span {
+  color: #79bfd7;
+}
+/* line 63, modules/_site.scss */
+.blue.homepage .featurette header.complex h1 {
+  border-top: 2px solid #f9fdeb;
+  border-bottom: 2px solid #f9fdeb;
+  color: #f9fdeb;
+}
+/* line 68, modules/_site.scss */
+.blue.homepage .featurette header.complex a, .blue.homepage .featurette header.complex span {
+  color: #79bfd7;
+}
+/* line 75, modules/_site.scss */
 .blue ul.horizontal li {
   display: inline-block;
   float: left;
@@ -1679,14 +2231,251 @@ table td, table th {
   line-height: 28px;
   line-height: 2.8rem;
 }
+/* line 5, modules/_typography.scss */
+.yellow * {
+  -webkit-font-smoothing: antialiased;
+}
+/* line 7, modules/_typography.scss */
+.yellow html {
+  font-size: 62.5%;
+}
+/* line 9, modules/_typography.scss */
+.yellow body {
+  color: #614600;
+  font-size: 14px;
+  font-size: 1.4rem;
+}
+/* line 14, modules/_typography.scss */
+.yellow p {
+  margin-bottom: 14px;
+  margin-bottom: 1.4rem;
+}
+/* line 17, modules/_typography.scss */
+.yellow h1, .yellow h2, .yellow h3, .yellow h4, .yellow h5, .yellow h6 {
+  text-rendering: optimizeLegibility;
+  line-height: 1.1;
+  margin-bottom: 4px;
+}
+/* line 21, modules/_typography.scss */
+.yellow h1 small, .yellow h2 small, .yellow h3 small, .yellow h4 small, .yellow h5 small, .yellow h6 small {
+  font-size: 10px;
+  font-size: 1rem;
+  color: #ccc;
+  line-height: 0;
+}
+/* line 25, modules/_typography.scss */
+.yellow hr {
+  border: solid #cbcbcb;
+  border-width: 1px 0 0;
+  clear: both;
+  margin: 22px 0 21px;
+  height: 0;
+}
+/* line 27, modules/_typography.scss */
+.yellow em, .yellow i {
+  font-style: italic;
+  line-height: inherit;
+}
+/* line 28, modules/_typography.scss */
+.yellow strong, .yellow b {
+  font-weight: 700;
+  line-height: inherit;
+}
+/* line 29, modules/_typography.scss */
+.yellow small {
+  font-size: 10px;
+  font-size: 1rem;
+  line-height: inherit;
+}
+/* line 33, modules/_typography.scss */
+.yellow a, .yellow a:visited {
+  color: #614600;
+  text-decoration: none;
+}
+/* line 34, modules/_typography.scss */
+.yellow a:hover {
+  color: #ad7d00;
+}
+/* line 35, modules/_typography.scss */
+.yellow a:focus {
+  outline: none;
+}
+/* line 38, modules/_typography.scss */
+.yellow a:hover, .yellow a:active {
+  outline: none;
+}
+/* line 42, modules/_typography.scss */
+.yellow ol, .yellow ul {
+  line-height: 1.6;
+  margin-bottom: 14px;
+  margin-bottom: 1.4rem;
+  margin-left: 25px;
+  margin-left: 2.5rem;
+  list-style-position: outside;
+}
+/* line 43, modules/_typography.scss */
+.yellow ol ol, .yellow ul ul {
+  margin-bottom: 0;
+}
+/* line 45, modules/_typography.scss */
+.yellow ul ul {
+  list-style: outside;
+}
+/* line 47, modules/_typography.scss */
+.yellow ul.square {
+  margin-left: 10px;
+  margin-left: 1rem;
+  list-style-type: square;
+}
+/* line 51, modules/_typography.scss */
+.yellow ul.square ul {
+  list-style: inherit;
+}
+/* line 54, modules/_typography.scss */
+.yellow ul.no-bullet {
+  list-style: none;
+}
+/* line 55, modules/_typography.scss */
+.yellow ul.large li {
+  line-height: 21px;
+}
+/* line 60, modules/_typography.scss */
+.yellow mark {
+  background: #ff9;
+}
+/* line 61, modules/_typography.scss */
+.yellow ins {
+  text-decoration: none;
+  background: #ff9;
+}
+/* line 62, modules/_typography.scss */
+.yellow del {
+  text-decoration: line-through;
+}
+/* line 66, modules/_typography.scss */
+.yellow pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+/* line 72, modules/_typography.scss */
+.yellow pre, .yellow code, .yellow kbd, .yellow samp {
+  font-family: Menlo, Consolas, 'DejaVu Sans Mono', Monaco, 'Courier New', Courier, monospace;
+}
+/* line 73, modules/_typography.scss */
+.yellow pre code {
+  border: none;
+}
+/* line 74, modules/_typography.scss */
+.yellow code, .yellow kbd, .yellow samp {
+  padding: 0 4px;
+  background: #f9fdeb;
+  border: 1px solid #2c2a30;
+  border-radius: 3px;
+  font-size: 12px;
+  font-size: 1.2rem;
+}
+/* line 84, modules/_typography.scss */
+.yellow blockquote, .yellow blockquote p {
+  line-height: 1.5;
+  color: #6f7479;
+}
+/* line 85, modules/_typography.scss */
+.yellow blockquote {
+  margin: 0 0 1rem;
+  padding: 9px 20px 0 19px;
+  border-left: 1px solid #cbcbcb;
+}
+/* line 86, modules/_typography.scss */
+.yellow blockquote cite {
+  display: block;
+  font-size: 6px;
+  font-size: 0.6rem;
+  color: #52585f;
+}
+/* line 87, modules/_typography.scss */
+.yellow blockquote cite:before {
+  content: "\2014 \0020";
+}
+/* line 88, modules/_typography.scss */
+.yellow blockquote cite a, .yellow blockquote cite a:visited {
+  color: #614600;
+}
+/* line 92, modules/_typography.scss */
+.yellow abbr, .yellow acronym {
+  color: #6f7479;
+  border-bottom: 1px dashed #cbcbcb;
+  cursor: help;
+}
+/* line 93, modules/_typography.scss */
+.yellow abbr {
+  text-transform: none;
+}
+/* line 98, modules/_typography.scss */
+.yellow .light {
+  font-weight: 300;
+}
+/* line 99, modules/_typography.scss */
+.yellow .regular {
+  font-weight: 400;
+}
+/* line 100, modules/_typography.scss */
+.yellow .italic {
+  font-weight: 500;
+}
+/* line 101, modules/_typography.scss */
+.yellow .bold-it {
+  font-weight: 700;
+}
+/* line 105, modules/_typography.scss */
+.yellow .align-right {
+  text-align: right;
+}
+/* line 106, modules/_typography.scss */
+.yellow .align-left {
+  text-align: left;
+}
+/* line 107, modules/_typography.scss */
+.yellow .align-center {
+  text-align: center;
+}
+/* line 112, modules/_typography.scss */
+.yellow .link-list span, .yellow .link-list li {
+  display: inline;
+}
+/* line 115, modules/_typography.scss */
+.yellow .link-list span:after, .yellow .link-list li:after {
+  content: " \00b7";
+}
+/* line 116, modules/_typography.scss */
+.yellow .link-list span:last-child:after, .yellow .link-list li:last-child:after {
+  content: "";
+}
+/* line 119, modules/_typography.scss */
+.yellow ul.link-list {
+  list-style: none;
+  margin-left: 0;
+}
 /* line 5, modules/_site.scss */
+.yellow p {
+  font-family: "klinic-slab", Georgia, serif;
+  font-weight: 400;
+}
+/* line 8, modules/_site.scss */
+.yellow.homepage a, .yellow.homepage span, .yellow.homepage .button {
+  font-size: 8px;
+  font-size: 0.8rem;
+  font-family: "raleway", "Helvetica Neue", Verdana, sans-serif;
+  font-weight: 600;
+}
+/* line 14, modules/_site.scss */
 .yellow.homepage .page-header {
   background-color: #e8ac31;
   font-family: "raleway", "Helvetica Neue", Verdana, sans-serif;
   text-transform: uppercase;
   border-top: 4px solid #614600;
 }
-/* line 11, modules/_site.scss */
+/* line 20, modules/_site.scss */
 .yellow.homepage .page-header .logo {
   background: url("/images/yellow/logo.png") no-repeat center;
   width: 180px;
@@ -1695,17 +2484,56 @@ table td, table th {
   position: relative;
   top: -4px;
 }
-/* line 20, modules/_site.scss */
-.yellow.homepage .page-header a {
-  font-size: 8px;
-  font-size: 0.8rem;
-}
-/* line 25, modules/_site.scss */
+/* line 30, modules/_site.scss */
 .yellow.homepage .featurette {
   background-color: #e8ac31;
   height: 500px;
 }
-/* line 32, modules/_site.scss */
+/* line 34, modules/_site.scss */
+.yellow.homepage .featurette header {
+  margin: 20% auto 0;
+  text-align: center;
+}
+/* line 38, modules/_site.scss */
+.yellow.homepage .featurette header h1 {
+  padding: 20px;
+}
+/* line 41, modules/_site.scss */
+.yellow.homepage .featurette header h1 a {
+  font-size: 26px;
+  font-size: 2.6rem;
+  font-family: "klinic-slab", Georgia, serif;
+}
+/* line 48, modules/_site.scss */
+.yellow.homepage .featurette header.dark h1 {
+  border-top: 2px solid #e8ac31;
+  border-bottom: 2px solid #e8ac31;
+}
+/* line 52, modules/_site.scss */
+.yellow.homepage .featurette header.dark a, .yellow.homepage .featurette header.dark span {
+  color: #e8ac31;
+}
+/* line 55, modules/_site.scss */
+.yellow.homepage .featurette header.light h1 {
+  border-top: 2px solid #614600;
+  border-bottom: 2px solid #614600;
+  color: #614600;
+}
+/* line 60, modules/_site.scss */
+.yellow.homepage .featurette header.light a, .yellow.homepage .featurette header.light span {
+  color: #e8ac31;
+}
+/* line 63, modules/_site.scss */
+.yellow.homepage .featurette header.complex h1 {
+  border-top: 2px solid #f9fdeb;
+  border-bottom: 2px solid #f9fdeb;
+  color: #f9fdeb;
+}
+/* line 68, modules/_site.scss */
+.yellow.homepage .featurette header.complex a, .yellow.homepage .featurette header.complex span {
+  color: #e8ac31;
+}
+/* line 75, modules/_site.scss */
 .yellow ul.horizontal li {
   display: inline-block;
   float: left;
@@ -1729,15 +2557,15 @@ table td, table th {
 }
 
 @font-face {
-  font-family: 'klinic_slab';
+  font-family: 'klinic-slab';
   src: url("./fonts/klinicslabbookit-webfont.eot");
   src: url("./fonts/klinicslabbookit-webfont.eot?#iefix") format("embedded-opentype"), url("./fonts/klinicslabbookit-webfont.woff") format("woff"), url("./fonts/klinicslabbookit-webfont.ttf") format("truetype"), url("./fonts/klinicslabbookit-webfont.svg#klinic_slabbook_italic") format("svg");
-  font-weight: 500;
-  font-style: normal;
+  font-weight: 400;
+  font-style: italic;
 }
 
 @font-face {
-  font-family: 'klinic_slab';
+  font-family: 'klinic-slab';
   src: url("./fonts/klinicslablightit-webfont.eot");
   src: url("./fonts/klinicslablightit-webfont.eot?#iefix") format("embedded-opentype"), url("./fonts/klinicslablightit-webfont.woff") format("woff"), url("./fonts/klinicslablightit-webfont.ttf") format("truetype"), url("./fonts/klinicslablightit-webfont.svg#klinic_slablight_italic") format("svg");
   font-weight: 300;
@@ -1745,9 +2573,25 @@ table td, table th {
 }
 
 @font-face {
+  font-family: 'klinic-slab';
+  src: url("./fonts/klinicslabmedium-webfont.eot");
+  src: url("./fonts/klinicslabmedium-webfont.eot?#iefix") format("embedded-opentype"), url("./fonts/klinicslabmedium-webfont.woff") format("woff"), url("./fonts/klinicslabmedium-webfont.ttf") format("truetype"), url("./fonts/klinicslabmedium-webfont.svg#klinic_slabmedium") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'raleway';
   src: url("./fonts/raleway-extrabold-webfont.eot");
   src: url("./fonts/raleway-extrabold-webfont.eot?#iefix") format("embedded-opentype"), url("./fonts/raleway-extrabold-webfont.woff") format("woff"), url("./fonts/raleway-extrabold-webfont.ttf") format("truetype"), url("./fonts/raleway-extrabold-webfont.svg#ralewayextrabold") format("svg");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'raleway';
+  src: url("./fonts/raleway-regular-webfont.eot");
+  src: url("./fonts/raleway-regular-webfont.eot?#iefix") format("embedded-opentype"), url("./fonts/raleway-regular-webfont.woff") format("woff"), url("./fonts/raleway-regular-webfont.ttf") format("truetype"), url("./fonts/raleway-regular-webfont.svg#ralewayregular") format("svg");
   font-weight: 400;
   font-style: normal;
 }
