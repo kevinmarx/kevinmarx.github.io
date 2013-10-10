@@ -1,0 +1,26 @@
+<article class="gray column x100">
+  <ul id="Posts">
+    {% for post in site.posts %}
+      {% if post %}
+        <li>
+          <a href="{{ post.url }}" class="media">
+            <div class="img">
+              <img src="/images/posts/{{ post.hero }}"/>
+            </div>
+            <header class="bd">
+              <h1>{{ post.title }}</h1>
+              <h2>{{ post.date | date_to_string }}</h2>
+              <p>{{ post.excerpt }}</p>
+            </header>
+          </a>
+        </li>
+      {% else %}
+        <li>
+          <header>
+            <h1>There aren't any posts</h1>
+          </header>
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</article>

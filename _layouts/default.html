@@ -17,25 +17,31 @@
     <link rel="shortcut icon" href="/images/favicon.ico" />
     <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
   </head>
+
   <body>
-      <section id="Main" class="group homepage" style="display: none;">
-        {{ content }}
-      </section>
-      <script>
-        $(document).ready(function() {
-          var colors = ['red', 'blue', 'yellow']
-          window.currentColor = colors[Math.random() * colors.length | 0]
 
-          $('[data-bkgimg]').each(function() {
-            var target = $(this).data('bkgimg')
-            $(this).css({
-              'background-image': "url('/images/" + window.currentColor + "/" + target + "')"
-            })
+    <section id="Main" class="group homepage" style="display: none;">
+      {{ content }}
+    </section>
+
+    {% include footer.html %}
+
+    <script>
+      $(document).ready(function() {
+        var colors = ['red', 'blue', 'yellow']
+        window.currentColor = colors[Math.random() * colors.length | 0]
+
+        $('[data-bkgimg]').each(function() {
+          var target = $(this).data('bkgimg')
+          $(this).css({
+            'background-image': "url('/images/" + window.currentColor + "/" + target + "')"
           })
-
-          // make it go
-          $('#Main').addClass(window.currentColor).show()
         })
-      </script>
+
+        // make it go
+        $('#Main').addClass(window.currentColor).show()
+      })
+    </script>
+
   </body>
 </html>
