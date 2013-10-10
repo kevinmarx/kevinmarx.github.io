@@ -32,11 +32,12 @@ p { font-family: $default-font-family; font-weight: 400; }
     height: 500px;
 
     header {
-      margin: 20% auto 0;
+      margin: 0 auto;
       text-align: center;
 
       h1 {
         padding: $pad*5;
+        margin-top: 20%;
 
         a {
           @include font-size(26);

@@ -3,3 +3,4 @@ _import
 .DS_Store
 Gemfile.lock
 .sass-cache
+styles/main.css
