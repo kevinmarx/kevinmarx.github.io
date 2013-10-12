@@ -141,7 +141,9 @@ p { font-family: $default-font-family; font-weight: 400; }
 }
 
 .article-list {
-  padding: $pad*12.5 0;
+  padding-top: $pad*12.5;
+  padding-bottom: $pad*22.5;
+
   ul {
     li {
       a {
