@@ -1,26 +1,26 @@
-<article class="gray column x100">
-  <ul id="Posts">
-    {% for post in site.posts %}
-      {% if post %}
-        <li>
-          <a href="{{ post.url }}" class="media">
-            <div class="img">
-              <img src="/images/posts/{{ post.hero }}"/>
-            </div>
-            <header class="bd">
+<article class="article-list gray column x100">
+  <ul id="Posts" class="pillar group padded">
+    {% for post in site.posts offset: 0 limit: 10 %}
+      <li class="column x100 el">
+        <a href="{{ post.url }}" class="media group">
+          <div class="img x33">
+            <img src="/images/posts/{{post.date | date: "%Y-%m-%d" }}/hero_small.jpg" class="group x100"/>
+          </div>
+          <div class="bd">
+            <header>
               <h1>{{ post.title }}</h1>
-              <h2>{{ post.date | date_to_string }}</h2>
-              <p>{{ post.excerpt }}</p>
+              <h2>{{ post.date | date_to_string }} | {{ post.duration }} minute read</h2>
             </header>
-          </a>
-        </li>
-      {% else %}
-        <li>
-          <header>
-            <h1>There aren't any posts</h1>
-          </header>
-        </li>
-      {% endif %}
+            <p>{{ post.excerpt }}</p>
+          </div>
+        </a>
+      </li>
     {% endfor %}
+    {% unless site.posts %}
+      <header class="pillar group padded">
+        <h1>There aren't any recent posts.</h1>
+      </header>
+    {% endunless %}
+
   </ul>
 </article>

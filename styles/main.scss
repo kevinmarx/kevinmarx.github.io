@@ -4,13 +4,19 @@
 @import "compass";
 @import "compass/css3/user-interface";
 @import "modules/variables";
+@import "modules/font-awesome/variables";
 @import "mixins/mixins";
+@import "modules/font-awesome/mixins";
+
 
 @import "modules/structure";
+@import "modules/media";
 @import "modules/forms";
 @import "modules/html5";
 @import "modules/responsiveness";
 @import "modules/table";
+@import "modules/font-awesome/core";
+@import "modules/font-awesome/icons";
 
 @import "modules/colors/red";
 @import "modules/colors/blue";
@@ -18,4 +24,5 @@
 
 @import "fonts/klinic_slab";
 @import "fonts/raleway";
+@import "modules/font-awesome/path";
 

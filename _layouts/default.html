@@ -22,10 +22,9 @@
 
     <section id="Main" class="group homepage" style="display: none;">
       {{ content }}
+
+      {% include footer.html %}
     </section>
-
-    {% include footer.html %}
-
     <script>
       $(document).ready(function() {
         var colors = ['red', 'blue', 'yellow']

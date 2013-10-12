@@ -3,12 +3,18 @@
 @import "modules/buttons";
 @import "modules/typography";
 
+img { display: block; }
+
 .gray {
   background: $ltGray;
 }
 
 .center {
   margin: 0 auto;
+}
+
+a {
+  @include transition(all, 150ms, linear, 0)
 }
 
 p { font-family: $default-font-family; font-weight: 400; }
@@ -47,41 +53,171 @@ p { font-family: $default-font-family; font-weight: 400; }
       margin: 0 auto;
       text-align: center;
 
-      h1 {
-        padding: $pad*5;
+      a {
+        padding: $pad*2.5;
 
-        a {
+        h1 {
+          padding: $pad*5;
           @include font-size(62);
           font-family: $default-font-family;
         }
-      }
 
-      a, span {
-        @include font-size(16);
+        span {
+          @include font-size(16);
+        }
+
+        h1, span {
+          @include transition(color, 200ms, linear, 0)
+        }
+
       }
 
       &.dark {
-        h1 {
-          border-top: 2px solid $lt;
-          border-bottom: 2px solid $lt;
+        a {
+          color: $lt;
+          &:hover, &:focus {
+            h1 {
+              color: lighten($lt, 10%);
+              border-color: lighten($lt, 10%);
+            }
+
+            span { color: lighten($lt, 10%); }
+          }
+
+          h1 {
+            color: $lt;
+            border-top: 2px solid $lt;
+            border-bottom: 2px solid $lt;
+          }
+
+          span { color: $lt; }
         }
-        a, span { color: $lt; }
       }
       &.light {
-        h1 {
-          border-top: 2px solid $dk;
-          border-bottom: 2px solid $dk;
+        a {
           color: $dk;
+          &:hover, &:focus {
+            h1 {
+              color: darken($dk, 10%);
+              border-color: darken($dk, 10%);
+            }
+
+            span { color: darken($dk, 10%); }
+          }
+
+          h1 {
+            border-top: 2px solid $dk;
+            border-bottom: 2px solid $dk;
+            color: $dk;
+          }
+
+          span { color: $lt; }
         }
-        a, span { color: $lt; }
       }
       &.complex {
-        h1 {
-          border-top: 2px solid $ltGray;
-          border-bottom: 2px solid $ltGray;
+        a {
           color: $ltGray;
+
+          &:hover, &:focus {
+            h1 {
+             color: darken($ltGray, 10%);
+             border-color: darken($ltGray, 10%);
+            }
+
+            span { color: darken($ltGray, 10%); }
+          }
+
+          h1 {
+            border-top: 2px solid $ltGray;
+            border-bottom: 2px solid $ltGray;
+            color: $ltGray;
+          }
+
+          span { color: $lt; }
         }
-        a, span { color: $lt; }
+      }
+    }
+  }
+}
+
+.article-list {
+  padding: $pad*12.5 0;
+  ul {
+    li {
+      a {
+        border: 1px solid #dedede;
+        border-radius: $pad;
+        padding: 25px;
+        color: $text;
+        @include transition(all, 200ms, linear, 0);
+
+        &:hover, &:focus {
+          background: white;
+          box-shadow: $subtle-shadow;
+        }
+
+        img {
+          max-height: 138px;
+        }
+
+        h1 {
+          color: $dkGray;
+          @include font-size(34);
+          font-family: $default-font-family;
+        }
+
+        h2 {
+          font-weight: 400;
+          font-style: italic;
+          @include font-size(14)
+        }
+
+        p {
+          @include font-size(18);
+          max-height: 55px;
+          overflow: hidden;
+        }
+      }
+    }
+  }
+}
+
+.page-footer {
+  background: $lt;
+  color: $dk;
+  ul {
+    padding-top: $pad*3.5;
+  }
+
+  .social {
+
+    li { margin: 0 $pad*4; }
+
+    span {
+      font-family: 'FontAwesome';
+      @include font-size(28);
+    }
+  }
+
+  .secondary-footer {
+    color: $lt;
+    background: $dk;
+
+    a {
+      display: block;
+      color: $lt;
+
+      &:hover {
+        color: lighten($lt, 15%);
+      }
+    }
+
+    li {
+      padding: 0 $pad*2;
+      border-left: 1px solid lighten($dk, 10%);
+
+      &:first-child {
+        border-left: none;
       }
     }
   }
@@ -90,7 +226,6 @@ p { font-family: $default-font-family; font-weight: 400; }
 ul.horizontal {
   li {
     display: inline-block;
-    float: left;
     list-style: none;
   }
 }

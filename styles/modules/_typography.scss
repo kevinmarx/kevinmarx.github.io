@@ -39,7 +39,7 @@ a:hover, a:active { outline: none; }
 
 // Lists ---------------------- //
 
-ol, ul { line-height: 1.6; @include use-rems(margin-bottom, 14); @include use-rems(margin-left, 25); list-style-position: outside; }
+ol, ul { line-height: 1.6; @include use-rems(margin-bottom, 14); list-style-position: outside; }
 ol ol, ul ul { margin-bottom: 0; }
 ul {
   ul { list-style: outside; }

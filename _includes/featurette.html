@@ -1,14 +1,14 @@
 <article class="featurette table x100" data-bkgimg="{{include.post.hero}}">
   <header class="cell x100 h100 va-middle {{include.post.hero_contrast}}">
-    <div class="group px480 center">
+    <a href="#" class="group px480 center">
       {% if include.post.title %}
-        <h1 class="js-bg-check"><a href="#">{{include.post.title}}</a></h1>
+        <h1 class="js-bg-check">{{include.post.title}}</h1>
       {% endif %}
       <div class="column x100">
-        <a href="#" class="column">{{ include.post.date | date_to_string }}</a>
-        <span class="column right">1 minute read</span>
+        <span class="column">{{ include.post.date | date_to_string }}</span>
+        <span class="column right">{{ include.post.duration }} minute read</span>
       </div>
-    </div>
+    </a>
   </header>
 
 </article>
