@@ -9,7 +9,9 @@
           <div class="bd">
             <header>
               <h1>{{ post.title }}</h1>
-              <h2>{{ post.date | date_to_string }} | {{ post.duration }} minute read</h2>
+              <h2>
+                <time datetime="{{ post.date}}">{{ post.date | date_to_string }}</time>
+                <span class="duration">{{ post.duration }} minute read.</span></h2>
             </header>
             <p>{{ post.excerpt }}</p>
           </div>

@@ -2,6 +2,8 @@ GEM
   remote: https://rubygems.org/
   specs:
     RedCloth (4.2.9)
+    albino (1.3.3)
+      posix-spawn (>= 0.3.6)
     chunky_png (1.2.8)
     classifier (1.3.3)
       fast-stemmer (>= 1.0.0)
@@ -55,8 +57,10 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  albino
   compass
   github-pages
   rake
   rb-fsevent (~> 0.9)
+  redcarpet
   sass

@@ -3,6 +3,8 @@
 @import "modules/buttons";
 @import "modules/typography";
 
+#Main { background-color: white; }
+
 img { display: block; }
 
 .gray {
@@ -19,122 +21,120 @@ a {
 
 p { font-family: $default-font-family; font-weight: 400; }
 
-&.homepage {
-  a, span, .button {
-    @include font-size(11);
-    font-family: $accent-font-family;
-    font-weight: 600;
+a, span, .button {
+  @include font-size(11);
+  font-family: $accent-font-family;
+  font-weight: 600;
+}
+
+.page-header {
+  background-color: $lt;
+  font-family: $accent-font-family;
+  text-transform: uppercase;
+  border-top: $pad solid $dk;
+
+  .logo {
+    background: url("/images/#{$color}/logo.png") no-repeat center;
+    width: 180px;
+    height: 41px;
+    display: block;
+    position: relative;
+    top: -$pad;
   }
+}
 
-  .page-header {
-    background-color: $lt;
-    font-family: $accent-font-family;
-    text-transform: uppercase;
-    border-top: $pad solid $dk;
+.featurette {
+  background-color: $lt;
+  background-size: cover;
+  background-repeat: none;
+  background-position: center top;
+  height: 757px;
 
-    .logo {
-      background: url("/images/#{$color}/logo.png") no-repeat center;
-      width: 180px;
-      height: 41px;
-      display: block;
-      position: relative;
-      top: -$pad;
+  header {
+    margin: 0 auto;
+    text-align: center;
+
+    a {
+      padding: $pad*2.5;
+
+      h1 {
+        padding: $pad*5;
+        @include font-size(62);
+        font-family: $default-font-family;
+      }
+
+      span {
+        @include font-size(16);
+      }
+
+      h1, span {
+        @include transition(color, 200ms, linear, 0)
+      }
+
     }
-  }
 
-  .featurette {
-    background-color: $lt;
-    background-size: cover;
-    background-repeat: none;
-    background-position: center top;
-    height: 757px;
-
-    header {
-      margin: 0 auto;
-      text-align: center;
-
+    &.dark {
       a {
-        padding: $pad*2.5;
+        color: $lt;
+        &:hover, &:focus {
+          h1 {
+            color: lighten($lt, 10%);
+            border-color: lighten($lt, 10%);
+          }
+
+          span { color: lighten($lt, 10%); }
+        }
 
         h1 {
-          padding: $pad*5;
-          @include font-size(62);
-          font-family: $default-font-family;
-        }
-
-        span {
-          @include font-size(16);
-        }
-
-        h1, span {
-          @include transition(color, 200ms, linear, 0)
-        }
-
-      }
-
-      &.dark {
-        a {
           color: $lt;
-          &:hover, &:focus {
-            h1 {
-              color: lighten($lt, 10%);
-              border-color: lighten($lt, 10%);
-            }
-
-            span { color: lighten($lt, 10%); }
-          }
-
-          h1 {
-            color: $lt;
-            border-top: 2px solid $lt;
-            border-bottom: 2px solid $lt;
-          }
-
-          span { color: $lt; }
+          border-top: 2px solid $lt;
+          border-bottom: 2px solid $lt;
         }
+
+        span { color: $lt; }
       }
-      &.light {
-        a {
+    }
+    &.light {
+      a {
+        color: $dk;
+        &:hover, &:focus {
+          h1 {
+            color: darken($dk, 10%);
+            border-color: darken($dk, 10%);
+          }
+
+          span { color: darken($dk, 10%); }
+        }
+
+        h1 {
+          border-top: 2px solid $dk;
+          border-bottom: 2px solid $dk;
           color: $dk;
-          &:hover, &:focus {
-            h1 {
-              color: darken($dk, 10%);
-              border-color: darken($dk, 10%);
-            }
-
-            span { color: darken($dk, 10%); }
-          }
-
-          h1 {
-            border-top: 2px solid $dk;
-            border-bottom: 2px solid $dk;
-            color: $dk;
-          }
-
-          span { color: $lt; }
         }
+
+        span { color: $lt; }
       }
-      &.complex {
-        a {
-          color: $ltGray;
+    }
+    &.complex {
+      a {
+        color: $ltGray;
 
-          &:hover, &:focus {
-            h1 {
-             color: darken($ltGray, 10%);
-             border-color: darken($ltGray, 10%);
-            }
-
-            span { color: darken($ltGray, 10%); }
-          }
-
+        &:hover, &:focus {
           h1 {
-            border-top: 2px solid $ltGray;
-            border-bottom: 2px solid $ltGray;
-            color: $ltGray;
+           color: darken($ltGray, 10%);
+           border-color: darken($ltGray, 10%);
           }
 
-          span { color: $lt; }
+          span { color: darken($ltGray, 10%); }
         }
+
+        h1 {
+          border-top: 2px solid $ltGray;
+          border-bottom: 2px solid $ltGray;
+          color: $ltGray;
+        }
+
+        span { color: $lt; }
       }
     }
   }
@@ -229,5 +229,86 @@ ul.horizontal {
   li {
     display: inline-block;
     list-style: none;
+  }
+}
+
+// posts
+.post {
+  font-family: $default-font-family;
+
+  .feature-img {
+    height: 587px;
+  }
+
+  header {
+    padding-top: $pad*12.5;
+    margin-bottom: $pad*6.25;
+
+    h1 {
+      @include font-size(68);
+      line-height: 1.25;
+      font-family: $default-font-family;
+    }
+
+    .meta {
+      margin-bottom: $pad*2.5;
+
+      * {
+        @include font-size(16);
+        font-family: $accent-font-family;
+        font-weight: 400;
+      }
+    }
+  }
+
+  .post-body {
+    margin-bottom: $pad*25;
+
+    h1 { @include font-size(48); }
+
+    h2 { @include font-size(32); }
+
+    h3 { @include font-size(24); font-style: italic; }
+
+    p, li, a {
+      @include font-size(24);
+      font-weight: 400;
+      line-height: 1.8;
+      font-family: $default-font-family;
+
+      > code {
+        background: #f8f8f8;
+        border: 1px solid #ddd;
+        padding: $pad;
+        border-radius: $pad;
+        font-family: $code-family;
+        font-weight: normal;
+        @include font-size(16)
+      }
+    }
+
+    a {
+      color: #6f7479;
+
+      &:hover {
+       text-decoration: underline;
+      }
+    }
+
+    p { margin-bottom: 1em; }
+
+    pre {
+      background: #f8f8f8;
+      border: 1px solid #ddd;
+      padding: $pad*4;
+      border-radius: $pad;
+      margin: $pad*6 0;
+
+      span {
+        font-family: $code-family;
+        @include font-size(12);
+        font-weight: normal;
+      }
+    }
   }
 }

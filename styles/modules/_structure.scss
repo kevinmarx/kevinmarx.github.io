@@ -4,6 +4,12 @@
 
 html {
   font-size: 62.5%;
+  height: 100%;
+  display: block;
+
+  &.blue { background-color: #2a505b; }
+  &.red { background-color: #571d03; }
+  &.yellow { background-color: #614600; }
 }
 
 * {

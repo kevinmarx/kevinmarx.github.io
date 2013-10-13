@@ -2,8 +2,21 @@
 layout: default
 ---
 
-<article>
-<h1>{{page.title}}</h1>
-<hr/>
-{{content}}
+<article class="post group">
+  <div class="feature-img group" style="background: url('/images/posts/{{page.date | date: "%Y-%m-%d" }}/hero.jpg') no-repeat center top"></div>
+
+  <header class="px640 center group">
+    <div class="meta">
+      <time datetime="{{ page.date }}">{{ page.date | date_to_string }}</time>
+      <span class="duration column right">{{ page.duration }} minute read.</span>
+    </div>
+    <h1>{{ page.title }}</h1>
+  </header>
+
+  <section class="post-body px640 center group">
+    {{ content }}
+  </section>
+
+  <script> window.currentColor = 'gray' </script>
+
 </article>

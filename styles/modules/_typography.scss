@@ -21,8 +21,22 @@ h1, h2, h3, h4, h5, h6 {
   small { @include font-size(10); color: #ccc; line-height: 0; }
 }
 
+h1 {
+  @include font-size(18);
+  font-weight: $normal;
+}
+h2 {
+  @include font-size(16);
+  font-weight: $bold-it;
+}
+h3 {
+  @include font-size(14);
+  font-family: $accent-font-family;
+  text-transform: uppercase;
+  font-weight: $normal;
+}
 
-hr { border: solid #cbcbcb; border-width: 1px 0 0; clear: both; margin: 22px 0 21px; height: 0; }
+hr { border: solid #cbcbcb; border-width: 2px 0 0; clear: both; margin: 22px 0 21px; height: 0; }
 
 em, i { font-style: italic; line-height: inherit; }
 strong, b { font-weight: $bold-it; line-height: inherit; }
@@ -39,10 +53,10 @@ a:hover, a:active { outline: none; }
 
 // Lists ---------------------- //
 
-ol, ul { line-height: 1.6; @include use-rems(margin-bottom, 14); list-style-position: outside; }
+ol, ul { line-height: 1.6; @include use-rems(margin-bottom, 14); list-style-position: inside; }
 ol ol, ul ul { margin-bottom: 0; }
 ul {
-  ul { list-style: outside; }
+  ul { list-style: inside; }
 
   &.square {
     @include use-rems(margin-left, 10);
@@ -69,7 +83,7 @@ pre {
   word-wrap: break-word;
 }
 
-pre, code, kbd, samp { font-family: Menlo, Consolas, 'DejaVu Sans Mono', Monaco, 'Courier New', Courier, monospace; }
+pre, kbd, samp { font-family: Menlo, Consolas, 'DejaVu Sans Mono', Monaco, 'Courier New', Courier, monospace; }
 pre code { border: none; }
 code, kbd, samp {
   padding: 0 $pad;
@@ -82,7 +96,7 @@ code, kbd, samp {
 
 // Blockquotes ---------------------- //
 blockquote, blockquote p { line-height: 1.5; color: #6f7479; }
-blockquote { margin: 0 0 1rem; padding: 9px 20px 0 19px; border-left: 1px solid #cbcbcb;
+blockquote { margin: 0 0 1rem; padding: 9px 20px 0 19px; border-left: $pad solid #cbcbcb;
   cite { display: block; @include font-size(6); color: #52585f;
     &:before { content: "\2014 \0020"; }
     a, a:visited { color: $dk; }
