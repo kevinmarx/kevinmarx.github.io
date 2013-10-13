@@ -144,8 +144,19 @@ a, span, .button {
 }
 
 .article-list {
-  padding-top: $pad*12.5;
+  padding-top: $pad*18.75;
   padding-bottom: $pad*22.5;
+
+  > div > span {
+    color: $dkGray;
+    @include font-size(21);
+    padding: $pad*1.5;
+    font-family: $default-font-family;
+    font-weight: 400;
+    font-style: italic;
+    position: relative;
+    top: -15px;
+  }
 
   ul {
     li {
