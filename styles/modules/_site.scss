@@ -63,6 +63,7 @@ a, span, .button {
         padding: $pad*5;
         @include font-size(62);
         font-family: $default-font-family;
+        font-weight: 600;
       }
 
       span {
