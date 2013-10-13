@@ -7,6 +7,8 @@
 
 img { display: block; }
 
+span.icon { font-family: 'FontAwesome'; }
+
 .gray {
   background: $ltGray;
 }
@@ -252,6 +254,7 @@ ul.horizontal {
 
     .meta {
       margin-bottom: $pad*2.5;
+      color: #6f7479;
 
       * {
         @include font-size(16);
@@ -308,6 +311,50 @@ ul.horizontal {
         font-family: $code-family;
         @include font-size(12);
         font-weight: normal;
+      }
+    }
+  }
+
+  footer {
+    border-top: 1px solid #cbcbcb;
+    position: relative;
+    height: 100px;
+    margin-bottom: 75px;
+
+    a {
+      font-weight: 400;
+      @include font-size(18);
+      color: #6f7479;
+
+      span {
+        @include font-size(28);
+        margin: 0 $pad*2;
+        position: relative;
+        top: $pad;
+      }
+
+      &:hover {
+        color: $dk;
+      }
+    }
+
+    .btn-feed {
+      position: absolute;
+      top: -16px;
+      left: 49%;
+      border: 1px solid #cbcbcb;
+      border-radius: 20px;
+      padding: 3px 6px 5px 8px;
+      background: white;
+      span {
+        @include font-size(16);
+        position: static;
+        margin: 0;
+      }
+
+      &:hover {
+        background: $lt;
+        color: $dk;
       }
     }
   }
