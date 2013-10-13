@@ -4326,11 +4326,15 @@ a [class*=" icon-"] {
   position: relative;
   top: 4px;
 }
-/* line 336, modules/_site.scss */
+/* line 335, modules/_site.scss */
+.red .post footer a span.img {
+  margin-right: 20px;
+}
+/* line 340, modules/_site.scss */
 .red .post footer a:hover {
   color: #571d03;
 }
-/* line 341, modules/_site.scss */
+/* line 345, modules/_site.scss */
 .red .post footer .btn-feed {
   position: absolute;
   top: -16px;
@@ -4340,14 +4344,14 @@ a [class*=" icon-"] {
   padding: 3px 6px 5px 8px;
   background: white;
 }
-/* line 349, modules/_site.scss */
+/* line 353, modules/_site.scss */
 .red .post footer .btn-feed span {
   font-size: 16px;
   font-size: 1.6rem;
   position: static;
   margin: 0;
 }
-/* line 355, modules/_site.scss */
+/* line 359, modules/_site.scss */
 .red .post footer .btn-feed:hover {
   background: #cc6044;
   color: #571d03;
@@ -5133,11 +5137,15 @@ a [class*=" icon-"] {
   position: relative;
   top: 4px;
 }
-/* line 336, modules/_site.scss */
+/* line 335, modules/_site.scss */
+.blue .post footer a span.img {
+  margin-right: 20px;
+}
+/* line 340, modules/_site.scss */
 .blue .post footer a:hover {
   color: #2a505b;
 }
-/* line 341, modules/_site.scss */
+/* line 345, modules/_site.scss */
 .blue .post footer .btn-feed {
   position: absolute;
   top: -16px;
@@ -5147,14 +5155,14 @@ a [class*=" icon-"] {
   padding: 3px 6px 5px 8px;
   background: white;
 }
-/* line 349, modules/_site.scss */
+/* line 353, modules/_site.scss */
 .blue .post footer .btn-feed span {
   font-size: 16px;
   font-size: 1.6rem;
   position: static;
   margin: 0;
 }
-/* line 355, modules/_site.scss */
+/* line 359, modules/_site.scss */
 .blue .post footer .btn-feed:hover {
   background: #79bfd7;
   color: #2a505b;
@@ -5940,11 +5948,15 @@ a [class*=" icon-"] {
   position: relative;
   top: 4px;
 }
-/* line 336, modules/_site.scss */
+/* line 335, modules/_site.scss */
+.yellow .post footer a span.img {
+  margin-right: 20px;
+}
+/* line 340, modules/_site.scss */
 .yellow .post footer a:hover {
   color: #614600;
 }
-/* line 341, modules/_site.scss */
+/* line 345, modules/_site.scss */
 .yellow .post footer .btn-feed {
   position: absolute;
   top: -16px;
@@ -5954,14 +5966,14 @@ a [class*=" icon-"] {
   padding: 3px 6px 5px 8px;
   background: white;
 }
-/* line 349, modules/_site.scss */
+/* line 353, modules/_site.scss */
 .yellow .post footer .btn-feed span {
   font-size: 16px;
   font-size: 1.6rem;
   position: static;
   margin: 0;
 }
-/* line 355, modules/_site.scss */
+/* line 359, modules/_site.scss */
 .yellow .post footer .btn-feed:hover {
   background: #e8ac31;
   color: #614600;
@@ -6747,11 +6759,15 @@ a [class*=" icon-"] {
   position: relative;
   top: 4px;
 }
-/* line 336, modules/_site.scss */
+/* line 335, modules/_site.scss */
+.gray .post footer a span.img {
+  margin-right: 20px;
+}
+/* line 340, modules/_site.scss */
 .gray .post footer a:hover {
   color: #2c2a30;
 }
-/* line 341, modules/_site.scss */
+/* line 345, modules/_site.scss */
 .gray .post footer .btn-feed {
   position: absolute;
   top: -16px;
@@ -6761,14 +6777,14 @@ a [class*=" icon-"] {
   padding: 3px 6px 5px 8px;
   background: white;
 }
-/* line 349, modules/_site.scss */
+/* line 353, modules/_site.scss */
 .gray .post footer .btn-feed span {
   font-size: 16px;
   font-size: 1.6rem;
   position: static;
   margin: 0;
 }
-/* line 355, modules/_site.scss */
+/* line 359, modules/_site.scss */
 .gray .post footer .btn-feed:hover {
   background: #f2f2f2;
   color: #2c2a30;

@@ -331,6 +331,10 @@ ul.horizontal {
         margin: 0 $pad*2;
         position: relative;
         top: $pad;
+
+        &.img {
+          margin-right: 20px;
+        }
       }
 
       &:hover {

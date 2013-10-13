@@ -5,15 +5,21 @@
         {% if post.title == page.title %}
             {% unless forloop.last %}
                 {% assign next = site.posts[forloop.index] %}
-                <a href="{{ site.baseurl }}{{ next.url }}" class="next column right">
-                    {{ next.title }}<span class="icon icon-chevron-sign-right"></span>
-                    <small class="group">{{ next.duration }} minute read.</small>
+                <a href="{{ next.url }}" class="next column right x50 media">
+                    <span class="icon icon-chevron-sign-right img right"></span>
+                    <div class="bd align-right">
+                      {{ next.title }}
+                      <small class="column x100">{{ next.duration }} minute read.</small>
+                    </div>
                 </a>
             {% endunless %}
             {% unless forloop.first %}
-                <a href="{{ site.baseurl }}{{ prev.url }}" class="prev column">
-                    <span class="icon icon-chevron-sign-left"></span>{{ prev.title }}
-                    <small class="group">{{ prev.duration }} minute read.</small>
+                <a href="{{ prev.url }}" class="prev column x50 media">
+                    <span class="icon icon-chevron-sign-left img"></span>
+                    <div class="bd">
+                      {{ prev.title }}
+                      <small class="column x100 right">{{ prev.duration }} minute read.</small>
+                    </div>
                 </a>
             {% endunless %}
         {% endif %}
