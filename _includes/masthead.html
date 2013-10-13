@@ -3,9 +3,9 @@
     <a href="/" class="column logo el"></a>
     <nav class="column right">
       <ul class="horizontal el">
-        <li><a href="#" class="button no-style selected">Writings</a></li>
-        <li><a href="#" class="button no-style">Projects</a></li>
-        <li><a href="#" class="button no-style">Talks</a></li>
+        <li><a href="/" class="button no-style {% if include.selected == "writings" %}selected{% endif %}">Writings</a></li>
+        <li><a href="/projects" class="button no-style {% if include.selected == "projects" %}selected{% endif %}">Projects</a></li>
+        <li><a href="/talks" class="button no-style {% if include.selected == "talks" %}selected{% endif %}">Talks</a></li>
       </ul>
     </nav>
   </div>
