@@ -375,3 +375,22 @@ ul.horizontal {
     }
   }
 }
+
+.four-oh-four {
+  padding: 75px 0;
+
+  div {
+    padding: $pad*2;
+    background: $lt;
+    border: 1px solid darken($lt, 20%);
+  }
+
+  header {
+    h1 {
+      font-family: $default-font-family;
+      font-weight: 600;
+      @include font-size(36);
+      margin-top: 25px;
+    }
+  }
+}
