@@ -8,7 +8,7 @@ button, a.button, input[type=submit] {
   @include border($dk);
   border-radius: $pad*1;
   color: $dk;
-  font-style: $bold-it;
+  font-weight: $bold-it;
   @include font-size(11);
   line-height: 1.5;
   text-transform: uppercase;

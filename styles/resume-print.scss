@@ -1,0 +1,101 @@
+@import "compass";
+@import "compass/css3/user-interface";
+@import "modules/variables";
+@import "modules/font-awesome/variables";
+@import "mixins/mixins";
+@import "modules/font-awesome/mixins";
+
+
+@import "modules/structure";
+@import "modules/media";
+@import "modules/forms";
+@import "modules/html5";
+@import "modules/responsiveness";
+@import "modules/table";
+@import "modules/font-awesome/core";
+@import "modules/font-awesome/icons";
+@import "modules/syntax";
+
+@import "modules/colors/gray";
+
+@import "fonts/klinic_slab";
+@import "fonts/raleway";
+@import "modules/font-awesome/path";
+
+
+.gray {
+  #Main { background: white; }
+  &.resume {
+    background: white !important;
+
+    nav { display: none; }
+
+    .el {
+      margin-bottom: 7px;
+    }
+
+    img {
+      height: 25px;
+      margin: 0 0 15px 15px;
+    }
+
+    .logo {
+      background: url("/images/resume/logo.png") no-repeat center;
+      width: 180px;
+      height: 100px;
+      display: block;
+      margin-top: 125px;
+    }
+
+    .cell {
+      padding: 0 15px;
+    }
+
+    header {
+      h1 {
+        font-family: $accent-font-family;
+        @include font-size(18);
+        font-weight: 400;
+        color: lighten($dk, 15%);
+        margin-bottom: 7px;
+      }
+
+      ~ *, ~ * ~ * {
+        margin-left: 15px;
+      }
+    }
+
+    .align-right header {
+      ~ * {
+        margin-left: 0;
+        margin-right: 15px;
+      }
+    }
+
+    .align-right p {
+      margin-left: 0;
+      margin-right: 15px;
+    }
+
+    h1 {
+      font-family: $default-font-family;
+      @include font-size(16);
+      margin-bottom: 7px;
+    }
+
+    h2 {
+      font-family: $accent-font-family;
+      font-weight: 400;
+      font-style: italic;
+      @include font-size(14);
+      margin-bottom: 15px;
+    }
+
+    p, li {
+      color: $dk;
+      @include font-size(14);
+      font-family: $default-font-family;
+    }
+
+  }
+}
