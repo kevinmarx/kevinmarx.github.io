@@ -4118,12 +4118,12 @@ a [class*=" icon-"] {
   color: #cc6044;
 }
 /* line 146, modules/_site.scss */
-.red .article-list {
+.red .article-list, .red .project-list {
   padding-top: 75px;
   padding-bottom: 90px;
 }
 /* line 150, modules/_site.scss */
-.red .article-list > div > span {
+.red .article-list > div > span, .red .project-list > div > span {
   color: #2c2a30;
   font-size: 21px;
   font-size: 2.1rem;
@@ -4135,7 +4135,7 @@ a [class*=" icon-"] {
   top: -15px;
 }
 /* line 163, modules/_site.scss */
-.red .article-list ul li a {
+.red .article-list ul li a, .red .project-list ul li a {
   border: 1px solid #dedede;
   border-radius: 4px;
   padding: 25px;
@@ -4147,30 +4147,30 @@ a [class*=" icon-"] {
   -ms-transition: all 200ms linear 0;
 }
 /* line 170, modules/_site.scss */
-.red .article-list ul li a:hover, .red .article-list ul li a:focus {
+.red .article-list ul li a:hover, .red .article-list ul li a:focus, .red .project-list ul li a:hover, .red .project-list ul li a:focus {
   background: white;
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
 }
 /* line 175, modules/_site.scss */
-.red .article-list ul li a img {
+.red .article-list ul li a img, .red .project-list ul li a img {
   max-height: 138px;
 }
 /* line 179, modules/_site.scss */
-.red .article-list ul li a h1 {
+.red .article-list ul li a h1, .red .project-list ul li a h1 {
   color: #2c2a30;
   font-size: 34px;
   font-size: 3.4rem;
   font-family: "klinic-slab", Georgia, serif;
 }
 /* line 185, modules/_site.scss */
-.red .article-list ul li a h2 {
+.red .article-list ul li a h2, .red .project-list ul li a h2 {
   font-weight: 400;
   font-style: italic;
   font-size: 14px;
   font-size: 1.4rem;
 }
 /* line 191, modules/_site.scss */
-.red .article-list ul li a p {
+.red .article-list ul li a p, .red .project-list ul li a p {
   font-size: 18px;
   font-size: 1.8rem;
   max-height: 55px;
@@ -5027,12 +5027,12 @@ a [class*=" icon-"] {
   color: #79bfd7;
 }
 /* line 146, modules/_site.scss */
-.blue .article-list {
+.blue .article-list, .blue .project-list {
   padding-top: 75px;
   padding-bottom: 90px;
 }
 /* line 150, modules/_site.scss */
-.blue .article-list > div > span {
+.blue .article-list > div > span, .blue .project-list > div > span {
   color: #2c2a30;
   font-size: 21px;
   font-size: 2.1rem;
@@ -5044,7 +5044,7 @@ a [class*=" icon-"] {
   top: -15px;
 }
 /* line 163, modules/_site.scss */
-.blue .article-list ul li a {
+.blue .article-list ul li a, .blue .project-list ul li a {
   border: 1px solid #dedede;
   border-radius: 4px;
   padding: 25px;
@@ -5056,30 +5056,30 @@ a [class*=" icon-"] {
   -ms-transition: all 200ms linear 0;
 }
 /* line 170, modules/_site.scss */
-.blue .article-list ul li a:hover, .blue .article-list ul li a:focus {
+.blue .article-list ul li a:hover, .blue .article-list ul li a:focus, .blue .project-list ul li a:hover, .blue .project-list ul li a:focus {
   background: white;
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
 }
 /* line 175, modules/_site.scss */
-.blue .article-list ul li a img {
+.blue .article-list ul li a img, .blue .project-list ul li a img {
   max-height: 138px;
 }
 /* line 179, modules/_site.scss */
-.blue .article-list ul li a h1 {
+.blue .article-list ul li a h1, .blue .project-list ul li a h1 {
   color: #2c2a30;
   font-size: 34px;
   font-size: 3.4rem;
   font-family: "klinic-slab", Georgia, serif;
 }
 /* line 185, modules/_site.scss */
-.blue .article-list ul li a h2 {
+.blue .article-list ul li a h2, .blue .project-list ul li a h2 {
   font-weight: 400;
   font-style: italic;
   font-size: 14px;
   font-size: 1.4rem;
 }
 /* line 191, modules/_site.scss */
-.blue .article-list ul li a p {
+.blue .article-list ul li a p, .blue .project-list ul li a p {
   font-size: 18px;
   font-size: 1.8rem;
   max-height: 55px;
@@ -5936,12 +5936,12 @@ a [class*=" icon-"] {
   color: #e8ac31;
 }
 /* line 146, modules/_site.scss */
-.yellow .article-list {
+.yellow .article-list, .yellow .project-list {
   padding-top: 75px;
   padding-bottom: 90px;
 }
 /* line 150, modules/_site.scss */
-.yellow .article-list > div > span {
+.yellow .article-list > div > span, .yellow .project-list > div > span {
   color: #2c2a30;
   font-size: 21px;
   font-size: 2.1rem;
@@ -5953,7 +5953,7 @@ a [class*=" icon-"] {
   top: -15px;
 }
 /* line 163, modules/_site.scss */
-.yellow .article-list ul li a {
+.yellow .article-list ul li a, .yellow .project-list ul li a {
   border: 1px solid #dedede;
   border-radius: 4px;
   padding: 25px;
@@ -5965,30 +5965,30 @@ a [class*=" icon-"] {
   -ms-transition: all 200ms linear 0;
 }
 /* line 170, modules/_site.scss */
-.yellow .article-list ul li a:hover, .yellow .article-list ul li a:focus {
+.yellow .article-list ul li a:hover, .yellow .article-list ul li a:focus, .yellow .project-list ul li a:hover, .yellow .project-list ul li a:focus {
   background: white;
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
 }
 /* line 175, modules/_site.scss */
-.yellow .article-list ul li a img {
+.yellow .article-list ul li a img, .yellow .project-list ul li a img {
   max-height: 138px;
 }
 /* line 179, modules/_site.scss */
-.yellow .article-list ul li a h1 {
+.yellow .article-list ul li a h1, .yellow .project-list ul li a h1 {
   color: #2c2a30;
   font-size: 34px;
   font-size: 3.4rem;
   font-family: "klinic-slab", Georgia, serif;
 }
 /* line 185, modules/_site.scss */
-.yellow .article-list ul li a h2 {
+.yellow .article-list ul li a h2, .yellow .project-list ul li a h2 {
   font-weight: 400;
   font-style: italic;
   font-size: 14px;
   font-size: 1.4rem;
 }
 /* line 191, modules/_site.scss */
-.yellow .article-list ul li a p {
+.yellow .article-list ul li a p, .yellow .project-list ul li a p {
   font-size: 18px;
   font-size: 1.8rem;
   max-height: 55px;
@@ -6845,12 +6845,12 @@ a [class*=" icon-"] {
   color: #f2f2f2;
 }
 /* line 146, modules/_site.scss */
-.gray .article-list {
+.gray .article-list, .gray .project-list {
   padding-top: 75px;
   padding-bottom: 90px;
 }
 /* line 150, modules/_site.scss */
-.gray .article-list > div > span {
+.gray .article-list > div > span, .gray .project-list > div > span {
   color: #2c2a30;
   font-size: 21px;
   font-size: 2.1rem;
@@ -6862,7 +6862,7 @@ a [class*=" icon-"] {
   top: -15px;
 }
 /* line 163, modules/_site.scss */
-.gray .article-list ul li a {
+.gray .article-list ul li a, .gray .project-list ul li a {
   border: 1px solid #dedede;
   border-radius: 4px;
   padding: 25px;
@@ -6874,30 +6874,30 @@ a [class*=" icon-"] {
   -ms-transition: all 200ms linear 0;
 }
 /* line 170, modules/_site.scss */
-.gray .article-list ul li a:hover, .gray .article-list ul li a:focus {
+.gray .article-list ul li a:hover, .gray .article-list ul li a:focus, .gray .project-list ul li a:hover, .gray .project-list ul li a:focus {
   background: white;
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
 }
 /* line 175, modules/_site.scss */
-.gray .article-list ul li a img {
+.gray .article-list ul li a img, .gray .project-list ul li a img {
   max-height: 138px;
 }
 /* line 179, modules/_site.scss */
-.gray .article-list ul li a h1 {
+.gray .article-list ul li a h1, .gray .project-list ul li a h1 {
   color: #2c2a30;
   font-size: 34px;
   font-size: 3.4rem;
   font-family: "klinic-slab", Georgia, serif;
 }
 /* line 185, modules/_site.scss */
-.gray .article-list ul li a h2 {
+.gray .article-list ul li a h2, .gray .project-list ul li a h2 {
   font-weight: 400;
   font-style: italic;
   font-size: 14px;
   font-size: 1.4rem;
 }
 /* line 191, modules/_site.scss */
-.gray .article-list ul li a p {
+.gray .article-list ul li a p, .gray .project-list ul li a p {
   font-size: 18px;
   font-size: 1.8rem;
   max-height: 55px;

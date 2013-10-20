@@ -4118,12 +4118,12 @@ a [class*=" icon-"] {
   color: #f2f2f2;
 }
 /* line 146, modules/_site.scss */
-.gray .article-list {
+.gray .article-list, .gray .project-list {
   padding-top: 75px;
   padding-bottom: 90px;
 }
 /* line 150, modules/_site.scss */
-.gray .article-list > div > span {
+.gray .article-list > div > span, .gray .project-list > div > span {
   color: #2c2a30;
   font-size: 21px;
   font-size: 2.1rem;
@@ -4135,7 +4135,7 @@ a [class*=" icon-"] {
   top: -15px;
 }
 /* line 163, modules/_site.scss */
-.gray .article-list ul li a {
+.gray .article-list ul li a, .gray .project-list ul li a {
   border: 1px solid #dedede;
   border-radius: 4px;
   padding: 25px;
@@ -4147,30 +4147,30 @@ a [class*=" icon-"] {
   -ms-transition: all 200ms linear 0;
 }
 /* line 170, modules/_site.scss */
-.gray .article-list ul li a:hover, .gray .article-list ul li a:focus {
+.gray .article-list ul li a:hover, .gray .article-list ul li a:focus, .gray .project-list ul li a:hover, .gray .project-list ul li a:focus {
   background: white;
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
 }
 /* line 175, modules/_site.scss */
-.gray .article-list ul li a img {
+.gray .article-list ul li a img, .gray .project-list ul li a img {
   max-height: 138px;
 }
 /* line 179, modules/_site.scss */
-.gray .article-list ul li a h1 {
+.gray .article-list ul li a h1, .gray .project-list ul li a h1 {
   color: #2c2a30;
   font-size: 34px;
   font-size: 3.4rem;
   font-family: "klinic-slab", Georgia, serif;
 }
 /* line 185, modules/_site.scss */
-.gray .article-list ul li a h2 {
+.gray .article-list ul li a h2, .gray .project-list ul li a h2 {
   font-weight: 400;
   font-style: italic;
   font-size: 14px;
   font-size: 1.4rem;
 }
 /* line 191, modules/_site.scss */
-.gray .article-list ul li a p {
+.gray .article-list ul li a p, .gray .project-list ul li a p {
   font-size: 18px;
   font-size: 1.8rem;
   max-height: 55px;

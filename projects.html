@@ -1,0 +1,57 @@
+---
+layout: default
+title: Projects
+---
+
+{% include masthead.html selected='projects' %}
+
+<article class="project-list gray column x100">
+  <hr class="px320 group center"/>
+  <div class="px320 group center align-center">
+    <span class="gray">Open Source Projects</span>
+  </div>
+  <ul id="Projects" class="pillar goup padded">
+    <li class="column x100 el">
+      <a href="/projects/viewstate/" class="table x100">
+        <div class="cell x33 va-middle">
+          <header>
+            <h1>ViewState</h1>
+          </header>
+        </div>
+        <div class="cell">
+          <p>ViewState simplifies state tracking by providing a simplified model on your view with an easy interface. ViewState, like the Sith, only deals in absolute; either the state exists or it doesn't. This makes adding/removing states quick and easy and simplifies getting the current state of an item. Also when a state changes, you usually want to tell others about it. ViewState emits events for every change in data scoped all the way down to the nested items, passing itself and the change attribute as arguments of the event.</p>
+        </div>
+      </a>
+    </li>
+
+    <li class="column x100 el">
+      <a href="/projects/spyquery/" class="table x100">
+        <div class="cell x33 va-middle">
+          <header>
+            <h1>SpyQuery</h1>
+          </header>
+        </div>
+        <div class="cell">
+          <p>
+            Emulates jQuery as sinon spies, so you can test code that uses jQuery on the server or in the browser.
+          </p>
+        </div>
+      </a>
+    </li>
+
+    <li class="column x100 el">
+      <a href="/projects/overflowing/" class="table x100">
+        <div class="cell x33 va-middle">
+          <header>
+            <h1>Overflowing</h1>
+          </header>
+        </div>
+        <div class="cell">
+          <p>A small jQuery plugin that traverses up the dom and checks to see if the elemeint is overflowing any of its parent elements.</p>
+        </div>
+      </a>
+    </li>
+  </ul>
+</article>
+
+{% include colorizer.html %}

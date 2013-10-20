@@ -1,0 +1,11 @@
+<script>
+var colors = ['red', 'blue', 'yellow']
+window.currentColor = colors[Math.random() * colors.length | 0]
+
+$('[data-bkgimg]').each(function() {
+  var target = $(this).data('bkgimg')
+  $(this).css({
+    'background-image': "url('/images/" + window.currentColor + "/" + target + "')"
+  })
+})
+</script>
