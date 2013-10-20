@@ -3,7 +3,7 @@
 @import "modules/buttons";
 @import "modules/typography";
 
-#Main { background-color: white; }
+#Main { background-color: #f9fbfa; }
 
 img { display: block; }
 
@@ -393,4 +393,74 @@ ul.horizontal {
       margin-top: 25px;
     }
   }
+}
+
+
+// Resume
+&.resume {
+  background: #f9fbfa;
+
+  img {
+    height: 25px;
+    margin: 0 0 15px 15px;
+  }
+
+  .logo {
+    background: url("/images/resume/logo.png") no-repeat center;
+    width: 180px;
+    height: 100px;
+    display: block;
+    margin-top: 125px;
+  }
+
+  .cell {
+    padding: 0 15px;
+  }
+
+  header {
+    h1 {
+      font-family: $accent-font-family;
+      @include font-size(21);
+      font-weight: 400;
+      color: lighten($dk, 15%);
+      margin-bottom: 15px;
+    }
+
+    ~ *, ~ * ~ * {
+      margin-left: 15px;
+    }
+  }
+
+  .align-right header {
+    ~ * {
+      margin-left: 0;
+      margin-right: 15px;
+    }
+  }
+
+  .align-right p {
+    margin-left: 0;
+    margin-right: 15px;
+  }
+
+  h1 {
+    font-family: $default-font-family;
+    @include font-size(18);
+    margin-bottom: 7px;
+  }
+
+  h2 {
+    font-family: $accent-font-family;
+    font-weight: 400;
+    font-style: italic;
+    @include font-size(14);
+    margin-bottom: 15px;
+  }
+
+  p, li {
+    color: $dk;
+    @include font-size(17);
+    font-family: $default-font-family;
+  }
+
 }

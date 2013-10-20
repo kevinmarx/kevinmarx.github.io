@@ -3956,7 +3956,7 @@ a [class*=" icon-"] {
 }
 /* line 6, modules/_site.scss */
 .red #Main {
-  background-color: white;
+  background-color: #f9fbfa;
 }
 /* line 8, modules/_site.scss */
 .red img {
@@ -4391,6 +4391,73 @@ a [class*=" icon-"] {
   font-size: 3.6rem;
   margin-top: 25px;
 }
+/* line 400, modules/_site.scss */
+.red.resume {
+  background: #f9fbfa;
+}
+/* line 403, modules/_site.scss */
+.red.resume img {
+  height: 25px;
+  margin: 0 0 15px 15px;
+}
+/* line 408, modules/_site.scss */
+.red.resume .logo {
+  background: url("/images/resume/logo.png") no-repeat center;
+  width: 180px;
+  height: 100px;
+  display: block;
+  margin-top: 125px;
+}
+/* line 416, modules/_site.scss */
+.red.resume .cell {
+  padding: 0 15px;
+}
+/* line 421, modules/_site.scss */
+.red.resume header h1 {
+  font-family: "raleway", "Helvetica Neue", Verdana, sans-serif;
+  font-size: 21px;
+  font-size: 2.1rem;
+  font-weight: 400;
+  color: #a13606;
+  margin-bottom: 15px;
+}
+/* line 429, modules/_site.scss */
+.red.resume header ~ *, .red.resume header ~ * ~ * {
+  margin-left: 15px;
+}
+/* line 435, modules/_site.scss */
+.red.resume .align-right header ~ * {
+  margin-left: 0;
+  margin-right: 15px;
+}
+/* line 441, modules/_site.scss */
+.red.resume .align-right p {
+  margin-left: 0;
+  margin-right: 15px;
+}
+/* line 446, modules/_site.scss */
+.red.resume h1 {
+  font-family: "klinic-slab", Georgia, serif;
+  font-size: 18px;
+  font-size: 1.8rem;
+  margin-bottom: 7px;
+}
+/* line 452, modules/_site.scss */
+.red.resume h2 {
+  font-family: "raleway", "Helvetica Neue", Verdana, sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 14px;
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+}
+/* line 460, modules/_site.scss */
+.red.resume p, .red.resume li {
+  color: #571d03;
+  font-size: 17px;
+  font-size: 1.7rem;
+  font-family: "klinic-slab", Georgia, serif;
+}
 
 /* line 1, modules/_buttons.scss */
 .blue button, .blue a.button, .blue input[type=submit] {
@@ -4798,7 +4865,7 @@ a [class*=" icon-"] {
 }
 /* line 6, modules/_site.scss */
 .blue #Main {
-  background-color: white;
+  background-color: #f9fbfa;
 }
 /* line 8, modules/_site.scss */
 .blue img {
@@ -5233,6 +5300,73 @@ a [class*=" icon-"] {
   font-size: 3.6rem;
   margin-top: 25px;
 }
+/* line 400, modules/_site.scss */
+.blue.resume {
+  background: #f9fbfa;
+}
+/* line 403, modules/_site.scss */
+.blue.resume img {
+  height: 25px;
+  margin: 0 0 15px 15px;
+}
+/* line 408, modules/_site.scss */
+.blue.resume .logo {
+  background: url("/images/resume/logo.png") no-repeat center;
+  width: 180px;
+  height: 100px;
+  display: block;
+  margin-top: 125px;
+}
+/* line 416, modules/_site.scss */
+.blue.resume .cell {
+  padding: 0 15px;
+}
+/* line 421, modules/_site.scss */
+.blue.resume header h1 {
+  font-family: "raleway", "Helvetica Neue", Verdana, sans-serif;
+  font-size: 21px;
+  font-size: 2.1rem;
+  font-weight: 400;
+  color: #427e8f;
+  margin-bottom: 15px;
+}
+/* line 429, modules/_site.scss */
+.blue.resume header ~ *, .blue.resume header ~ * ~ * {
+  margin-left: 15px;
+}
+/* line 435, modules/_site.scss */
+.blue.resume .align-right header ~ * {
+  margin-left: 0;
+  margin-right: 15px;
+}
+/* line 441, modules/_site.scss */
+.blue.resume .align-right p {
+  margin-left: 0;
+  margin-right: 15px;
+}
+/* line 446, modules/_site.scss */
+.blue.resume h1 {
+  font-family: "klinic-slab", Georgia, serif;
+  font-size: 18px;
+  font-size: 1.8rem;
+  margin-bottom: 7px;
+}
+/* line 452, modules/_site.scss */
+.blue.resume h2 {
+  font-family: "raleway", "Helvetica Neue", Verdana, sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 14px;
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+}
+/* line 460, modules/_site.scss */
+.blue.resume p, .blue.resume li {
+  color: #2a505b;
+  font-size: 17px;
+  font-size: 1.7rem;
+  font-family: "klinic-slab", Georgia, serif;
+}
 
 /* line 1, modules/_buttons.scss */
 .yellow button, .yellow a.button, .yellow input[type=submit] {
@@ -5640,7 +5774,7 @@ a [class*=" icon-"] {
 }
 /* line 6, modules/_site.scss */
 .yellow #Main {
-  background-color: white;
+  background-color: #f9fbfa;
 }
 /* line 8, modules/_site.scss */
 .yellow img {
@@ -6075,6 +6209,73 @@ a [class*=" icon-"] {
   font-size: 3.6rem;
   margin-top: 25px;
 }
+/* line 400, modules/_site.scss */
+.yellow.resume {
+  background: #f9fbfa;
+}
+/* line 403, modules/_site.scss */
+.yellow.resume img {
+  height: 25px;
+  margin: 0 0 15px 15px;
+}
+/* line 408, modules/_site.scss */
+.yellow.resume .logo {
+  background: url("/images/resume/logo.png") no-repeat center;
+  width: 180px;
+  height: 100px;
+  display: block;
+  margin-top: 125px;
+}
+/* line 416, modules/_site.scss */
+.yellow.resume .cell {
+  padding: 0 15px;
+}
+/* line 421, modules/_site.scss */
+.yellow.resume header h1 {
+  font-family: "raleway", "Helvetica Neue", Verdana, sans-serif;
+  font-size: 21px;
+  font-size: 2.1rem;
+  font-weight: 400;
+  color: #ad7d00;
+  margin-bottom: 15px;
+}
+/* line 429, modules/_site.scss */
+.yellow.resume header ~ *, .yellow.resume header ~ * ~ * {
+  margin-left: 15px;
+}
+/* line 435, modules/_site.scss */
+.yellow.resume .align-right header ~ * {
+  margin-left: 0;
+  margin-right: 15px;
+}
+/* line 441, modules/_site.scss */
+.yellow.resume .align-right p {
+  margin-left: 0;
+  margin-right: 15px;
+}
+/* line 446, modules/_site.scss */
+.yellow.resume h1 {
+  font-family: "klinic-slab", Georgia, serif;
+  font-size: 18px;
+  font-size: 1.8rem;
+  margin-bottom: 7px;
+}
+/* line 452, modules/_site.scss */
+.yellow.resume h2 {
+  font-family: "raleway", "Helvetica Neue", Verdana, sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 14px;
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+}
+/* line 460, modules/_site.scss */
+.yellow.resume p, .yellow.resume li {
+  color: #614600;
+  font-size: 17px;
+  font-size: 1.7rem;
+  font-family: "klinic-slab", Georgia, serif;
+}
 
 /* line 1, modules/_buttons.scss */
 .gray button, .gray a.button, .gray input[type=submit] {
@@ -6482,7 +6683,7 @@ a [class*=" icon-"] {
 }
 /* line 6, modules/_site.scss */
 .gray #Main {
-  background-color: white;
+  background-color: #f9fbfa;
 }
 /* line 8, modules/_site.scss */
 .gray img {
@@ -6916,6 +7117,73 @@ a [class*=" icon-"] {
   font-size: 36px;
   font-size: 3.6rem;
   margin-top: 25px;
+}
+/* line 400, modules/_site.scss */
+.gray.resume {
+  background: #f9fbfa;
+}
+/* line 403, modules/_site.scss */
+.gray.resume img {
+  height: 25px;
+  margin: 0 0 15px 15px;
+}
+/* line 408, modules/_site.scss */
+.gray.resume .logo {
+  background: url("/images/resume/logo.png") no-repeat center;
+  width: 180px;
+  height: 100px;
+  display: block;
+  margin-top: 125px;
+}
+/* line 416, modules/_site.scss */
+.gray.resume .cell {
+  padding: 0 15px;
+}
+/* line 421, modules/_site.scss */
+.gray.resume header h1 {
+  font-family: "raleway", "Helvetica Neue", Verdana, sans-serif;
+  font-size: 21px;
+  font-size: 2.1rem;
+  font-weight: 400;
+  color: #514e59;
+  margin-bottom: 15px;
+}
+/* line 429, modules/_site.scss */
+.gray.resume header ~ *, .gray.resume header ~ * ~ * {
+  margin-left: 15px;
+}
+/* line 435, modules/_site.scss */
+.gray.resume .align-right header ~ * {
+  margin-left: 0;
+  margin-right: 15px;
+}
+/* line 441, modules/_site.scss */
+.gray.resume .align-right p {
+  margin-left: 0;
+  margin-right: 15px;
+}
+/* line 446, modules/_site.scss */
+.gray.resume h1 {
+  font-family: "klinic-slab", Georgia, serif;
+  font-size: 18px;
+  font-size: 1.8rem;
+  margin-bottom: 7px;
+}
+/* line 452, modules/_site.scss */
+.gray.resume h2 {
+  font-family: "raleway", "Helvetica Neue", Verdana, sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 14px;
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+}
+/* line 460, modules/_site.scss */
+.gray.resume p, .gray.resume li {
+  color: #2c2a30;
+  font-size: 17px;
+  font-size: 1.7rem;
+  font-family: "klinic-slab", Georgia, serif;
 }
 
 @font-face {
