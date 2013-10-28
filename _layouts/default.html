@@ -5,7 +5,7 @@
 <!--[if IE 9]>     <html lang="en-us" class="ie ie9 lte9"> <![endif]-->
 <!--[if gt IE 9]   <html lang="en-us"> <![endif]-->
 <!--[if !IE]><!-->
-<html lang="en-us" style="display: none;">
+<html lang="en-us" class="gray" style="display: none;">
 <!--<![endif]-->
   <head>
     <meta charset="utf-8" />
@@ -30,7 +30,7 @@
     <script>
       $(document).ready(function() {
         // make it go
-        $('html').addClass(window.currentColor || 'gray').show()
+        $('html').addClass(window.currentColor || '').show()
       })
     </script>
 

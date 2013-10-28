@@ -1,4 +1,4 @@
-<article class="article-list gray column x100">
+<article class="article-list gray column x100 wrapper">
   <hr class="px320 group center"/>
   <div class="px320 group center align-center">
     <span class="gray">Recent Posts</span>
@@ -15,7 +15,7 @@
               <h1>{{ post.title }}</h1>
               <h2>
                 <time datetime="{{ post.date}}">{{ post.date | date_to_string }}</time>
-                <span class="duration">{{ post.duration }} minute read.</span></h2>
+                <span class="duration"> | {{ post.duration }} minute read.</span></h2>
             </header>
             <p>{{ post.excerpt }}</p>
           </div>
