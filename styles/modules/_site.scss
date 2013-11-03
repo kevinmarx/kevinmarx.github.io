@@ -64,9 +64,14 @@ a, span, .button {
 
     header {
       position: absolute;
-      top: 100px;
+      top: 125px;
       left: 0;
       padding: $pad*5;
+
+      &.right {
+        left: auto;
+        right: 0;
+      }
     }
 
     h1 {
@@ -150,6 +155,7 @@ a, span, .button {
           @include font-size(21);
           max-height: 70px;
           overflow: hidden;
+          margin: 0;
         }
 
       }
@@ -216,6 +222,7 @@ ul.horizontal {
 
   .feature-img {
     height: 587px;
+    box-shadow: inset 0 0 4px rgba(0,0,0,0.35);
   }
 
   header {
