@@ -7,7 +7,7 @@ excerpt: Over the past year I have effectively designed nothing. Instead I spent
 
 ## Over the past year I have effectively designed nothing. Instead I spent that time programming.
 
-I would like to dedicate this post to those designers who have made the leap to the dark side. I started my transition a little over a year ago, this was/is my journey.
+I have been meaning to write a post about my transition to the “dark side”. I started my transition a little over a year ago, this was/is my journey.
 
 I, for the better part of my career, have been what many label as an Interactive Designer. I worked at an advertising agency in Minneapolis making things for clients on the web. Yes at the time I “knew” how to code, and by code I mean browser only HTML CSS and very limited JavaScript. My primary duty was not to program, it was to design.
 
