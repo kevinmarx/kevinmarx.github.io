@@ -4,7 +4,7 @@
     <span class="gray">Recent Posts</span>
   </div>
   <ul id="Posts" class="pillar group padded">
-    {% for post in site.posts offset: 0 limit: 10 %}
+    {% for post in site.categories.blog offset: 0 limit: 10 %}
       <li class="column x100 el">
         <a href="{{ post.url }}" class="media group">
           <div class="img x33">

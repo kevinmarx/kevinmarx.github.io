@@ -3,7 +3,7 @@
               url(/images/posts/{{include.post.date | date: "%Y-%m-%d" }}/images/feature_02.jpg) -300px 252px no-repeat,
               url(/images/posts/{{include.post.date | date: "%Y-%m-%d" }}/images/feature_03.jpg) -300px 502px no-repeat;"
   >
-  <a href="{{ include.post.url }}" class="group pillar h100">
+  <a href="{{ include.post.url }}" class="group pillar h100 {{ include.post.hero_contrast }}">
     <header class="column x100 px480 {{inlcude.post.title_location}} {{include.post.hero_contrast}}">
       <h1 class="column x100">{{ include.post.title }}</h1>
       <div class="column x100">

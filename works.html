@@ -1,0 +1,27 @@
+---
+layout: default
+title: Work
+---
+
+{% include masthead.html selected='work' %}
+
+<article class="work-list gray column x100">
+
+  <ul id="Works" class="group">
+    {% for work in site.categories.works %}
+      <li class="column x100 el">
+        <section class="media pillar group padded">
+          <header class="img x25">
+            <h1>{{ work.title }}</h1>
+            <p>{{ work.cutline }}</p>
+            <label>Role:</label>
+            <p>{{ work.roles }}</p>
+          </header>
+          <div class="bd">
+            {{ work.content }}
+          </div>
+        </section>
+      </li>
+    {% endfor %}
+  </ul>
+</article>
