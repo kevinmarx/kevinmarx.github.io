@@ -122,7 +122,7 @@ a, span, .button {
 
   ul {
     li {
-      a {
+      a, section {
         border: 1px solid #dedede;
         border-radius: $pad;
         padding: 25px;
@@ -133,7 +133,9 @@ a, span, .button {
           background: white;
           box-shadow: $subtle-shadow;
         }
+      }
 
+      a {
         img {
           max-height: 138px;
         }
@@ -162,7 +164,28 @@ a, span, .button {
           overflow: hidden;
           margin: 0;
         }
+      }
 
+      section {
+        height: 525px;
+
+        h1 {
+          color: $dkGray;
+          margin-top: 30px;
+          @include font-size(34);
+          font-family: $default-font-family;
+        }
+
+        p {
+          @include font-size(14);
+          font-family: $accent-font-family;
+        }
+
+        label {
+          @include font-size(18);
+          font-weight: $bold-it;
+          font-family: $default-font-family;
+        }
       }
     }
   }

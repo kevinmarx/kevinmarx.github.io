@@ -4090,7 +4090,7 @@ a [class*=" icon-"] {
   top: -15px;
 }
 /* line 125, modules/_site.scss */
-.gray .article-list ul li a, .gray .project-list ul li a {
+.gray .article-list ul li a, .gray .article-list ul li section, .gray .project-list ul li a, .gray .project-list ul li section {
   border: 1px solid #dedede;
   border-radius: 4px;
   padding: 25px;
@@ -4102,35 +4102,35 @@ a [class*=" icon-"] {
   -ms-transition: all 200ms linear 0;
 }
 /* line 132, modules/_site.scss */
-.gray .article-list ul li a:hover, .gray .article-list ul li a:focus, .gray .project-list ul li a:hover, .gray .project-list ul li a:focus {
+.gray .article-list ul li a:hover, .gray .article-list ul li a:focus, .gray .article-list ul li section:hover, .gray .article-list ul li section:focus, .gray .project-list ul li a:hover, .gray .project-list ul li a:focus, .gray .project-list ul li section:hover, .gray .project-list ul li section:focus {
   background: white;
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
 }
-/* line 137, modules/_site.scss */
+/* line 139, modules/_site.scss */
 .gray .article-list ul li a img, .gray .project-list ul li a img {
   max-height: 138px;
 }
-/* line 141, modules/_site.scss */
+/* line 143, modules/_site.scss */
 .gray .article-list ul li a h1, .gray .project-list ul li a h1 {
   color: #212229;
   font-size: 34px;
   font-size: 3.4rem;
   font-family: "klinic-slab", Georgia, serif;
 }
-/* line 147, modules/_site.scss */
+/* line 149, modules/_site.scss */
 .gray .article-list ul li a h2, .gray .project-list ul li a h2 {
   font-weight: 400;
   font-style: italic;
   font-size: 14px;
   font-size: 1.4rem;
 }
-/* line 152, modules/_site.scss */
+/* line 154, modules/_site.scss */
 .gray .article-list ul li a h2 span, .gray .article-list ul li a h2 time, .gray .project-list ul li a h2 span, .gray .project-list ul li a h2 time {
   font-weight: 400;
   font-size: 14px;
   font-size: 1.4rem;
 }
-/* line 159, modules/_site.scss */
+/* line 161, modules/_site.scss */
 .gray .article-list ul li a p, .gray .project-list ul li a p {
   font-size: 21px;
   font-size: 2.1rem;
@@ -4138,73 +4138,98 @@ a [class*=" icon-"] {
   overflow: hidden;
   margin: 0;
 }
-/* line 171, modules/_site.scss */
+/* line 169, modules/_site.scss */
+.gray .article-list ul li section, .gray .project-list ul li section {
+  height: 525px;
+}
+/* line 172, modules/_site.scss */
+.gray .article-list ul li section h1, .gray .project-list ul li section h1 {
+  color: #212229;
+  margin-top: 30px;
+  font-size: 34px;
+  font-size: 3.4rem;
+  font-family: "klinic-slab", Georgia, serif;
+}
+/* line 179, modules/_site.scss */
+.gray .article-list ul li section p, .gray .project-list ul li section p {
+  font-size: 14px;
+  font-size: 1.4rem;
+  font-family: "raleway", "Helvetica Neue", Verdana, sans-serif;
+}
+/* line 184, modules/_site.scss */
+.gray .article-list ul li section label, .gray .project-list ul li section label {
+  font-size: 18px;
+  font-size: 1.8rem;
+  font-weight: 700;
+  font-family: "klinic-slab", Georgia, serif;
+}
+/* line 194, modules/_site.scss */
 .gray .page-footer {
   background: #f2f2f2;
   color: #212229;
 }
-/* line 174, modules/_site.scss */
+/* line 197, modules/_site.scss */
 .gray .page-footer ul {
   padding-top: 14px;
 }
-/* line 180, modules/_site.scss */
+/* line 203, modules/_site.scss */
 .gray .page-footer .social li {
   margin: 0 16px;
 }
-/* line 182, modules/_site.scss */
+/* line 205, modules/_site.scss */
 .gray .page-footer .social span {
   font-family: 'FontAwesome';
   font-size: 28px;
   font-size: 2.8rem;
 }
-/* line 188, modules/_site.scss */
+/* line 211, modules/_site.scss */
 .gray .page-footer .secondary-footer {
   color: #f2f2f2;
   background: #212229;
 }
-/* line 192, modules/_site.scss */
+/* line 215, modules/_site.scss */
 .gray .page-footer .secondary-footer a {
   display: block;
   color: #f2f2f2;
 }
-/* line 196, modules/_site.scss */
+/* line 219, modules/_site.scss */
 .gray .page-footer .secondary-footer a:hover {
   color: white;
 }
-/* line 201, modules/_site.scss */
+/* line 224, modules/_site.scss */
 .gray .page-footer .secondary-footer li {
   padding: 0 8px;
   border-left: 1px solid #383945;
 }
-/* line 205, modules/_site.scss */
+/* line 228, modules/_site.scss */
 .gray .page-footer .secondary-footer li:first-child {
   border-left: none;
 }
-/* line 213, modules/_site.scss */
+/* line 236, modules/_site.scss */
 .gray ul.horizontal li {
   display: inline-block;
   list-style: none;
 }
-/* line 220, modules/_site.scss */
+/* line 243, modules/_site.scss */
 .gray .post {
   font-family: "klinic-slab", Georgia, serif;
 }
-/* line 223, modules/_site.scss */
+/* line 246, modules/_site.scss */
 .gray .post > * {
   padding-left: 20px;
   padding-right: 20px;
 }
-/* line 228, modules/_site.scss */
+/* line 251, modules/_site.scss */
 .gray .post .feature-img {
   height: 300px;
   box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.35);
 }
-/* line 233, modules/_site.scss */
+/* line 256, modules/_site.scss */
 .gray .post header {
   padding-top: 50px;
   margin-bottom: 25px;
 }
-/* line 237, modules/_site.scss */
+/* line 260, modules/_site.scss */
 .gray .post header h1 {
   font-size: 68px;
   font-size: 6.8rem;
@@ -4212,39 +4237,39 @@ a [class*=" icon-"] {
   font-family: "klinic-slab", Georgia, serif;
   font-weight: 300;
 }
-/* line 244, modules/_site.scss */
+/* line 267, modules/_site.scss */
 .gray .post header .meta {
   margin-bottom: 10px;
   color: #6f7479;
 }
-/* line 248, modules/_site.scss */
+/* line 271, modules/_site.scss */
 .gray .post header .meta * {
   font-size: 16px;
   font-size: 1.6rem;
   font-family: "raleway", "Helvetica Neue", Verdana, sans-serif;
   font-weight: 400;
 }
-/* line 256, modules/_site.scss */
+/* line 279, modules/_site.scss */
 .gray .post .post-body {
   margin-bottom: 100px;
 }
-/* line 259, modules/_site.scss */
+/* line 282, modules/_site.scss */
 .gray .post .post-body h1 {
   font-size: 48px;
   font-size: 4.8rem;
 }
-/* line 261, modules/_site.scss */
+/* line 284, modules/_site.scss */
 .gray .post .post-body h2 {
   font-size: 32px;
   font-size: 3.2rem;
 }
-/* line 263, modules/_site.scss */
+/* line 286, modules/_site.scss */
 .gray .post .post-body h3 {
   font-size: 24px;
   font-size: 2.4rem;
   font-style: italic;
 }
-/* line 265, modules/_site.scss */
+/* line 288, modules/_site.scss */
 .gray .post .post-body p, .gray .post .post-body li, .gray .post .post-body a {
   font-size: 24px;
   font-size: 2.4rem;
@@ -4252,7 +4277,7 @@ a [class*=" icon-"] {
   line-height: 1.8;
   font-family: "klinic-slab", Georgia, serif;
 }
-/* line 271, modules/_site.scss */
+/* line 294, modules/_site.scss */
 .gray .post .post-body p > code, .gray .post .post-body li > code, .gray .post .post-body a > code {
   background: #f8f8f8;
   border: 1px solid #ddd;
@@ -4263,19 +4288,19 @@ a [class*=" icon-"] {
   font-size: 16px;
   font-size: 1.6rem;
 }
-/* line 282, modules/_site.scss */
+/* line 305, modules/_site.scss */
 .gray .post .post-body a {
   color: #6f7479;
 }
-/* line 285, modules/_site.scss */
+/* line 308, modules/_site.scss */
 .gray .post .post-body a:hover {
   text-decoration: underline;
 }
-/* line 290, modules/_site.scss */
+/* line 313, modules/_site.scss */
 .gray .post .post-body p {
   margin-bottom: 1em;
 }
-/* line 292, modules/_site.scss */
+/* line 315, modules/_site.scss */
 .gray .post .post-body pre {
   background: #f8f8f8;
   border: 1px solid #ddd;
@@ -4283,28 +4308,28 @@ a [class*=" icon-"] {
   border-radius: 4px;
   margin: 24px 0;
 }
-/* line 299, modules/_site.scss */
+/* line 322, modules/_site.scss */
 .gray .post .post-body pre span {
   font-family: Menlo, Consolas, "DejaVu Sans Mono", Monaco, "Courier New", Courier, monospace;
   font-size: 12px;
   font-size: 1.2rem;
   font-weight: normal;
 }
-/* line 307, modules/_site.scss */
+/* line 330, modules/_site.scss */
 .gray .post footer {
   border-top: 1px solid #cbcbcb;
   position: relative;
   height: 100px;
   margin-bottom: 75px;
 }
-/* line 313, modules/_site.scss */
+/* line 336, modules/_site.scss */
 .gray .post footer a {
   font-weight: 400;
   font-size: 18px;
   font-size: 1.8rem;
   color: #6f7479;
 }
-/* line 318, modules/_site.scss */
+/* line 341, modules/_site.scss */
 .gray .post footer a span {
   font-size: 28px;
   font-size: 2.8rem;
@@ -4312,15 +4337,15 @@ a [class*=" icon-"] {
   position: relative;
   top: 4px;
 }
-/* line 324, modules/_site.scss */
+/* line 347, modules/_site.scss */
 .gray .post footer a span.img {
   margin-right: 20px;
 }
-/* line 329, modules/_site.scss */
+/* line 352, modules/_site.scss */
 .gray .post footer a:hover {
   color: #212229;
 }
-/* line 334, modules/_site.scss */
+/* line 357, modules/_site.scss */
 .gray .post footer .btn-feed {
   position: absolute;
   top: -16px;
@@ -4330,29 +4355,29 @@ a [class*=" icon-"] {
   padding: 3px 6px 5px 8px;
   background: white;
 }
-/* line 342, modules/_site.scss */
+/* line 365, modules/_site.scss */
 .gray .post footer .btn-feed span {
   font-size: 16px;
   font-size: 1.6rem;
   position: static;
   margin: 0;
 }
-/* line 348, modules/_site.scss */
+/* line 371, modules/_site.scss */
 .gray .post footer .btn-feed:hover {
   background: #f2f2f2;
   color: #212229;
 }
-/* line 356, modules/_site.scss */
+/* line 379, modules/_site.scss */
 .gray .four-oh-four {
   padding: 75px 0;
 }
-/* line 359, modules/_site.scss */
+/* line 382, modules/_site.scss */
 .gray .four-oh-four div {
   padding: 8px;
   background: #f2f2f2;
   border: 1px solid #bfbfbf;
 }
-/* line 366, modules/_site.scss */
+/* line 389, modules/_site.scss */
 .gray .four-oh-four header h1 {
   font-family: "klinic-slab", Georgia, serif;
   font-weight: 600;
@@ -4360,16 +4385,16 @@ a [class*=" icon-"] {
   font-size: 3.6rem;
   margin-top: 25px;
 }
-/* line 377, modules/_site.scss */
+/* line 400, modules/_site.scss */
 .gray.resume {
   background: #f9fbfa;
 }
-/* line 380, modules/_site.scss */
+/* line 403, modules/_site.scss */
 .gray.resume img {
   height: 25px;
   margin: 0 0 15px 15px;
 }
-/* line 385, modules/_site.scss */
+/* line 408, modules/_site.scss */
 .gray.resume .logo {
   background: url("/images/resume/logo.png") no-repeat center;
   width: 180px;
@@ -4377,11 +4402,11 @@ a [class*=" icon-"] {
   display: block;
   margin-top: 125px;
 }
-/* line 393, modules/_site.scss */
+/* line 416, modules/_site.scss */
 .gray.resume .cell {
   padding: 0 15px;
 }
-/* line 398, modules/_site.scss */
+/* line 421, modules/_site.scss */
 .gray.resume header h1 {
   font-family: "raleway", "Helvetica Neue", Verdana, sans-serif;
   font-size: 21px;
@@ -4390,28 +4415,28 @@ a [class*=" icon-"] {
   color: #434553;
   margin-bottom: 15px;
 }
-/* line 406, modules/_site.scss */
+/* line 429, modules/_site.scss */
 .gray.resume header ~ *, .gray.resume header ~ * ~ * {
   margin-left: 15px;
 }
-/* line 412, modules/_site.scss */
+/* line 435, modules/_site.scss */
 .gray.resume .align-right header ~ * {
   margin-left: 0;
   margin-right: 15px;
 }
-/* line 418, modules/_site.scss */
+/* line 441, modules/_site.scss */
 .gray.resume .align-right p {
   margin-left: 0;
   margin-right: 15px;
 }
-/* line 423, modules/_site.scss */
+/* line 446, modules/_site.scss */
 .gray.resume h1 {
   font-family: "klinic-slab", Georgia, serif;
   font-size: 18px;
   font-size: 1.8rem;
   margin-bottom: 7px;
 }
-/* line 429, modules/_site.scss */
+/* line 452, modules/_site.scss */
 .gray.resume h2 {
   font-family: "raleway", "Helvetica Neue", Verdana, sans-serif;
   font-weight: 400;
@@ -4420,7 +4445,7 @@ a [class*=" icon-"] {
   font-size: 1.4rem;
   margin-bottom: 15px;
 }
-/* line 437, modules/_site.scss */
+/* line 460, modules/_site.scss */
 .gray.resume p, .gray.resume li {
   color: #212229;
   font-size: 17px;
