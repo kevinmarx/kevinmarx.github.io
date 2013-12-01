@@ -2,11 +2,10 @@
 layout: default
 title: Kevin Marx
 ---
+<script src="/js/lib/jquery.isotope.js"></script>
 
 {% include masthead.html selected='writings' %}
 
-{% include featurette.html post=site.categories.blog.first %}
+{% include featurette.html post=site.posts.first %}
 
 {% include article_list.html %}
-
-{% include colorizer.html %}

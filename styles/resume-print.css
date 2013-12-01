@@ -4090,7 +4090,7 @@ a [class*=" icon-"] {
   top: -15px;
 }
 /* line 125, modules/_site.scss */
-.gray .article-list ul li a, .gray .article-list ul li section, .gray .project-list ul li a, .gray .project-list ul li section {
+.gray .article-list ul li > a, .gray .article-list ul li > section, .gray .project-list ul li > a, .gray .project-list ul li > section {
   border: 1px solid #dedede;
   border-radius: 4px;
   padding: 25px;
@@ -4102,7 +4102,7 @@ a [class*=" icon-"] {
   -ms-transition: all 200ms linear 0;
 }
 /* line 132, modules/_site.scss */
-.gray .article-list ul li a:hover, .gray .article-list ul li a:focus, .gray .article-list ul li section:hover, .gray .article-list ul li section:focus, .gray .project-list ul li a:hover, .gray .project-list ul li a:focus, .gray .project-list ul li section:hover, .gray .project-list ul li section:focus {
+.gray .article-list ul li > a:hover, .gray .article-list ul li > a:focus, .gray .article-list ul li > section:hover, .gray .article-list ul li > section:focus, .gray .project-list ul li > a:hover, .gray .project-list ul li > a:focus, .gray .project-list ul li > section:hover, .gray .project-list ul li > section:focus {
   background: white;
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
 }

@@ -4090,7 +4090,7 @@ a [class*=" icon-"] {
   top: -15px;
 }
 /* line 125, modules/_site.scss */
-.red .article-list ul li a, .red .article-list ul li section, .red .project-list ul li a, .red .project-list ul li section {
+.red .article-list ul li > a, .red .article-list ul li > section, .red .project-list ul li > a, .red .project-list ul li > section {
   border: 1px solid #dedede;
   border-radius: 4px;
   padding: 25px;
@@ -4102,7 +4102,7 @@ a [class*=" icon-"] {
   -ms-transition: all 200ms linear 0;
 }
 /* line 132, modules/_site.scss */
-.red .article-list ul li a:hover, .red .article-list ul li a:focus, .red .article-list ul li section:hover, .red .article-list ul li section:focus, .red .project-list ul li a:hover, .red .project-list ul li a:focus, .red .project-list ul li section:hover, .red .project-list ul li section:focus {
+.red .article-list ul li > a:hover, .red .article-list ul li > a:focus, .red .article-list ul li > section:hover, .red .article-list ul li > section:focus, .red .project-list ul li > a:hover, .red .project-list ul li > a:focus, .red .project-list ul li > section:hover, .red .project-list ul li > section:focus {
   background: white;
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
 }
@@ -4993,7 +4993,7 @@ a [class*=" icon-"] {
   top: -15px;
 }
 /* line 125, modules/_site.scss */
-.blue .article-list ul li a, .blue .article-list ul li section, .blue .project-list ul li a, .blue .project-list ul li section {
+.blue .article-list ul li > a, .blue .article-list ul li > section, .blue .project-list ul li > a, .blue .project-list ul li > section {
   border: 1px solid #dedede;
   border-radius: 4px;
   padding: 25px;
@@ -5005,7 +5005,7 @@ a [class*=" icon-"] {
   -ms-transition: all 200ms linear 0;
 }
 /* line 132, modules/_site.scss */
-.blue .article-list ul li a:hover, .blue .article-list ul li a:focus, .blue .article-list ul li section:hover, .blue .article-list ul li section:focus, .blue .project-list ul li a:hover, .blue .project-list ul li a:focus, .blue .project-list ul li section:hover, .blue .project-list ul li section:focus {
+.blue .article-list ul li > a:hover, .blue .article-list ul li > a:focus, .blue .article-list ul li > section:hover, .blue .article-list ul li > section:focus, .blue .project-list ul li > a:hover, .blue .project-list ul li > a:focus, .blue .project-list ul li > section:hover, .blue .project-list ul li > section:focus {
   background: white;
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
 }
@@ -5896,7 +5896,7 @@ a [class*=" icon-"] {
   top: -15px;
 }
 /* line 125, modules/_site.scss */
-.yellow .article-list ul li a, .yellow .article-list ul li section, .yellow .project-list ul li a, .yellow .project-list ul li section {
+.yellow .article-list ul li > a, .yellow .article-list ul li > section, .yellow .project-list ul li > a, .yellow .project-list ul li > section {
   border: 1px solid #dedede;
   border-radius: 4px;
   padding: 25px;
@@ -5908,7 +5908,7 @@ a [class*=" icon-"] {
   -ms-transition: all 200ms linear 0;
 }
 /* line 132, modules/_site.scss */
-.yellow .article-list ul li a:hover, .yellow .article-list ul li a:focus, .yellow .article-list ul li section:hover, .yellow .article-list ul li section:focus, .yellow .project-list ul li a:hover, .yellow .project-list ul li a:focus, .yellow .project-list ul li section:hover, .yellow .project-list ul li section:focus {
+.yellow .article-list ul li > a:hover, .yellow .article-list ul li > a:focus, .yellow .article-list ul li > section:hover, .yellow .article-list ul li > section:focus, .yellow .project-list ul li > a:hover, .yellow .project-list ul li > a:focus, .yellow .project-list ul li > section:hover, .yellow .project-list ul li > section:focus {
   background: white;
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
 }
@@ -6799,7 +6799,7 @@ a [class*=" icon-"] {
   top: -15px;
 }
 /* line 125, modules/_site.scss */
-.gray .article-list ul li a, .gray .article-list ul li section, .gray .project-list ul li a, .gray .project-list ul li section {
+.gray .article-list ul li > a, .gray .article-list ul li > section, .gray .project-list ul li > a, .gray .project-list ul li > section {
   border: 1px solid #dedede;
   border-radius: 4px;
   padding: 25px;
@@ -6811,7 +6811,7 @@ a [class*=" icon-"] {
   -ms-transition: all 200ms linear 0;
 }
 /* line 132, modules/_site.scss */
-.gray .article-list ul li a:hover, .gray .article-list ul li a:focus, .gray .article-list ul li section:hover, .gray .article-list ul li section:focus, .gray .project-list ul li a:hover, .gray .project-list ul li a:focus, .gray .project-list ul li section:hover, .gray .project-list ul li section:focus {
+.gray .article-list ul li > a:hover, .gray .article-list ul li > a:focus, .gray .article-list ul li > section:hover, .gray .article-list ul li > section:focus, .gray .project-list ul li > a:hover, .gray .project-list ul li > a:focus, .gray .project-list ul li > section:hover, .gray .project-list ul li > section:focus {
   background: white;
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
 }
@@ -7226,4 +7226,414 @@ a [class*=" icon-"] {
   src: url("../fonts/fontawesome-webfont.eot?#iefix&v=3.2.1") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff?v=3.2.1") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=3.2.1") format("truetype"), url("../fonts/fontawesome-webfont.svg#fontawesomeregular?v=3.2.1") format("svg");
   font-weight: normal;
   font-style: normal;
+}
+
+/* line 4, modules/_orbit.scss */
+img,
+object,
+embed {
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 9, modules/_orbit.scss */
+object,
+embed {
+  height: 100%;
+}
+
+/* line 12, modules/_orbit.scss */
+img {
+  -ms-interpolation-mode: bicubic;
+}
+
+/* line 16, modules/_orbit.scss */
+img {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* line 20, modules/_orbit.scss */
+textarea {
+  height: auto;
+  min-height: 50px;
+}
+
+/* line 24, modules/_orbit.scss */
+select {
+  width: 100%;
+}
+
+/* Orbit Graceful Loading */
+/* line 29, modules/_orbit.scss */
+.slideshow-wrapper {
+  position: relative;
+}
+
+/* line 31, modules/_orbit.scss */
+.slideshow-wrapper ul {
+  list-style-type: none;
+  margin: 0;
+}
+
+/* line 35, modules/_orbit.scss */
+.slideshow-wrapper ul li,
+.slideshow-wrapper ul li .orbit-caption {
+  display: none;
+}
+
+/* line 37, modules/_orbit.scss */
+.slideshow-wrapper ul li:first-child {
+  display: block;
+}
+
+/* line 39, modules/_orbit.scss */
+.slideshow-wrapper .orbit-container {
+  background-color: transparent;
+}
+
+/* line 41, modules/_orbit.scss */
+.slideshow-wrapper .orbit-container li {
+  display: block;
+}
+
+/* line 43, modules/_orbit.scss */
+.slideshow-wrapper .orbit-container li .orbit-caption {
+  display: block;
+}
+
+/* line 46, modules/_orbit.scss */
+.preloader {
+  display: block;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -20px;
+  margin-left: -20px;
+  border: solid 3px;
+  border-color: #555555 white;
+  -webkit-border-radius: 1000px;
+  border-radius: 1000px;
+  -webkit-animation-name: rotate;
+  -webkit-animation-duration: 1.5s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-name: rotate;
+  -moz-animation-duration: 1.5s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+  -o-animation-name: rotate;
+  -o-animation-duration: 1.5s;
+  -o-animation-iteration-count: infinite;
+  -o-animation-timing-function: linear;
+  animation-name: rotate;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+/* line 76, modules/_orbit.scss */
+.orbit-container {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  background: none;
+}
+
+/* line 81, modules/_orbit.scss */
+.orbit-container .orbit-slides-container {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+/* line 86, modules/_orbit.scss */
+.orbit-container .orbit-slides-container img {
+  display: block;
+  max-width: 100%;
+}
+
+/* line 89, modules/_orbit.scss */
+.orbit-container .orbit-slides-container > * {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  margin-left: 100%;
+}
+
+/* line 94, modules/_orbit.scss */
+.orbit-container .orbit-slides-container > *:first-child {
+  margin-left: 0%;
+}
+
+/* line 96, modules/_orbit.scss */
+.orbit-container .orbit-slides-container > * .orbit-caption {
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(51, 51, 51, 0.8);
+  color: white;
+  width: 100%;
+  padding: 10px 14px;
+  font-size: 0.875rem;
+}
+
+/* line 104, modules/_orbit.scss */
+.orbit-container .orbit-slide-number {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 12px;
+  color: white;
+  background: rgba(0, 0, 0, 0);
+  z-index: 10;
+}
+
+/* line 112, modules/_orbit.scss */
+.orbit-container .orbit-slide-number span {
+  font-weight: 700;
+  padding: 0.3125rem;
+}
+
+/* line 115, modules/_orbit.scss */
+.orbit-container .orbit-timer {
+  position: absolute;
+  top: 12px;
+  right: 10px;
+  height: 6px;
+  width: 100px;
+  z-index: 10;
+}
+
+/* line 122, modules/_orbit.scss */
+.orbit-container .orbit-timer .orbit-progress {
+  height: 3px;
+  background-color: rgba(255, 255, 255, 0.3);
+  display: block;
+  width: 0%;
+  position: relative;
+  right: 20px;
+  top: 5px;
+}
+
+/* line 130, modules/_orbit.scss */
+.orbit-container .orbit-timer > span {
+  display: none;
+  position: absolute;
+  top: 0px;
+  right: 0;
+  width: 11px;
+  height: 14px;
+  border: solid 4px white;
+  border-top: none;
+  border-bottom: none;
+}
+
+/* line 140, modules/_orbit.scss */
+.orbit-container .orbit-timer.paused > span {
+  right: -4px;
+  top: 0px;
+  width: 11px;
+  height: 14px;
+  border: inset 8px;
+  border-right-style: solid;
+  border-color: transparent transparent transparent white;
+}
+
+/* line 148, modules/_orbit.scss */
+.orbit-container .orbit-timer.paused > span.dark {
+  border-color: transparent transparent transparent #333333;
+}
+
+/* line 150, modules/_orbit.scss */
+.orbit-container:hover .orbit-timer > span {
+  display: block;
+}
+
+/* line 153, modules/_orbit.scss */
+.orbit-container .orbit-prev,
+.orbit-container .orbit-next {
+  position: absolute;
+  bottom: 0;
+  border-radius: 100%;
+  margin-top: -25px;
+  width: 60px;
+  height: 60px;
+  line-height: 50px;
+  color: white;
+  text-indent: -9999px !important;
+  z-index: 10;
+  display: none;
+}
+
+/* line 166, modules/_orbit.scss */
+.article-list ul > li:hover .orbit-container .orbit-prev, .article-list ul > li:hover .orbit-container .orbit-next {
+  display: block;
+  background-color: rgba(33, 34, 41, 0.5);
+}
+
+/* line 171, modules/_orbit.scss */
+.orbit-container .orbit-prev:hover,
+.orbit-container .orbit-next:hover {
+  background-color: rgba(33, 34, 41, 0.8);
+}
+
+/* line 174, modules/_orbit.scss */
+.orbit-container .orbit-prev > span,
+.orbit-container .orbit-next > span {
+  position: absolute;
+  top: 50%;
+  margin-top: -10px;
+  display: block;
+  width: 0;
+  height: 0;
+  border: inset 10px;
+}
+
+/* line 182, modules/_orbit.scss */
+.orbit-container .orbit-prev {
+  left: 0;
+}
+
+/* line 184, modules/_orbit.scss */
+.orbit-container .orbit-prev > span {
+  border-right-style: solid;
+  border-color: transparent;
+  border-right-color: white;
+}
+
+/* line 188, modules/_orbit.scss */
+.orbit-container .orbit-prev:hover > span {
+  border-right-color: white;
+}
+
+/* line 190, modules/_orbit.scss */
+.orbit-container .orbit-next {
+  right: 0;
+}
+
+/* line 192, modules/_orbit.scss */
+.orbit-container .orbit-next > span {
+  border-color: transparent;
+  border-left-style: solid;
+  border-left-color: white;
+  left: 50%;
+  margin-left: -4px;
+}
+
+/* line 198, modules/_orbit.scss */
+.orbit-container .orbit-next:hover > span {
+  border-left-color: white;
+}
+
+/* line 201, modules/_orbit.scss */
+.orbit-bullets-container {
+  text-align: center;
+}
+
+/* line 204, modules/_orbit.scss */
+.orbit-bullets {
+  margin: 0 auto 30px auto;
+  overflow: hidden;
+  position: relative;
+  top: 10px;
+  float: none;
+  text-align: center;
+  display: inline-block;
+}
+
+/* line 212, modules/_orbit.scss */
+.orbit-bullets li {
+  display: block;
+  width: 0.5625rem;
+  height: 0.5625rem;
+  background: #cccccc;
+  float: left;
+  margin-right: 6px;
+  -webkit-border-radius: 1000px;
+  border-radius: 1000px;
+}
+
+/* line 221, modules/_orbit.scss */
+.orbit-bullets li.active {
+  background: #999999;
+}
+
+/* line 223, modules/_orbit.scss */
+.orbit-bullets li:last-child {
+  margin-right: 0;
+}
+
+/* line 227, modules/_orbit.scss */
+.touch .orbit-container .orbit-prev,
+.touch .orbit-container .orbit-next {
+  display: none;
+}
+
+/* line 229, modules/_orbit.scss */
+.touch .orbit-bullets {
+  display: none;
+}
+
+@media only screen and (min-width: 40.063em) {
+  /* line 234, modules/_orbit.scss */
+  .touch .orbit-container .orbit-prev,
+  .touch .orbit-container .orbit-next {
+    display: inherit;
+  }
+
+  /* line 236, modules/_orbit.scss */
+  .touch .orbit-bullets {
+    display: block;
+  }
+}
+@media only screen and (max-width: 40em) {
+  /* line 239, modules/_orbit.scss */
+  .orbit-stack-on-small .orbit-slides-container {
+    height: auto !important;
+  }
+
+  /* line 241, modules/_orbit.scss */
+  .orbit-stack-on-small .orbit-slides-container > * {
+    position: relative;
+    margin-left: 0% !important;
+  }
+
+  /* line 247, modules/_orbit.scss */
+  .orbit-stack-on-small .orbit-timer,
+  .orbit-stack-on-small .orbit-next,
+  .orbit-stack-on-small .orbit-prev,
+  .orbit-stack-on-small .orbit-bullets {
+    display: none;
+  }
+}
+/* line 1, modules/_isotope.scss */
+.isotope-item {
+  z-index: 2;
+}
+
+/* line 5, modules/_isotope.scss */
+.isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* line 10, modules/_isotope.scss */
+.element {
+  float: left;
+  height: 137px;
+  width: 300px;
+  overflow: hidden;
+}
+
+/* line 11, modules/_isotope.scss */
+.writings {
+  width: 620px;
+}
+
+/* line 12, modules/_isotope.scss */
+.works {
+  height: 274px;
 }

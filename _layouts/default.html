@@ -15,7 +15,7 @@
     <title>{{ page.title }}</title>
     <link rel="stylesheet" href="/styles/main.css" media="screen" />
     <link rel="shortcut icon" href="/images/favicon.ico" />
-    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="/js/lib/jquery-1.10.2.min.js"></script>
   </head>
 
   <body>
@@ -27,12 +27,6 @@
 
     {% include footer.html %}
 
-    <script>
-      $(document).ready(function() {
-        // make it go
-        $('html').addClass(window.currentColor || '').show()
-      })
-    </script>
-
+    <script src="/js/site.js"></script>
   </body>
 </html>

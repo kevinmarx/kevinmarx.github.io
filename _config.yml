@@ -5,6 +5,6 @@ server_port: 4000
 pygments:    true
 markdown:    redcarpet
 permalink:   date
-categories: ['blog', 'works']
+categories: ['writings', 'works', 'projects', 'talks']
 redcarpet:
   extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript", "with_toc_data"]

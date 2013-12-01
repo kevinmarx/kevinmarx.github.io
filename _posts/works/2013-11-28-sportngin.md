@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Sport Ngin
 cutline: Sport Ngin was rebranding and needed to update their website to better
   reflect their business and new brand.
