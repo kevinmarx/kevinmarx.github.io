@@ -1,30 +1,37 @@
 <article class="article-list gray column x100">
   <nav class="group">
-    <ul id="Filters" class="pillar group wrapper">
-      <li><a href="#" data-filter="*" class="show-all">Show All</a></li>
-      <li><a href="#" data-filter="writings">Writings</a></li>
-      <li><a href="#" data-filter="works">Works</a></li>
-      <li><a href="#" data-filter="projects">Projects</a></li>
-      <li><a href="#" data-filter="talks">Talks</a></li>
+    <ul id="Filters" class="pillar no-bullet align-center">
+      <li><a href="#" data-filter="*" class="show-all selected">Show All</a></li>
+      <li><a href="#" data-filter="writings" class="writings">Writings</a></li>
+      <li><a href="#" data-filter="works" class="works">Works</a></li>
+      <li><a href="#" data-filter="projects" class="projects">Projects</a></li>
+      <li><a href="#" data-filter="talks" class="talks">Talks</a></li>
     </ul>
   </nav>
   <div class="pillar group wrapper">
     <ul id="Posts" class="center">
       {% for post in site.posts offset: 0 limit: 20 %}
         <li class="column x30 element {{ post.categories }}">
-          <a href="{{ post.url }}" class="media group">
-            <div class="img x33">
-              <img src="/images/posts/{{post.date | date: "%Y-%m-%d" }}/hero_small.jpg" class="group x100"/>
-            </div>
-            <div class="bd">
-              <header>
-                <h1>{{ post.title }}</h1>
-                <h2>
-                  <time datetime="{{ post.date}}">{{ post.date | date_to_string }}</time>
-                  <span class="duration"> | {{ post.duration }} minute read.</span></h2>
-              </header>
-              <p>{{ post.excerpt }}</p>
-            </div>
+          <a href="{{ post.url }}" class="group">
+            {% case post.categories.first %}
+            {% when 'works' %}
+              {% include works_el.html post=post %}
+            {% when 'writings' %}
+              {% include writings_el.html post=post %}
+            {% when 'projects' %}
+              {% include projects_el.html post=post %}
+            {% when 'talks' %}
+              {% include talks_el.html post=post %}
+            {% else %}
+              {% include writings_el.html post=post %}
+            {% endcase %}
+            <footer class="group">
+              <a href="#" class="column tag {{ post.categories }}">{{ post.categories }}</a>
+              <div class="column">
+                <time datetime="{{ post.date}}">{{ post.date | date_to_string }}</time>
+                <span class="duration">{% if post.duration %} | {{ post.duration }} minute read.{% endif %}</span>
+              </div>
+            </footer>
           </a>
         </li>
       {% endfor %}
@@ -34,6 +41,6 @@
         </header>
       {% endunless %}
     </ul>
-
   </div>
 </article>
+{% include colorizer.html %}

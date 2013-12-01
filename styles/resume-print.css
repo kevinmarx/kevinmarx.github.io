@@ -5,23 +5,11 @@ html {
   display: block;
 }
 /* line 10, modules/_structure.scss */
-html.blue {
-  background-color: #2a505b;
-}
-/* line 11, modules/_structure.scss */
-html.red {
-  background-color: #571d03;
-}
-/* line 12, modules/_structure.scss */
-html.yellow {
-  background-color: #614600;
-}
-/* line 13, modules/_structure.scss */
 html.gray {
   background-color: #2c2a30;
 }
 
-/* line 16, modules/_structure.scss */
+/* line 13, modules/_structure.scss */
 * {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -29,7 +17,7 @@ html.gray {
   padding: 0;
 }
 
-/* line 23, modules/_structure.scss */
+/* line 20, modules/_structure.scss */
 body {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: none;
@@ -37,14 +25,14 @@ body {
   min-height: 100%;
 }
 
-/* line 31, modules/_structure.scss */
+/* line 28, modules/_structure.scss */
 .hide-text {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
 }
 
-/* line 37, modules/_structure.scss */
+/* line 34, modules/_structure.scss */
 .group {
   *zoom: 1;
   clear: both;
@@ -57,51 +45,51 @@ body {
   display: table;
   clear: both;
 }
-/* line 42, modules/_structure.scss */
+/* line 39, modules/_structure.scss */
 .group.padded {
   margin-top: 20px;
   padding-left: 20px;
 }
-/* line 45, modules/_structure.scss */
+/* line 42, modules/_structure.scss */
 .group.padded + .group.padded {
   margin-top: 0;
 }
-/* line 47, modules/_structure.scss */
+/* line 44, modules/_structure.scss */
 .group.padded + .group.padded.column {
   margin-top: 20px;
 }
-/* line 51, modules/_structure.scss */
+/* line 48, modules/_structure.scss */
 .group.padded > .column {
   padding-left: 20px;
   left: -20px;
 }
-/* line 54, modules/_structure.scss */
+/* line 51, modules/_structure.scss */
 .group.padded > .column > .padded {
   padding-left: 0;
   margin-top: 0;
 }
-/* line 59, modules/_structure.scss */
+/* line 56, modules/_structure.scss */
 .group.padded > .el, .group.padded > .column > .el {
   margin-bottom: 20px;
 }
-/* line 63, modules/_structure.scss */
+/* line 60, modules/_structure.scss */
 .group.padded.minimal {
   left: -10px;
   margin-top: 0;
   margin-right: -10px;
   padding-left: 0;
 }
-/* line 69, modules/_structure.scss */
+/* line 66, modules/_structure.scss */
 .group.padded.minimal > .column {
   padding-left: 10px;
   left: -10px;
 }
-/* line 73, modules/_structure.scss */
+/* line 70, modules/_structure.scss */
 .group.padded.minimal.column {
   padding-left: 10px;
 }
 
-/* line 80, modules/_structure.scss */
+/* line 77, modules/_structure.scss */
 .column {
   *zoom: 1;
   position: relative;
@@ -118,12 +106,12 @@ body {
 }
 
 /* group class required for specificity */
-/* line 90, modules/_structure.scss */
+/* line 87, modules/_structure.scss */
 .group .el {
   margin-bottom: 20px;
 }
 
-/* line 93, modules/_structure.scss */
+/* line 90, modules/_structure.scss */
 .el {
   *zoom: 1;
   display: block;
@@ -137,54 +125,54 @@ body {
   clear: both;
 }
 
-/* line 103, modules/_structure.scss */
+/* line 100, modules/_structure.scss */
 .clear {
   clear: left;
 }
 
-/* line 104, modules/_structure.scss */
+/* line 101, modules/_structure.scss */
 .right {
   float: right;
 }
-/* line 106, modules/_structure.scss */
+/* line 103, modules/_structure.scss */
 .right.clear {
   clear: right;
 }
 
-/* line 111, modules/_structure.scss */
+/* line 108, modules/_structure.scss */
 .pillar {
   margin-left: auto;
   margin-right: auto;
   max-width: 1140px;
 }
-/* line 115, modules/_structure.scss */
+/* line 112, modules/_structure.scss */
 .pillar.group {
   padding-top: 25px;
 }
 
-/* line 122, modules/_structure.scss */
+/* line 119, modules/_structure.scss */
 .scroll {
   overflow: scroll;
 }
 
-/* line 126, modules/_structure.scss */
+/* line 123, modules/_structure.scss */
 .scroll-x {
   overflow-x: scroll;
   overflow-y: hidden;
 }
 
-/* line 131, modules/_structure.scss */
+/* line 128, modules/_structure.scss */
 .scroll-y {
   overflow-y: scroll;
   overflow-x: hidden;
 }
 
-/* line 136, modules/_structure.scss */
+/* line 133, modules/_structure.scss */
 .overflow-visible {
   overflow: visible;
 }
 
-/* line 140, modules/_structure.scss */
+/* line 137, modules/_structure.scss */
 .overflow-hidden {
   overflow: hidden;
 }
@@ -4077,159 +4065,361 @@ a [class*=" icon-"] {
   padding-top: 75px;
   padding-bottom: 90px;
 }
-/* line 112, modules/_site.scss */
-.gray .article-list > div > span, .gray .project-list > div > span {
-  color: #212229;
-  font-size: 21px;
-  font-size: 2.1rem;
-  padding: 6px;
-  font-family: "klinic-slab", Georgia, serif;
+/* line 114, modules/_site.scss */
+.gray #Filters li {
+  display: inline-block;
+}
+/* line 117, modules/_site.scss */
+.gray #Filters li a {
+  display: block;
+  font-size: 16px;
+  font-size: 1.6rem;
+  padding: 6px 16px;
+  border-radius: 4px;
+  border: 1px solid transparent;
   font-weight: 400;
-  font-style: italic;
-  position: relative;
-  top: -15px;
 }
 /* line 125, modules/_site.scss */
-.gray .article-list ul li > a, .gray .article-list ul li > section, .gray .project-list ul li > a, .gray .project-list ul li > section {
-  border: 1px solid #dedede;
+.gray #Filters li a:hover {
+  border-color: #212229;
+}
+/* line 129, modules/_site.scss */
+.gray #Filters li a:active {
+  background-color: #0a0b0d;
+  border-color: #0a0b0d;
+  color: #f9fbfa;
+}
+/* line 135, modules/_site.scss */
+.gray #Filters li a.selected {
+  background-color: #212229;
   border-radius: 4px;
-  padding: 25px;
-  color: #515151;
-  transition: all 200ms linear 0;
-  -moz-transition: all 200ms linear 0;
-  -webkit-transition: all 200ms linear 0;
-  -o-transition: all 200ms linear 0;
-  -ms-transition: all 200ms linear 0;
-}
-/* line 132, modules/_site.scss */
-.gray .article-list ul li > a:hover, .gray .article-list ul li > a:focus, .gray .article-list ul li > section:hover, .gray .article-list ul li > section:focus, .gray .project-list ul li > a:hover, .gray .project-list ul li > a:focus, .gray .project-list ul li > section:hover, .gray .project-list ul li > section:focus {
-  background: white;
-  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
-}
-/* line 139, modules/_site.scss */
-.gray .article-list ul li a img, .gray .project-list ul li a img {
-  max-height: 138px;
+  border-color: #212229;
+  color: #f9fbfa;
 }
 /* line 143, modules/_site.scss */
-.gray .article-list ul li a h1, .gray .project-list ul li a h1 {
-  color: #212229;
-  font-size: 34px;
-  font-size: 3.4rem;
-  font-family: "klinic-slab", Georgia, serif;
+.gray #Filters li a.works:hover {
+  border-color: #e26040;
+  color: #69200d;
+}
+/* line 144, modules/_site.scss */
+.gray #Filters li a.works:active {
+  background-color: #cf4220;
+  border-color: #cf4220;
+  color: #69200d;
 }
 /* line 149, modules/_site.scss */
-.gray .article-list ul li a h2, .gray .project-list ul li a h2 {
-  font-weight: 400;
-  font-style: italic;
-  font-size: 14px;
-  font-size: 1.4rem;
+.gray #Filters li a.works.selected {
+  background-color: #e26040;
+  border-color: #e26040;
+  color: #69200d;
 }
-/* line 154, modules/_site.scss */
-.gray .article-list ul li a h2 span, .gray .article-list ul li a h2 time, .gray .project-list ul li a h2 span, .gray .project-list ul li a h2 time {
-  font-weight: 400;
-  font-size: 14px;
-  font-size: 1.4rem;
+/* line 156, modules/_site.scss */
+.gray #Filters li a.writings:hover {
+  border-color: #fba631;
+  color: #69450b;
 }
-/* line 161, modules/_site.scss */
-.gray .article-list ul li a p, .gray .project-list ul li a p {
-  font-size: 21px;
-  font-size: 2.1rem;
-  max-height: 70px;
-  overflow: hidden;
-  margin: 0;
+/* line 157, modules/_site.scss */
+.gray #Filters li a.writings:active {
+  background-color: #f48f05;
+  border-color: #f48f05;
+  color: #69450b;
+}
+/* line 162, modules/_site.scss */
+.gray #Filters li a.writings.selected {
+  background-color: #fba631;
+  border-color: #fba631;
+  color: #69450b;
 }
 /* line 169, modules/_site.scss */
-.gray .article-list ul li section, .gray .project-list ul li section {
-  height: 525px;
+.gray #Filters li a.talks:hover {
+  border-color: #af44e2;
+  color: #5F257A;
 }
-/* line 172, modules/_site.scss */
-.gray .article-list ul li section h1, .gray .project-list ul li section h1 {
-  color: #212229;
-  margin-top: 30px;
-  font-size: 34px;
-  font-size: 3.4rem;
-  font-family: "klinic-slab", Georgia, serif;
+/* line 170, modules/_site.scss */
+.gray #Filters li a.talks:active {
+  background-color: #9921d2;
+  border-color: #9921d2;
+  color: #5F257A;
 }
-/* line 179, modules/_site.scss */
-.gray .article-list ul li section p, .gray .project-list ul li section p {
-  font-size: 14px;
-  font-size: 1.4rem;
+/* line 175, modules/_site.scss */
+.gray #Filters li a.talks.selected {
+  background-color: #af44e2;
+  border-color: #af44e2;
+  color: #5F257A;
+}
+/* line 182, modules/_site.scss */
+.gray #Filters li a.projects:hover {
+  border-color: #51c1d7;
+  color: #135764;
+}
+/* line 183, modules/_site.scss */
+.gray #Filters li a.projects:active {
+  background-color: #2eaec7;
+  border-color: #2eaec7;
+  color: #135764;
+}
+/* line 188, modules/_site.scss */
+.gray #Filters li a.projects.selected {
+  background-color: #51c1d7;
+  border-color: #51c1d7;
+  color: #135764;
+}
+/* line 199, modules/_site.scss */
+.gray #Posts li {
+  background: white;
+  margin: 0 15px 15px 0;
+  border-radius: 3px;
+  border: 1px solid #f5f5f5;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+}
+/* line 206, modules/_site.scss */
+.gray #Posts li footer {
+  background: #f5f5f5;
+  height: 35px;
+}
+/* line 210, modules/_site.scss */
+.gray #Posts li footer .tag {
+  height: 100%;
+  display: block;
+  padding: 8px 20px;
+}
+/* line 215, modules/_site.scss */
+.gray #Posts li footer .tag:after {
+  content: "";
+  height: 35px;
+  width: 20px;
+  position: absolute;
+  right: -10px;
+  top: 0;
+  -webkit-transform: skew(-25deg);
+  -moz-transform: skew(-25deg);
+  -ms-transform: skew(-25deg);
+  -o-transform: skew(-25deg);
+  transform: skew(-25deg);
+}
+/* line 225, modules/_site.scss */
+.gray #Posts li footer .tag.writings {
+  background-color: #fba631;
+  color: #69450b;
+}
+/* line 228, modules/_site.scss */
+.gray #Posts li footer .tag.writings:after {
+  background-color: #fba631;
+}
+/* line 232, modules/_site.scss */
+.gray #Posts li footer .tag.works {
+  background-color: #e26040;
+  color: #69200d;
+}
+/* line 235, modules/_site.scss */
+.gray #Posts li footer .tag.works:after {
+  background-color: #e26040;
+}
+/* line 239, modules/_site.scss */
+.gray #Posts li footer .tag.projects {
+  background-color: #51c1d7;
+  color: #135764;
+}
+/* line 242, modules/_site.scss */
+.gray #Posts li footer .tag.projects:after {
+  background-color: #51c1d7;
+}
+/* line 246, modules/_site.scss */
+.gray #Posts li footer .tag.talks {
+  background-color: #af44e2;
+  color: #5F257A;
+}
+/* line 249, modules/_site.scss */
+.gray #Posts li footer .tag.talks:after {
+  background-color: #af44e2;
+}
+/* line 254, modules/_site.scss */
+.gray #Posts li footer .tag + .column {
+  height: 100%;
+  margin-left: 25px;
+  padding: 5px;
+}
+/* line 259, modules/_site.scss */
+.gray #Posts li footer .tag + .column time {
   font-family: "raleway", "Helvetica Neue", Verdana, sans-serif;
 }
-/* line 184, modules/_site.scss */
-.gray .article-list ul li section label, .gray .project-list ul li section label {
+/* line 260, modules/_site.scss */
+.gray #Posts li footer .tag + .column .duration {
+  font-weight: 400;
+  font-size: 14px;
+  font-size: 1.4rem;
+}
+/* line 268, modules/_site.scss */
+.gray #Posts li.writings > a, .gray #Posts li.projects > a, .gray #Posts li.talks > a {
+  height: 165px;
+  position: relative;
+}
+/* line 277, modules/_site.scss */
+.gray #Posts li.writings > a header, .gray #Posts li.talks > a header {
+  position: absolute;
+  top: 0;
+  height: 60%;
+}
+/* line 282, modules/_site.scss */
+.gray #Posts li.writings > a header h1, .gray #Posts li.talks > a header h1 {
+  font-family: "klinic-slab", Georgia, serif;
+  font-size: 36px;
+  font-size: 3.6rem;
+  font-weight: 700;
+  padding: 25px 15px 5px 15px;
+  position: relative;
+  top: 26px;
+}
+/* line 292, modules/_site.scss */
+.gray #Posts li.writings > a header.dark, .gray #Posts li.talks > a header.dark {
+  box-shadow: inset 0 -100px 50px -50px rgba(0, 0, 0, 0.5);
+}
+/* line 294, modules/_site.scss */
+.gray #Posts li.writings > a header.dark h1, .gray #Posts li.talks > a header.dark h1 {
+  color: #f9fbfa;
+}
+/* line 299, modules/_site.scss */
+.gray #Posts li.writings > a header.light, .gray #Posts li.talks > a header.light {
+  box-shadow: inset 0 -100px 50px -50px rgba(249, 251, 250, 0.8);
+}
+/* line 301, modules/_site.scss */
+.gray #Posts li.writings > a header.light h1, .gray #Posts li.talks > a header.light h1 {
+  color: #212229;
+}
+/* line 307, modules/_site.scss */
+.gray #Posts li.writings > a section, .gray #Posts li.talks > a section {
+  height: 40%;
+  position: relative;
+  top: 60%;
+  color: white;
+  background-color: #212229;
+  padding: 5px 15px;
+}
+/* line 315, modules/_site.scss */
+.gray #Posts li.writings > a section p, .gray #Posts li.talks > a section p {
+  font-family: "raleway", "Helvetica Neue", Verdana, sans-serif;
+  font-size: 16px;
+  font-size: 1.6rem;
+}
+/* line 323, modules/_site.scss */
+.gray #Posts li.works > a {
+  height: 365px;
+}
+/* line 326, modules/_site.scss */
+.gray #Posts li.works > a header {
+  padding: 20px;
+  position: relative;
+  box-shadow: inset 0 -300px 250px -150px rgba(0, 0, 0, 0.5);
+}
+/* line 331, modules/_site.scss */
+.gray #Posts li.works > a header.light {
+  box-shadow: inset 0 -200px 150px -150px rgba(249, 251, 250, 0.8);
+}
+/* line 333, modules/_site.scss */
+.gray #Posts li.works > a header.light h1 {
+  color: #212229;
+}
+/* line 338, modules/_site.scss */
+.gray #Posts li.works > a header h1 {
+  font-size: 48px;
+  font-size: 4.8rem;
+  font-family: "klinic-slab", Georgia, serif;
+  font-weight: 700;
+  color: #f9fbfa;
+  position: absolute;
+  bottom: 20px;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.75);
+}
+/* line 350, modules/_site.scss */
+.gray #Posts li.projects {
+  background-color: white;
+}
+/* line 353, modules/_site.scss */
+.gray #Posts li.projects header {
+  padding: 20px;
+}
+/* line 356, modules/_site.scss */
+.gray #Posts li.projects header h1 {
+  font-size: 38px;
+  font-size: 3.8rem;
+  font-family: "klinic-slab", Georgia, serif;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+/* line 363, modules/_site.scss */
+.gray #Posts li.projects header h2 {
   font-size: 18px;
   font-size: 1.8rem;
-  font-weight: 700;
-  font-family: "klinic-slab", Georgia, serif;
+  font-family: "raleway", "Helvetica Neue", Verdana, sans-serif;
+  font-weight: 400;
 }
-/* line 194, modules/_site.scss */
+/* line 373, modules/_site.scss */
 .gray .page-footer {
   background: #f2f2f2;
   color: #212229;
 }
-/* line 197, modules/_site.scss */
+/* line 376, modules/_site.scss */
 .gray .page-footer ul {
   padding-top: 14px;
 }
-/* line 203, modules/_site.scss */
+/* line 382, modules/_site.scss */
 .gray .page-footer .social li {
   margin: 0 16px;
 }
-/* line 205, modules/_site.scss */
+/* line 384, modules/_site.scss */
 .gray .page-footer .social span {
   font-family: 'FontAwesome';
   font-size: 28px;
   font-size: 2.8rem;
 }
-/* line 211, modules/_site.scss */
+/* line 390, modules/_site.scss */
 .gray .page-footer .secondary-footer {
   color: #f2f2f2;
   background: #212229;
 }
-/* line 215, modules/_site.scss */
+/* line 394, modules/_site.scss */
 .gray .page-footer .secondary-footer a {
   display: block;
   color: #f2f2f2;
 }
-/* line 219, modules/_site.scss */
+/* line 398, modules/_site.scss */
 .gray .page-footer .secondary-footer a:hover {
   color: white;
 }
-/* line 224, modules/_site.scss */
+/* line 403, modules/_site.scss */
 .gray .page-footer .secondary-footer li {
   padding: 0 8px;
   border-left: 1px solid #383945;
 }
-/* line 228, modules/_site.scss */
+/* line 407, modules/_site.scss */
 .gray .page-footer .secondary-footer li:first-child {
   border-left: none;
 }
-/* line 236, modules/_site.scss */
+/* line 415, modules/_site.scss */
 .gray ul.horizontal li {
   display: inline-block;
   list-style: none;
 }
-/* line 243, modules/_site.scss */
+/* line 422, modules/_site.scss */
 .gray .post {
   font-family: "klinic-slab", Georgia, serif;
 }
-/* line 246, modules/_site.scss */
+/* line 425, modules/_site.scss */
 .gray .post > * {
   padding-left: 20px;
   padding-right: 20px;
 }
-/* line 251, modules/_site.scss */
+/* line 430, modules/_site.scss */
 .gray .post .feature-img {
   height: 300px;
   box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.35);
 }
-/* line 256, modules/_site.scss */
+/* line 435, modules/_site.scss */
 .gray .post header {
   padding-top: 50px;
   margin-bottom: 25px;
 }
-/* line 260, modules/_site.scss */
+/* line 439, modules/_site.scss */
 .gray .post header h1 {
   font-size: 68px;
   font-size: 6.8rem;
@@ -4237,39 +4427,39 @@ a [class*=" icon-"] {
   font-family: "klinic-slab", Georgia, serif;
   font-weight: 300;
 }
-/* line 267, modules/_site.scss */
+/* line 446, modules/_site.scss */
 .gray .post header .meta {
   margin-bottom: 10px;
   color: #6f7479;
 }
-/* line 271, modules/_site.scss */
+/* line 450, modules/_site.scss */
 .gray .post header .meta * {
   font-size: 16px;
   font-size: 1.6rem;
   font-family: "raleway", "Helvetica Neue", Verdana, sans-serif;
   font-weight: 400;
 }
-/* line 279, modules/_site.scss */
+/* line 458, modules/_site.scss */
 .gray .post .post-body {
   margin-bottom: 100px;
 }
-/* line 282, modules/_site.scss */
+/* line 461, modules/_site.scss */
 .gray .post .post-body h1 {
   font-size: 48px;
   font-size: 4.8rem;
 }
-/* line 284, modules/_site.scss */
+/* line 463, modules/_site.scss */
 .gray .post .post-body h2 {
   font-size: 32px;
   font-size: 3.2rem;
 }
-/* line 286, modules/_site.scss */
+/* line 465, modules/_site.scss */
 .gray .post .post-body h3 {
   font-size: 24px;
   font-size: 2.4rem;
   font-style: italic;
 }
-/* line 288, modules/_site.scss */
+/* line 467, modules/_site.scss */
 .gray .post .post-body p, .gray .post .post-body li, .gray .post .post-body a {
   font-size: 24px;
   font-size: 2.4rem;
@@ -4277,7 +4467,7 @@ a [class*=" icon-"] {
   line-height: 1.8;
   font-family: "klinic-slab", Georgia, serif;
 }
-/* line 294, modules/_site.scss */
+/* line 473, modules/_site.scss */
 .gray .post .post-body p > code, .gray .post .post-body li > code, .gray .post .post-body a > code {
   background: #f8f8f8;
   border: 1px solid #ddd;
@@ -4288,19 +4478,19 @@ a [class*=" icon-"] {
   font-size: 16px;
   font-size: 1.6rem;
 }
-/* line 305, modules/_site.scss */
+/* line 484, modules/_site.scss */
 .gray .post .post-body a {
   color: #6f7479;
 }
-/* line 308, modules/_site.scss */
+/* line 487, modules/_site.scss */
 .gray .post .post-body a:hover {
   text-decoration: underline;
 }
-/* line 313, modules/_site.scss */
+/* line 492, modules/_site.scss */
 .gray .post .post-body p {
   margin-bottom: 1em;
 }
-/* line 315, modules/_site.scss */
+/* line 494, modules/_site.scss */
 .gray .post .post-body pre {
   background: #f8f8f8;
   border: 1px solid #ddd;
@@ -4308,28 +4498,28 @@ a [class*=" icon-"] {
   border-radius: 4px;
   margin: 24px 0;
 }
-/* line 322, modules/_site.scss */
+/* line 501, modules/_site.scss */
 .gray .post .post-body pre span {
   font-family: Menlo, Consolas, "DejaVu Sans Mono", Monaco, "Courier New", Courier, monospace;
   font-size: 12px;
   font-size: 1.2rem;
   font-weight: normal;
 }
-/* line 330, modules/_site.scss */
+/* line 509, modules/_site.scss */
 .gray .post footer {
   border-top: 1px solid #cbcbcb;
   position: relative;
   height: 100px;
   margin-bottom: 75px;
 }
-/* line 336, modules/_site.scss */
+/* line 515, modules/_site.scss */
 .gray .post footer a {
   font-weight: 400;
   font-size: 18px;
   font-size: 1.8rem;
   color: #6f7479;
 }
-/* line 341, modules/_site.scss */
+/* line 520, modules/_site.scss */
 .gray .post footer a span {
   font-size: 28px;
   font-size: 2.8rem;
@@ -4337,15 +4527,15 @@ a [class*=" icon-"] {
   position: relative;
   top: 4px;
 }
-/* line 347, modules/_site.scss */
+/* line 526, modules/_site.scss */
 .gray .post footer a span.img {
   margin-right: 20px;
 }
-/* line 352, modules/_site.scss */
+/* line 531, modules/_site.scss */
 .gray .post footer a:hover {
   color: #212229;
 }
-/* line 357, modules/_site.scss */
+/* line 536, modules/_site.scss */
 .gray .post footer .btn-feed {
   position: absolute;
   top: -16px;
@@ -4355,29 +4545,29 @@ a [class*=" icon-"] {
   padding: 3px 6px 5px 8px;
   background: white;
 }
-/* line 365, modules/_site.scss */
+/* line 544, modules/_site.scss */
 .gray .post footer .btn-feed span {
   font-size: 16px;
   font-size: 1.6rem;
   position: static;
   margin: 0;
 }
-/* line 371, modules/_site.scss */
+/* line 550, modules/_site.scss */
 .gray .post footer .btn-feed:hover {
   background: #f2f2f2;
   color: #212229;
 }
-/* line 379, modules/_site.scss */
+/* line 558, modules/_site.scss */
 .gray .four-oh-four {
   padding: 75px 0;
 }
-/* line 382, modules/_site.scss */
+/* line 561, modules/_site.scss */
 .gray .four-oh-four div {
   padding: 8px;
   background: #f2f2f2;
   border: 1px solid #bfbfbf;
 }
-/* line 389, modules/_site.scss */
+/* line 568, modules/_site.scss */
 .gray .four-oh-four header h1 {
   font-family: "klinic-slab", Georgia, serif;
   font-weight: 600;
@@ -4385,16 +4575,16 @@ a [class*=" icon-"] {
   font-size: 3.6rem;
   margin-top: 25px;
 }
-/* line 400, modules/_site.scss */
+/* line 579, modules/_site.scss */
 .gray.resume {
   background: #f9fbfa;
 }
-/* line 403, modules/_site.scss */
+/* line 582, modules/_site.scss */
 .gray.resume img {
   height: 25px;
   margin: 0 0 15px 15px;
 }
-/* line 408, modules/_site.scss */
+/* line 587, modules/_site.scss */
 .gray.resume .logo {
   background: url("/images/resume/logo.png") no-repeat center;
   width: 180px;
@@ -4402,11 +4592,11 @@ a [class*=" icon-"] {
   display: block;
   margin-top: 125px;
 }
-/* line 416, modules/_site.scss */
+/* line 595, modules/_site.scss */
 .gray.resume .cell {
   padding: 0 15px;
 }
-/* line 421, modules/_site.scss */
+/* line 600, modules/_site.scss */
 .gray.resume header h1 {
   font-family: "raleway", "Helvetica Neue", Verdana, sans-serif;
   font-size: 21px;
@@ -4415,28 +4605,28 @@ a [class*=" icon-"] {
   color: #434553;
   margin-bottom: 15px;
 }
-/* line 429, modules/_site.scss */
+/* line 608, modules/_site.scss */
 .gray.resume header ~ *, .gray.resume header ~ * ~ * {
   margin-left: 15px;
 }
-/* line 435, modules/_site.scss */
+/* line 614, modules/_site.scss */
 .gray.resume .align-right header ~ * {
   margin-left: 0;
   margin-right: 15px;
 }
-/* line 441, modules/_site.scss */
+/* line 620, modules/_site.scss */
 .gray.resume .align-right p {
   margin-left: 0;
   margin-right: 15px;
 }
-/* line 446, modules/_site.scss */
+/* line 625, modules/_site.scss */
 .gray.resume h1 {
   font-family: "klinic-slab", Georgia, serif;
   font-size: 18px;
   font-size: 1.8rem;
   margin-bottom: 7px;
 }
-/* line 452, modules/_site.scss */
+/* line 631, modules/_site.scss */
 .gray.resume h2 {
   font-family: "raleway", "Helvetica Neue", Verdana, sans-serif;
   font-weight: 400;
@@ -4445,7 +4635,7 @@ a [class*=" icon-"] {
   font-size: 1.4rem;
   margin-bottom: 15px;
 }
-/* line 460, modules/_site.scss */
+/* line 639, modules/_site.scss */
 .gray.resume p, .gray.resume li {
   color: #212229;
   font-size: 17px;

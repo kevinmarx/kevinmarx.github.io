@@ -108,83 +108,262 @@ a, span, .button {
 .article-list, .project-list {
   padding-top: $pad*18.75;
   padding-bottom: $pad*22.5;
+}
 
-  > div > span {
-    color: $dkGray;
-    @include font-size(21);
-    padding: $pad*1.5;
-    font-family: $default-font-family;
-    font-weight: 400;
-    font-style: italic;
-    position: relative;
-    top: -15px;
-  }
+#Filters {
+  li {
+    display: inline-block;
 
-  ul {
-    li {
-      > a, > section {
-        border: 1px solid #dedede;
-        border-radius: $pad;
-        padding: 25px;
-        color: $text;
-        @include transition(all, 200ms, linear, 0);
+    a {
+      display: block;
+      @include font-size(16);
+      padding: 6px $pad*4;
+      border-radius: $pad;
+      border: 1px solid transparent;
+      font-weight: $normal;
 
-        &:hover, &:focus {
-          background: white;
-          box-shadow: $subtle-shadow;
-        }
+      &:hover {
+        border-color: $dkGray;
       }
 
-      a {
-        img {
-          max-height: 138px;
+      &:active {
+        background-color: darken($dkGray, 10%);
+        border-color: darken($dkGray, 10%);
+        color: $ltGray;
+      }
+
+      &.selected {
+        background-color: $dkGray;
+        border-radius: $pad;
+        border-color: $dkGray;
+        color: $ltGray;
+      }
+
+      &.works {
+        &:hover { border-color: #e26040; color: #69200d; }
+        &:active {
+          background-color: darken(#e26040, 10%);
+          border-color: darken(#e26040, 10%);
+          color: #69200d;
+        }
+        &.selected {
+          background-color: #e26040;
+          border-color: #e26040;
+          color: #69200d;
+        }
+      }
+      &.writings {
+        &:hover { border-color: #fba631; color: #69450b; }
+        &:active {
+          background-color: darken(#fba631, 10%);
+          border-color: darken(#fba631, 10%);
+          color: #69450b;
+        }
+        &.selected {
+          background-color: #fba631;
+          border-color: #fba631;
+          color: #69450b;
+        }
+      }
+      &.talks {
+        &:hover { border-color: #af44e2; color: #5F257A; }
+        &:active {
+          background-color: darken(#af44e2, 10%);
+          border-color: darken(#af44e2, 10%);
+          color: #5F257A;
+        }
+        &.selected {
+          background-color: #af44e2;
+          border-color: #af44e2;
+          color: #5F257A;
+        }
+      }
+      &.projects {
+        &:hover { border-color: #51c1d7; color: #135764; }
+        &:active {
+          background-color: darken(#51c1d7, 10%);
+          border-color: darken(#51c1d7, 10%);
+          color: #135764;
+        }
+        &.selected {
+          background-color: #51c1d7;
+          border-color: #51c1d7;
+          color: #135764;
+        }
+      }
+    }
+  }
+}
+
+#Posts {
+  li {
+    background: white;
+    margin: 0 15px 15px 0;
+    border-radius: 3px;
+    border: 1px solid #f5f5f5;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+
+    footer {
+      background: #f5f5f5;
+      height: 35px;
+
+      .tag {
+        height: 100%;
+        display: block;
+        padding: 8px 20px;
+
+        &:after {
+          content: "";
+          height: 35px;
+          width: 20px;
+          position: absolute;
+          right: -10px;
+          top: 0;
+          @include transform(skew(-25deg));
         }
 
+        &.writings {
+          background-color: #fba631; color: #69450b;
+
+          &:after {
+            background-color: #fba631;
+          }
+        }
+        &.works {
+          background-color: #e26040; color: #69200d;
+
+          &:after {
+            background-color: #e26040;
+          }
+        }
+        &.projects {
+          background-color: #51c1d7; color: #135764;
+
+          &:after {
+            background-color: #51c1d7;
+          }
+        }
+        &.talks {
+          background-color: #af44e2; color: #5F257A;
+
+          &:after {
+            background-color: #af44e2;
+          }
+        }
+
+        + .column {
+          height: 100%;
+          margin-left: 25px;
+          padding: 5px;
+
+          time { font-family: $accent-font-family; }
+          .duration { font-weight: $normal; @include font-size(14); }
+        }
+
+      }
+
+    }
+
+    &.writings, &.projects, &.talks {
+      > a {
+        height: 165px;
+        position: relative;
+      }
+    }
+
+    &.writings, &.talks {
+      > a {
+
+        header {
+          position: absolute;
+          top: 0;
+          height: 60%;
+
+          h1 {
+            font-family: $default-font-family;
+            @include font-size(36);
+            font-weight: $bold-it;
+            padding: 25px 15px 5px 15px;
+            position: relative;
+            top: 26px;
+
+          }
+
+          &.dark {
+            box-shadow: inset 0 -100px 50px -50px rgba(black, 0.5);
+            h1 {
+              color: $ltGray;
+            }
+          }
+
+          &.light {
+            box-shadow: inset 0 -100px 50px -50px rgba($ltGray, 0.8);
+            h1 {
+              color: $dkGray;
+            }
+          }
+        }
+
+        section {
+          height: 40%;
+          position: relative;
+          top: 60%;
+          color: white;
+          background-color: $dkGray;
+          padding: 5px 15px;
+
+          p {
+            font-family: $accent-font-family;
+            @include font-size(16);
+          }
+        }
+      }
+    }
+    &.works {
+      > a {
+        height: 365px;
+
+        header {
+          padding: 20px;
+          position: relative;
+          box-shadow: inset 0 -300px 250px -150px rgba(black, 0.5);
+
+          &.light {
+            box-shadow: inset 0 -200px 150px -150px rgba($ltGray, 0.8);
+            h1 {
+              color: $dkGray;
+            }
+          }
+
+          h1 {
+            @include font-size(48);
+            font-family: $default-font-family;
+            font-weight: $bold-it;
+            color: $ltGray;
+            position: absolute;
+            bottom: 20px;
+            text-shadow: 1px 1px 6px rgba(0,0,0,0.75);
+          }
+        }
+      }
+    }
+    &.projects {
+      background-color: white;
+
+      header {
+        padding: 20px;
+
         h1 {
-          color: $dkGray;
-          @include font-size(34);
+          @include font-size(38);
           font-family: $default-font-family;
+          font-weight: $bold-it;
+          margin-bottom: 20px;
         }
 
         h2 {
-          font-weight: 400;
-          font-style: italic;
-          @include font-size(14);
-
-          span, time {
-            font-weight: 400;
-            @include font-size(14);
-          }
-
-        }
-
-        p {
-          @include font-size(21);
-          max-height: 70px;
-          overflow: hidden;
-          margin: 0;
-        }
-      }
-
-      section {
-        height: 525px;
-
-        h1 {
-          color: $dkGray;
-          margin-top: 30px;
-          @include font-size(34);
-          font-family: $default-font-family;
-        }
-
-        p {
-          @include font-size(14);
-          font-family: $accent-font-family;
-        }
-
-        label {
           @include font-size(18);
-          font-weight: $bold-it;
-          font-family: $default-font-family;
+          font-family: $accent-font-family;
+          font-weight: $normal;
         }
       }
     }

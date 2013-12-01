@@ -78,7 +78,11 @@
 
       $('#Filters a').click(function(e) {
         e.preventDefault()
-        options.filter = $(this).data('filter')
+        $target = $(e.currentTarget)
+        if ($target.hasClass('selected')) return false
+        $('#Filters').find('.selected').removeClass('selected')
+        $target.addClass('selected')
+        options.filter = $target.hasClass('show-all') ? '*' : '.' + $(this).data('filter')
         $container.isotope(options)
       })
     }

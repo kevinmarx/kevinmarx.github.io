@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-{% include masthead.html selected='' %}
+{% include masthead.html selected=page.categories.first %}
 
 <article class="post group">
   <div class="feature-img group" style="background: url('/images/posts/{{page.date | date: "%Y-%m-%d" }}/hero.jpg') no-repeat center center"></div>

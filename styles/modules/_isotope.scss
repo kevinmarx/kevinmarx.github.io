@@ -7,8 +7,7 @@
   z-index: 1;
 }
 
-.element { float: left; height: 137px; width: 300px; overflow: hidden; }
-.writings { width: 620px; }
-.works { height: 274px; }
-// .projects { width: 25%; }
-// .talks { width: 25% }
+.element { float: left; height: 200px; width: 300px; overflow: hidden;
+  &.writings, &.talks { width: 620px; }
+  &.works { height: 400px; }
+}
