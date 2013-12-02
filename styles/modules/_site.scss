@@ -35,18 +35,17 @@ a, span, .button {
 }
 
 .page-header {
-  background-color: $lt;
-  font-family: $accent-font-family;
-  text-transform: uppercase;
-  border-top: $pad solid $dk;
+  .pillar {
+    position: relative;
+  }
 
   .logo {
-    background: url("/images/#{$color}/logo.png") no-repeat center;
     width: 180px;
     height: 41px;
     display: block;
-    position: relative;
-    top: -$pad;
+    position: absolute;
+    top: 50px;
+    left: 50px;
   }
 }
 
@@ -64,49 +63,39 @@ a, span, .button {
 
     header {
       position: absolute;
-      top: 125px;
-      left: 0;
-      padding: $pad*5;
-
-      &.right {
-        left: auto;
-        right: 0;
-      }
+      top: 165px;
+      left: 50px;
     }
 
     h1 {
-      color: #ee4025;
+      color: white;
       @include font-size(62);
       font-family: $default-font-family;
-      font-weight: 400;
-      font-style: italic;
+      font-weight: $normal;
     }
 
     p {
-      color: $dk;
+      color: white;
       @include font-size(24);
-      margin-top: 45px;
+      font-family: $accent-font-family;
+      font-weight: $normal;
+      margin-top: 25px;
     }
 
     span {
-      color: $dk;
+      color: white;
       @include font-size(12);
-      font-weight: 400;
+      font-weight: $bold-it;
 
       & + span {
         margin-left: 25px;
       }
     }
-
-    &.dark {
-      p, span { color: white; }
-    }
-
   }
 }
 
 .article-list, .project-list {
-  padding-top: $pad*18.75;
+  padding-top: 40px;
   padding-bottom: $pad*22.5;
 }
 
