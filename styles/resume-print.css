@@ -4435,24 +4435,27 @@ a [class*=" icon-"] {
 .gray .post .post-body h1 {
   font-size: 48px;
   font-size: 4.8rem;
+  margin-bottom: 1em;
 }
 /* line 452, modules/_site.scss */
 .gray .post .post-body h2 {
   font-size: 32px;
   font-size: 3.2rem;
+  margin-bottom: 1em;
 }
 /* line 454, modules/_site.scss */
 .gray .post .post-body h3 {
   font-size: 24px;
   font-size: 2.4rem;
   font-style: italic;
+  margin-bottom: 1em;
 }
 /* line 456, modules/_site.scss */
 .gray .post .post-body p, .gray .post .post-body li, .gray .post .post-body a {
-  font-size: 24px;
-  font-size: 2.4rem;
+  font-size: 22px;
+  font-size: 2.2rem;
   font-weight: 400;
-  line-height: 1.8;
+  line-height: 1.6;
   font-family: "klinic-slab", Georgia, serif;
 }
 /* line 462, modules/_site.scss */

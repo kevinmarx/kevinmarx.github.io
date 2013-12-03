@@ -447,16 +447,16 @@ ul.horizontal {
   .post-body {
     margin-bottom: $pad*25;
 
-    h1 { @include font-size(48); }
+    h1 { @include font-size(48); margin-bottom: 1em; }
 
-    h2 { @include font-size(32); }
+    h2 { @include font-size(32); margin-bottom: 1em; }
 
-    h3 { @include font-size(24); font-style: italic; }
+    h3 { @include font-size(24); font-style: italic; margin-bottom: 1em; }
 
     p, li, a {
-      @include font-size(24);
+      @include font-size(22);
       font-weight: 400;
-      line-height: 1.8;
+      line-height: 1.6;
       font-family: $default-font-family;
 
       > code {
