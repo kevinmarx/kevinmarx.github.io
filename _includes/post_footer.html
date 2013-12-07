@@ -22,7 +22,7 @@
                   <span class="icon icon-chevron-sign-right img right"></span>
                   <div class="bd align-right">
                     {{ next.title }}
-                    <small class="column x100">{{ next.duration }} minute read.</small>
+                    {% if next.duration %}<small class="column x100">{{ next.duration }} minute read.</small>{% endif %}
                   </div>
               </a>
           {% endunless %}
@@ -31,7 +31,7 @@
                   <span class="icon icon-chevron-sign-left img"></span>
                   <div class="bd">
                     {{ prev.title }}
-                    <small class="column x100 right">{{ prev.duration }} minute read.</small>
+                    {% if prev.duration %}<small class="column x100 right">{{ prev.duration }} minute read.</small>{% endif %}
                   </div>
               </a>
           {% endunless %}

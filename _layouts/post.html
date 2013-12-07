@@ -11,14 +11,17 @@ layout: default
   <header class="px640 center group">
     <div class="meta">
       <time datetime="{{ page.date }}">{{ page.date | date_to_string }}</time>
-      <span class="duration column right">{{ page.duration }} minute read.</span>
+      {% if page.duration %}<span class="duration column right">{{ page.duration }} minute read.</span>{% endif %}
     </div>
     <h1>{{ page.title }}</h1>
+    {% if page.roles %}<p><strong>Roles:</strong> {{ page.roles }}</p>{% endif %}
+    {% if page.technologies %}<p><strong>Technologies:</strong> {{ page.technologies }}</p>{% endif %}
   </header>
 
   <section class="post-body px640 center group">
     {{ content }}
 
+    {% if page.comments %}
     <div id="disqus_thread"></div>
     <script type="text/javascript">
         /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
@@ -33,7 +36,7 @@ layout: default
     </script>
     <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
     <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-
+    {% endif %}
   </section>
 
   {% include post_footer.html %}

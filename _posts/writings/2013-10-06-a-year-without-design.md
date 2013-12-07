@@ -5,6 +5,7 @@ hero: test.gif
 contrast: light
 categories: writings
 duration: 6
+comments: true
 excerpt: Over the past year I have effectively designed nothing. Instead I spent that time programming.
 ---
 

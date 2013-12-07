@@ -4496,21 +4496,36 @@ a [class*=" icon-"] {
   font-size: 1.2rem;
   font-weight: normal;
 }
-/* line 498, modules/_site.scss */
+/* line 497, modules/_site.scss */
+.gray .post .post-body img {
+  background: white;
+  border-radius: 3px;
+  padding: 8px;
+  margin-bottom: 24px;
+  border: 1px solid #ddd;
+}
+/* line 504, modules/_site.scss */
+.gray .post .post-body img[title] {
+  background: none;
+  border: none;
+  padding: 0;
+  border-radius: 0;
+}
+/* line 513, modules/_site.scss */
 .gray .post footer {
   border-top: 1px solid #cbcbcb;
   position: relative;
   height: 100px;
   margin-bottom: 75px;
 }
-/* line 504, modules/_site.scss */
+/* line 519, modules/_site.scss */
 .gray .post footer a {
   font-weight: 400;
   font-size: 18px;
   font-size: 1.8rem;
   color: #6f7479;
 }
-/* line 509, modules/_site.scss */
+/* line 524, modules/_site.scss */
 .gray .post footer a span {
   font-size: 28px;
   font-size: 2.8rem;
@@ -4518,15 +4533,15 @@ a [class*=" icon-"] {
   position: relative;
   top: 4px;
 }
-/* line 515, modules/_site.scss */
+/* line 530, modules/_site.scss */
 .gray .post footer a span.img {
   margin-right: 20px;
 }
-/* line 520, modules/_site.scss */
+/* line 535, modules/_site.scss */
 .gray .post footer a:hover {
   color: #212229;
 }
-/* line 525, modules/_site.scss */
+/* line 540, modules/_site.scss */
 .gray .post footer .btn-feed {
   position: absolute;
   top: -16px;
@@ -4536,29 +4551,29 @@ a [class*=" icon-"] {
   padding: 3px 6px 5px 8px;
   background: white;
 }
-/* line 533, modules/_site.scss */
+/* line 548, modules/_site.scss */
 .gray .post footer .btn-feed span {
   font-size: 16px;
   font-size: 1.6rem;
   position: static;
   margin: 0;
 }
-/* line 539, modules/_site.scss */
+/* line 554, modules/_site.scss */
 .gray .post footer .btn-feed:hover {
   background: #f2f2f2;
   color: #212229;
 }
-/* line 547, modules/_site.scss */
+/* line 562, modules/_site.scss */
 .gray .four-oh-four {
   padding: 75px 0;
 }
-/* line 550, modules/_site.scss */
+/* line 565, modules/_site.scss */
 .gray .four-oh-four div {
   padding: 8px;
   background: #f2f2f2;
   border: 1px solid #bfbfbf;
 }
-/* line 557, modules/_site.scss */
+/* line 572, modules/_site.scss */
 .gray .four-oh-four header h1 {
   font-family: "klinic-slab", Georgia, serif;
   font-weight: 600;
@@ -4566,16 +4581,16 @@ a [class*=" icon-"] {
   font-size: 3.6rem;
   margin-top: 25px;
 }
-/* line 568, modules/_site.scss */
+/* line 583, modules/_site.scss */
 .gray.resume {
   background: #f9fbfa;
 }
-/* line 571, modules/_site.scss */
+/* line 586, modules/_site.scss */
 .gray.resume img {
   height: 25px;
   margin: 0 0 15px 15px;
 }
-/* line 576, modules/_site.scss */
+/* line 591, modules/_site.scss */
 .gray.resume .logo {
   background: url("/images/resume/logo.png") no-repeat center;
   width: 180px;
@@ -4583,11 +4598,11 @@ a [class*=" icon-"] {
   display: block;
   margin-top: 125px;
 }
-/* line 584, modules/_site.scss */
+/* line 599, modules/_site.scss */
 .gray.resume .cell {
   padding: 0 15px;
 }
-/* line 589, modules/_site.scss */
+/* line 604, modules/_site.scss */
 .gray.resume header h1 {
   font-family: "raleway", "Helvetica Neue", Verdana, sans-serif;
   font-size: 21px;
@@ -4596,28 +4611,28 @@ a [class*=" icon-"] {
   color: #434553;
   margin-bottom: 15px;
 }
-/* line 597, modules/_site.scss */
+/* line 612, modules/_site.scss */
 .gray.resume header ~ *, .gray.resume header ~ * ~ * {
   margin-left: 15px;
 }
-/* line 603, modules/_site.scss */
+/* line 618, modules/_site.scss */
 .gray.resume .align-right header ~ * {
   margin-left: 0;
   margin-right: 15px;
 }
-/* line 609, modules/_site.scss */
+/* line 624, modules/_site.scss */
 .gray.resume .align-right p {
   margin-left: 0;
   margin-right: 15px;
 }
-/* line 614, modules/_site.scss */
+/* line 629, modules/_site.scss */
 .gray.resume h1 {
   font-family: "klinic-slab", Georgia, serif;
   font-size: 18px;
   font-size: 1.8rem;
   margin-bottom: 7px;
 }
-/* line 620, modules/_site.scss */
+/* line 635, modules/_site.scss */
 .gray.resume h2 {
   font-family: "raleway", "Helvetica Neue", Verdana, sans-serif;
   font-weight: 400;
@@ -4626,7 +4641,7 @@ a [class*=" icon-"] {
   font-size: 1.4rem;
   margin-bottom: 15px;
 }
-/* line 628, modules/_site.scss */
+/* line 643, modules/_site.scss */
 .gray.resume p, .gray.resume li {
   color: #212229;
   font-size: 17px;

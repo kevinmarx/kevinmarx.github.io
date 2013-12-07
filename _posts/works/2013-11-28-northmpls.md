@@ -9,7 +9,8 @@ key: northmpls
 categories: works
 ---
 
-![](/images/works/northmpls/home.png)
-![](/images/works/northmpls/arts.png)
-![](/images/works/northmpls/community.png)
-![](/images/works/northmpls/business_directory.png)
+![Home Page](/images/works/northmpls/home.png)
+![Arts Page](/images/works/northmpls/arts.png)
+![Community Page](/images/works/northmpls/community.png)
+![Business Directory](/images/works/northmpls/business_directory.png)
+![Mobile](/images/works/northmpls/mobile.png "Mobile")

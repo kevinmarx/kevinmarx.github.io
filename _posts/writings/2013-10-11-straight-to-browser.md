@@ -5,6 +5,7 @@ hero: test.gif
 contrast: dark
 duration: 12
 categories: writings
+comments: true
 excerpt: Designing in the browser, creating rapid prototypes for rapid development.
 ---
 
