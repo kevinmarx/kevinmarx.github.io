@@ -8,3 +8,8 @@ roles: Front-End Development, Interaction Design
 key: northmpls
 categories: works
 ---
+
+![](/images/works/northmpls/home.png)
+![](/images/works/northmpls/arts.png)
+![](/images/works/northmpls/community.png)
+![](/images/works/northmpls/business_directory.png)

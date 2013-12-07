@@ -1,7 +1,13 @@
+{%if include.post.contrast == 'dark' %}
+  {% assign contrast = 'dark' %}
+{% else %}
+  {% assign contrast = 'light' %}
+{% endif %}
+
 <header class="page-header group wrapper">
   <div class="pillar">
     <a href="/" class="column logo el">
-      <img src="/images/logo.png">
+      <img src="/images/{{ contrast }}/logo.png">
     </a>
   </div>
 </header>
