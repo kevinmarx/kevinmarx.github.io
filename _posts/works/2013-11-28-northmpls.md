@@ -8,6 +8,7 @@ roles: Front-End Development, Interaction Design
 technologies: Javascript, jQuery, Underscore.js, Ruby on Rails, HTML5, CSS3
 key: northmpls
 categories: works
+contrast: dark
 ---
 
 The West Broadway Area Coalition was our non-profit client in the 2013 Nerdery Overnight Website Challenge.

@@ -5,6 +5,7 @@ cutline: Something about this site.
 roles: Front-End Development, Interaction Design
 technologies: Javascript, jQuery, HTML, CSS3
 key: rush
+contrast: dark
 categories: works
 ---
 
