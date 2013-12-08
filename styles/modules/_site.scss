@@ -515,10 +515,10 @@ ul.horizontal {
   }
 
   footer {
-    border-top: 1px solid #cbcbcb;
+    // border-top: 1px solid #cbcbcb;
     position: relative;
     height: 100px;
-    margin-bottom: 75px;
+    margin-bottom: 130px;
 
     a {
       font-weight: 400;
@@ -541,9 +541,21 @@ ul.horizontal {
       }
     }
 
+    .table {
+      min-height: 100px;
+    }
+
+    #Filters {
+      margin-bottom: 15px;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      border-top: 1px solid #cbcbcb;
+      border-bottom: 1px solid #cbcbcb;
+    }
+
     .btn-feed {
       position: absolute;
-      top: -16px;
+      top: -15px;
       left: 49%;
       border: 1px solid #cbcbcb;
       border-radius: 20px;
