@@ -3,7 +3,7 @@ layout: post
 title: Straight to Browser
 hero: test.gif
 contrast: dark
-duration: 12
+duration: 9
 categories: writings
 comments: true
 excerpt: Designing in the browser, creating rapid prototypes for rapid development.
@@ -11,7 +11,7 @@ excerpt: Designing in the browser, creating rapid prototypes for rapid developme
 
 ## Designing in the browser, creating rapid prototypes for rapid development.
 
-I have been recently tasked with designing and developing a new application which will be my first real design project in over a year (See my [previous post](/2013/10/06/a-year-without-design.html)) . I approached the project like I had so many times in the past starting with rough sketches and then moving into Photoshop and Illustrator, but I found that I no longer had the patience for these tools; I found them cumbersome and slow and since I then had to build whatever interface I created in Photoshop, I was essentially building it twice. So I went to the browser.
+I have been recently tasked with designing and developing a new application which will be my first real design project in over a year. I approached the project like I had so many times in the past starting with rough sketches and then moving into Photoshop and Illustrator, but I found that I no longer had the patience for these tools; I found them cumbersome and slow and since I then had to build whatever interface I created in Photoshop, I was essentially building it twice. So I went to the browser.
 
 Designing for the web means that your medium is code, so working in the browser just makes sense. In the browser you can work out interactivity, flows, quirks that you just don't encounter in a Photoshop document. You quickly begin thinking about reuse-ability and structure in your design.
 
