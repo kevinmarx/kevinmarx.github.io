@@ -39,6 +39,15 @@
       margin: 0 0 15px 15px;
     }
 
+    .tag {
+      background: none;
+      border-radius: 3px;
+      padding: 2px;
+      margin-right: 2px;
+      margin-bottom: 2px;
+      @include font-size(10);
+    }
+
     .logo {
       background: url("/images/resume/logo.png") no-repeat center;
       width: 180px;

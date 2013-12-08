@@ -1,0 +1,13 @@
+.isotope-item {
+  z-index: 2;
+}
+
+.isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1;
+}
+
+.element { float: left; height: 200px; width: 300px; overflow: hidden;
+  &.writings, &.talks { width: 620px; }
+  &.works { height: 400px; }
+}

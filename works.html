@@ -1,0 +1,41 @@
+---
+layout: default
+title: Work
+---
+
+{% include masthead.html selected='work' %}
+
+<article class="article-list gray column x100 wrapper">
+
+  <ul id="Works" class="pillar group padded">
+    {% for work in site.categories.works %}
+      <li class="column x100 el">
+        <section>
+          <div class="group">
+            {{ work.content }}
+          </div>
+          <header class="group">
+            <h1>{{ work.title }}</h1>
+            <div class="media">
+              <div class="img right">
+                <label>Role:</label>
+                <p>{{ work.roles }}</p>
+              </div>
+            </div>
+
+            <p>{{ work.cutline }}</p>
+          </header>
+        </section>
+      </li>
+    {% endfor %}
+  </ul>
+</article>
+<script src="/js/lib/foundation.js"></script>
+<script src="/js/lib/foundation.orbit.js"></script>
+<script>
+(function() {
+  $(document).foundation('orbit', {
+    animation_speed: 200
+  });
+})(jQuery)
+</script

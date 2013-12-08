@@ -22,6 +22,10 @@ span.icon { font-family: 'FontAwesome'; }
   margin: 0 auto;
 }
 
+.inline {
+  display: inline-block;
+}
+
 a {
   @include transition(all, 150ms, linear, 0)
 }
@@ -35,18 +39,17 @@ a, span, .button {
 }
 
 .page-header {
-  background-color: $lt;
-  font-family: $accent-font-family;
-  text-transform: uppercase;
-  border-top: $pad solid $dk;
+  .pillar {
+    position: relative;
+  }
 
   .logo {
-    background: url("/images/#{$color}/logo.png") no-repeat center;
     width: 180px;
     height: 41px;
     display: block;
-    position: relative;
-    top: -$pad;
+    position: absolute;
+    top: 50px;
+    left: 50px;
   }
 }
 
@@ -56,7 +59,7 @@ a, span, .button {
   background-repeat: none;
   background-position: center top;
   box-shadow: inset 0 0 4px rgba(0,0,0,0.35);
-  height: 757px;
+  height: 587px;
 
   a {
     padding: $pad*2.5;
@@ -64,100 +67,297 @@ a, span, .button {
 
     header {
       position: absolute;
-      top: 125px;
-      left: 0;
-      padding: $pad*5;
-
-      &.right {
-        left: auto;
-        right: 0;
-      }
+      top: 165px;
+      left: 50px;
     }
 
     h1 {
-      color: #ee4025;
+      color: white;
       @include font-size(62);
       font-family: $default-font-family;
-      font-weight: 300;
+      font-weight: $normal;
     }
 
     p {
-      color: $dk;
+      color: white;
       @include font-size(24);
-      margin-top: 45px;
+      font-family: $accent-font-family;
+      font-weight: $normal;
+      margin-top: 25px;
     }
 
     span {
-      color: $dk;
+      color: white;
       @include font-size(12);
-      font-weight: 400;
+      font-weight: $bold-it;
 
       & + span {
         margin-left: 25px;
       }
     }
-
   }
 }
 
 .article-list, .project-list {
-  padding-top: $pad*18.75;
+  padding-top: 40px;
   padding-bottom: $pad*22.5;
+}
 
-  > div > span {
-    color: $dkGray;
-    @include font-size(21);
-    padding: $pad*1.5;
-    font-family: $default-font-family;
-    font-weight: 400;
-    font-style: italic;
-    position: relative;
-    top: -15px;
-  }
+#Filters {
+  li {
+    display: inline-block;
 
-  ul {
-    li {
-      a {
-        border: 1px solid #dedede;
+    a {
+      display: block;
+      @include font-size(16);
+      padding: 6px $pad*4;
+      border-radius: $pad;
+      border: 1px solid transparent;
+      font-weight: $normal;
+
+      &:hover {
+        border-color: $dkGray;
+      }
+
+      &:active {
+        background-color: darken($dkGray, 10%);
+        border-color: darken($dkGray, 10%);
+        color: $ltGray;
+      }
+
+      &.selected {
+        background-color: $dkGray;
         border-radius: $pad;
-        padding: 25px;
-        color: $text;
-        @include transition(all, 200ms, linear, 0);
+        border-color: $dkGray;
+        color: $ltGray;
+      }
 
-        &:hover, &:focus {
-          background: white;
-          box-shadow: $subtle-shadow;
+      &.works {
+        &:hover { border-color: #e26040; color: #69200d; }
+        &:active {
+          background-color: darken(#e26040, 10%);
+          border-color: darken(#e26040, 10%);
+          color: #69200d;
+        }
+        &.selected {
+          background-color: #e26040;
+          border-color: #e26040;
+          color: #69200d;
+        }
+      }
+      &.writings {
+        &:hover { border-color: #fba631; color: #69450b; }
+        &:active {
+          background-color: darken(#fba631, 10%);
+          border-color: darken(#fba631, 10%);
+          color: #69450b;
+        }
+        &.selected {
+          background-color: #fba631;
+          border-color: #fba631;
+          color: #69450b;
+        }
+      }
+      &.talks {
+        &:hover { border-color: #af44e2; color: #5F257A; }
+        &:active {
+          background-color: darken(#af44e2, 10%);
+          border-color: darken(#af44e2, 10%);
+          color: #5F257A;
+        }
+        &.selected {
+          background-color: #af44e2;
+          border-color: #af44e2;
+          color: #5F257A;
+        }
+      }
+      &.projects {
+        &:hover { border-color: #51c1d7; color: #135764; }
+        &:active {
+          background-color: darken(#51c1d7, 10%);
+          border-color: darken(#51c1d7, 10%);
+          color: #135764;
+        }
+        &.selected {
+          background-color: #51c1d7;
+          border-color: #51c1d7;
+          color: #135764;
+        }
+      }
+    }
+  }
+}
+
+#Posts {
+  li {
+    background: white;
+    margin: 0 15px 15px 0;
+    border-radius: 3px;
+    border: 1px solid #f5f5f5;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+
+    footer {
+      background: #f5f5f5;
+      height: 35px;
+
+      .tag {
+        height: 100%;
+        display: block;
+        padding: 8px 20px;
+
+        &:after {
+          content: "";
+          height: 35px;
+          width: 20px;
+          position: absolute;
+          right: -10px;
+          top: 0;
+          @include transform(skew(-25deg));
         }
 
-        img {
-          max-height: 138px;
+        &.writings {
+          background-color: #fba631; color: #69450b;
+
+          &:after {
+            background-color: #fba631;
+          }
         }
+        &.works {
+          background-color: #e26040; color: #69200d;
+
+          &:after {
+            background-color: #e26040;
+          }
+        }
+        &.projects {
+          background-color: #51c1d7; color: #135764;
+
+          &:after {
+            background-color: #51c1d7;
+          }
+        }
+        &.talks {
+          background-color: #af44e2; color: #5F257A;
+
+          &:after {
+            background-color: #af44e2;
+          }
+        }
+
+        + .column {
+          height: 100%;
+          margin-left: 25px;
+          padding: 5px;
+
+          time { font-family: $accent-font-family; }
+          .duration { font-weight: $normal; @include font-size(14); }
+        }
+
+      }
+
+    }
+
+    &.writings, &.projects, &.talks {
+      > a {
+        height: 165px;
+        position: relative;
+      }
+    }
+
+    &.writings, &.talks {
+      > a {
+
+        header {
+          position: absolute;
+          top: 0;
+          height: 60%;
+
+          h1 {
+            font-family: $default-font-family;
+            @include font-size(36);
+            font-weight: $bold-it;
+            padding: 25px 15px 5px 15px;
+            position: relative;
+            top: 26px;
+
+          }
+
+          &.dark {
+            box-shadow: inset 0 -100px 50px -50px rgba(black, 0.5);
+            h1 {
+              color: $ltGray;
+            }
+          }
+
+          &.light {
+            box-shadow: inset 0 -100px 50px -50px rgba($ltGray, 0.8);
+            h1 {
+              color: $dkGray;
+            }
+          }
+        }
+
+        section {
+          height: 40%;
+          position: relative;
+          top: 60%;
+          color: white;
+          background-color: $dkGray;
+          padding: 5px 15px;
+
+          p {
+            font-family: $accent-font-family;
+            @include font-size(16);
+          }
+        }
+      }
+    }
+    &.works {
+      > a {
+        height: 365px;
+
+        header {
+          padding: 20px;
+          position: relative;
+          box-shadow: inset 0 -300px 250px -150px rgba(black, 0.5);
+
+          &.light {
+            box-shadow: inset 0 -200px 150px -150px rgba($ltGray, 0.8);
+            h1 {
+              color: $dkGray;
+            }
+          }
+
+          h1 {
+            @include font-size(48);
+            font-family: $default-font-family;
+            font-weight: $bold-it;
+            color: $ltGray;
+            position: absolute;
+            bottom: 20px;
+            text-shadow: 1px 1px 6px rgba(0,0,0,0.75);
+          }
+        }
+      }
+    }
+    &.projects {
+      background-color: white;
+
+      header {
+        padding: 20px;
 
         h1 {
-          color: $dkGray;
-          @include font-size(34);
+          @include font-size(38);
           font-family: $default-font-family;
+          font-weight: $bold-it;
+          margin-bottom: 20px;
         }
 
         h2 {
-          font-weight: 400;
-          font-style: italic;
-          @include font-size(14);
-
-          span, time {
-            font-weight: 400;
-            @include font-size(14);
-          }
-
+          @include font-size(18);
+          font-family: $accent-font-family;
+          font-weight: $normal;
         }
-
-        p {
-          @include font-size(21);
-          max-height: 70px;
-          overflow: hidden;
-          margin: 0;
-        }
-
       }
     }
   }
@@ -221,7 +421,7 @@ ul.horizontal {
   }
 
   .feature-img {
-    height: 587px;
+    height: 300px;
     box-shadow: inset 0 0 4px rgba(0,0,0,0.35);
   }
 
@@ -251,16 +451,16 @@ ul.horizontal {
   .post-body {
     margin-bottom: $pad*25;
 
-    h1 { @include font-size(48); }
+    h1 { @include font-size(48); margin-bottom: 1em; }
 
-    h2 { @include font-size(32); }
+    h2 { @include font-size(32); margin-bottom: 1em; }
 
-    h3 { @include font-size(24); font-style: italic; }
+    h3 { @include font-size(24); font-style: italic; margin-bottom: 1em; }
 
     p, li, a {
-      @include font-size(24);
+      @include font-size(22);
       font-weight: 400;
-      line-height: 1.8;
+      line-height: 1.6;
       font-family: $default-font-family;
 
       > code {
@@ -297,13 +497,28 @@ ul.horizontal {
         font-weight: normal;
       }
     }
+
+    img {
+      background: white;
+      border-radius: 3px;
+      padding: $pad*2;
+      margin-bottom: $pad*6;
+      border: 1px solid #ddd;
+
+      &[title] {
+        background: none;
+        border: none;
+        padding: 0;
+        border-radius: 0;
+      }
+    }
   }
 
   footer {
-    border-top: 1px solid #cbcbcb;
+    // border-top: 1px solid #cbcbcb;
     position: relative;
     height: 100px;
-    margin-bottom: 75px;
+    margin-bottom: 130px;
 
     a {
       font-weight: 400;
@@ -326,9 +541,21 @@ ul.horizontal {
       }
     }
 
+    .table {
+      min-height: 100px;
+    }
+
+    #Filters {
+      margin-bottom: 15px;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      border-top: 1px solid #cbcbcb;
+      border-bottom: 1px solid #cbcbcb;
+    }
+
     .btn-feed {
       position: absolute;
-      top: -16px;
+      top: -15px;
       left: 49%;
       border: 1px solid #cbcbcb;
       border-radius: 20px;
@@ -375,6 +602,15 @@ ul.horizontal {
   img {
     height: 25px;
     margin: 0 0 15px 15px;
+  }
+
+  .tag {
+    background: #ddd;
+    border-radius: 3px;
+    padding: $pad $pad*2;
+    margin-right: $pad;
+    margin-bottom: $pad;
+    @include font-size(12);
   }
 
   .logo {

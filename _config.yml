@@ -1,9 +1,10 @@
 destination: ./_site
 auto:        true
 lsi:         false
-server_port: 4000
+port:        4000
 pygments:    true
 markdown:    redcarpet
 permalink:   date
+categories: ['writings', 'works', 'projects', 'talks']
 redcarpet:
   extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript", "with_toc_data"]

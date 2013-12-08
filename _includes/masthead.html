@@ -1,12 +1,13 @@
-<header class="page-header column x100">
-  <div class="pillar wrapper group">
-    <a href="/" class="column logo el"></a>
-    <nav class="column right">
-      <ul class="horizontal el">
-        <li><a href="/" class="button no-style {% if include.selected == "writings" %}selected{% endif %}">Writings</a></li>
-        <li><a href="/projects" class="button no-style {% if include.selected == "projects" %}selected{% endif %}">Projects</a></li>
-<!--    <li><a href="/talks" class="button no-style {% if include.selected == "talks" %}selected{% endif %}">Talks</a></li> -->
-      </ul>
-    </nav>
+{% if include.post.contrast == 'dark' %}
+  {% assign contrast = 'dark' %}
+{% else %}
+  {% assign contrast = 'light' %}
+{% endif %}
+
+<header class="page-header group wrapper">
+  <div class="pillar">
+    <a href="/" class="column logo el">
+      <img src="/images/{{ contrast }}/logo.png">
+    </a>
   </div>
 </header>
