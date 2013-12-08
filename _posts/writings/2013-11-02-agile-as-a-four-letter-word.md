@@ -3,7 +3,7 @@ layout: post
 title: Agile Is A Four Letter Word
 contrast: dark
 duration: 9
-excerpt: You keep using that word, I do not thing it means what you think it means.
+excerpt: You keep using that word, I do not think it means what you think it means.
 categories: writings
 comments: true
 ---
