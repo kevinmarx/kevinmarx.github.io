@@ -12,7 +12,7 @@
     <ul id="Posts" class="center">
       {% for post in site.posts offset: 0 limit: 20 %}
         <li class="column x30 element {{ post.categories }}">
-          <a href="{{ post.url }}" class="group">
+          <a href="{% unless post.link %}{{ post.url }}{% else %}{{ post.link }}{% endunless %}" class="group">
             {% case post.categories.first %}
             {% when 'works' %}
               {% include works_el.html post=post %}

@@ -5,7 +5,7 @@ layout: default
 
 <article class="post group">
   <div class="feature-img group"
-    style="background: url('/images/{{page.categories.first}}/{%if page.categories.first == 'writings'%}{{page.date | date: "%Y-%m-%d" }}{% else %}{{page.key}}{% endif %}/hero.jpg') no-repeat center center">
+    style="background: url('/images/{{page.categories.first}}/{%if page.categories.first == 'writings' or page.categories.first == 'talks' %}{{page.date | date: "%Y-%m-%d" }}{% else %}{{page.key}}{% endif %}/hero.jpg') no-repeat center center">
   </div>
 
   <header class="px640 center group">

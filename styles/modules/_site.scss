@@ -22,6 +22,10 @@ span.icon { font-family: 'FontAwesome'; }
   margin: 0 auto;
 }
 
+.inline {
+  display: inline-block;
+}
+
 a {
   @include transition(all, 150ms, linear, 0)
 }
@@ -586,6 +590,15 @@ ul.horizontal {
   img {
     height: 25px;
     margin: 0 0 15px 15px;
+  }
+
+  .tag {
+    background: #ddd;
+    border-radius: 3px;
+    padding: $pad $pad*2;
+    margin-right: $pad;
+    margin-bottom: $pad;
+    @include font-size(12);
   }
 
   .logo {
