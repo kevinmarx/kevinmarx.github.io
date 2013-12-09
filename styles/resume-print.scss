@@ -85,15 +85,15 @@
 
     h1 {
       font-family: $default-font-family;
-      @include font-size(14);
-      margin-bottom: 7px;
+      @include font-size(12);
+      margin-bottom: 4px;
     }
 
     h2 {
       font-family: $accent-font-family;
       font-weight: 400;
       font-style: italic;
-      @include font-size(12);
+      @include font-size(10);
       margin-bottom: 15px;
     }
 

@@ -4806,17 +4806,17 @@ a [class*=" icon-"] {
 /* line 86, resume-print.scss */
 .gray.resume h1 {
   font-family: "klinic-slab", Georgia, serif;
-  font-size: 14px;
-  font-size: 1.4rem;
-  margin-bottom: 7px;
+  font-size: 12px;
+  font-size: 1.2rem;
+  margin-bottom: 4px;
 }
 /* line 92, resume-print.scss */
 .gray.resume h2 {
   font-family: "raleway", "Helvetica Neue", Verdana, sans-serif;
   font-weight: 400;
   font-style: italic;
-  font-size: 12px;
-  font-size: 1.2rem;
+  font-size: 10px;
+  font-size: 1rem;
   margin-bottom: 15px;
 }
 /* line 100, resume-print.scss */
