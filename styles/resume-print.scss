@@ -40,11 +40,8 @@
     }
 
     .tag {
-      background: none;
       border-radius: 3px;
-      padding: 2px;
-      margin-right: 2px;
-      margin-bottom: 2px;
+      padding: 2px 6px;
       @include font-size(10);
     }
 
@@ -63,7 +60,7 @@
     header {
       h1 {
         font-family: $accent-font-family;
-        @include font-size(18);
+        @include font-size(16);
         font-weight: 400;
         color: lighten($dk, 15%);
         margin-bottom: 7px;
@@ -88,7 +85,7 @@
 
     h1 {
       font-family: $default-font-family;
-      @include font-size(16);
+      @include font-size(14);
       margin-bottom: 7px;
     }
 
@@ -96,13 +93,13 @@
       font-family: $accent-font-family;
       font-weight: 400;
       font-style: italic;
-      @include font-size(14);
+      @include font-size(12);
       margin-bottom: 15px;
     }
 
     p, li {
       color: $dk;
-      @include font-size(14);
+      @include font-size(12);
       font-family: $default-font-family;
     }
 
