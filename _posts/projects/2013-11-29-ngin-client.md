@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Ngin Client
+title: LightBlue Bean
 categories: projects
-excerpt: Sport Ngin API wrapper for NodeJS services.
-link: https://github.com/sportngin/ngin_client_node
+excerpt: Punch Through's SDK for development with the LightBlue Bean.
+link: https://github.com/PunchThrough/Bean-iOS-OSX-SDK
 ---
