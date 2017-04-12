@@ -70,7 +70,7 @@ body {
 }
 /* line 56, modules/_structure.scss */
 .group.padded > .el, .group.padded > .column > .el {
-  margin-bottom: 20px;
+  margin-bottom: 0;
 }
 /* line 60, modules/_structure.scss */
 .group.padded.minimal {
@@ -108,7 +108,7 @@ body {
 /* group class required for specificity */
 /* line 87, modules/_structure.scss */
 .group .el {
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 
 /* line 90, modules/_structure.scss */
@@ -4662,7 +4662,7 @@ a [class*=" icon-"] {
   font-style: italic;
   font-size: 14px;
   font-size: 1.4rem;
-  margin-bottom: 15px;
+  margin-bottom: 8px;
 }
 /* line 666, modules/_site.scss */
 .red.resume p, .red.resume li {
