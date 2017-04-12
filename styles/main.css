@@ -7118,7 +7118,7 @@ a [class*=" icon-"] {
 /* line 14, modules/_typography.scss */
 .gray p {
   margin-bottom: 14px;
-  margin-bottom: 1.4rem;
+  margin-bottom: 8px;
 }
 /* line 17, modules/_typography.scss */
 .gray h1, .gray h2, .gray h3, .gray h4, .gray h5, .gray h6 {

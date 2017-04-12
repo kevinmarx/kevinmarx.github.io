@@ -4817,7 +4817,7 @@ a [class*=" icon-"] {
   font-style: italic;
   font-size: 10px;
   font-size: 1rem;
-  margin-bottom: 15px;
+  margin-bottom: 8px;
 }
 /* line 100, resume-print.scss */
 .gray.resume p, .gray.resume li {
