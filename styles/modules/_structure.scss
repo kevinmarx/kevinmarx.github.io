@@ -54,7 +54,7 @@ body {
       }
     }
     & > .el, & > .column > .el {
-      margin-bottom: $pad*5;
+      margin-bottom: 0;
     }
     // Minimal Styles
     &.minimal {
@@ -85,7 +85,7 @@ body {
 
 /* group class required for specificity */
 .group .el {
-  margin-bottom: $pad*2;
+  margin-bottom: 0;
 }
 .el {
   @include pie-clearfix;
