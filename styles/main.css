@@ -70,7 +70,7 @@ body {
 }
 /* line 56, modules/_structure.scss */
 .group.padded > .el, .group.padded > .column > .el {
-  margin-bottom: 0;
+  margin-bottom: 8px;
 }
 /* line 60, modules/_structure.scss */
 .group.padded.minimal {
@@ -108,7 +108,7 @@ body {
 /* group class required for specificity */
 /* line 87, modules/_structure.scss */
 .group .el {
-  margin-bottom: 0px;
+  margin-bottom: 8px;
 }
 
 /* line 90, modules/_structure.scss */
